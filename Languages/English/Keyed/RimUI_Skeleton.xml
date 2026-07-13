@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimUI.Skeleton.Group.Text>Text</RimUI.Skeleton.Group.Text>
+  <RimUI.Skeleton.Group.Forms>Buttons and forms</RimUI.Skeleton.Group.Forms>
+  <RimUI.Skeleton.Group.Inputs>Input fields</RimUI.Skeleton.Group.Inputs>
+  <RimUI.Skeleton.Group.Selection>Selection</RimUI.Skeleton.Group.Selection>
+  <RimUI.Skeleton.Group.Indicators>Indicators</RimUI.Skeleton.Group.Indicators>
+  <RimUI.Skeleton.Group.Containers>Containers</RimUI.Skeleton.Group.Containers>
+  <RimUI.Skeleton.Group.Data>Data</RimUI.Skeleton.Group.Data>
+  <RimUI.Skeleton.Group.Display>Display</RimUI.Skeleton.Group.Display>
+  <RimUI.Skeleton.Group.Charts>Charts</RimUI.Skeleton.Group.Charts>
+  <RimUI.Skeleton.ContainerLabel>{0} (container)</RimUI.Skeleton.ContainerLabel>
+  <RimUI.Skeleton.Error.SelectTwoCells>Select at least two cells</RimUI.Skeleton.Error.SelectTwoCells>
+  <RimUI.Skeleton.Error.SelectionMustBeRect>The selection must be one solid rectangle</RimUI.Skeleton.Error.SelectionMustBeRect>
+  <RimUI.Skeleton.Error.NoTopLeftCell>Could not find the top-left cell</RimUI.Skeleton.Error.NoTopLeftCell>
+  <RimUI.Skeleton.Error.SelectMergedCell>Select a merged cell</RimUI.Skeleton.Error.SelectMergedCell>
+  <RimUI.Skeleton.Error.SplitVerticalMergeFirst>Split the vertically merged cells in this row first</RimUI.Skeleton.Error.SplitVerticalMergeFirst>
+  <RimUI.Skeleton.Menu.Delete>Delete</RimUI.Skeleton.Menu.Delete>
+  <RimUI.Skeleton.Menu.Merge>Merge</RimUI.Skeleton.Menu.Merge>
+  <RimUI.Skeleton.Menu.Split>Split</RimUI.Skeleton.Menu.Split>
+  <RimUI.Skeleton.Header.WorkAreaHint>Workspace — 12-column grid</RimUI.Skeleton.Header.WorkAreaHint>
+  <RimUI.Skeleton.AddRowButton>+ row</RimUI.Skeleton.AddRowButton>
+  <RimUI.Skeleton.Header.Instructions>Left-click a cell to select it. Right-click empty space to merge or split cells. Right-click a block to remove it. Use the X on the right to remove a row. Field, ScrollBox, and Grid containers can hold nested blocks, including other containers.</RimUI.Skeleton.Header.Instructions>
+  <RimUI.Skeleton.Wrapper.Label>Output wrapper</RimUI.Skeleton.Wrapper.Label>
+  <RimUI.Skeleton.Wrapper.NoWindow>No window (Grid)</RimUI.Skeleton.Wrapper.NoWindow>
+  <RimUI.Skeleton.Wrapper.ComponentGroupLabel>Component group</RimUI.Skeleton.Wrapper.ComponentGroupLabel>
+  <RimUI.Skeleton.ExportButton>Export</RimUI.Skeleton.ExportButton>
+  <RimUI.Skeleton.ResetButton>Reset</RimUI.Skeleton.ResetButton>
+  <RimUI.Skeleton.ResetConfirmText>Reset the workspace to a 12×1 grid? This will remove every block.</RimUI.Skeleton.ResetConfirmText>
+  <RimUI.Skeleton.Wrapper.NoWindowPrefix>No</RimUI.Skeleton.Wrapper.NoWindowPrefix>
+  <RimUI.Skeleton.CodeGen.RowComment>// Row {0}</RimUI.Skeleton.CodeGen.RowComment>
+  <RimUI.Skeleton.CopiedMessage>Copied the {0}-cell UI skeleton to the clipboard as C# code</RimUI.Skeleton.CopiedMessage>
+  <RimUI.Skeleton.CodeGen.GridReadyComment>// grid is ready to use (no window wrapper)</RimUI.Skeleton.CodeGen.GridReadyComment>
+</LanguageData>

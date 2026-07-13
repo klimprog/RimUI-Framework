@@ -1,0 +1,442 @@
+{
+  "name": "RimUI Default (file)",
+
+  "_comment": "ШАБЛОН ТЕМЫ (вложенный формат, ТЗ 0.1). Секции: palette (базовые цвета - из них выводятся дефолты всех компонентов), metrics (радиусы/бордюры/высота окна), слоты компонентов (text/field/button/divider/popover/menu/tooltip/modal), buttonPresets, menuItems, input, control. Форматы значений: цвет '#RRGGBB[AA]'; заливка (background/borderFill) - цвет, 'linear:vertical|horizontal|diagonal:#цвет1:#цвет2' или 'image:КлючТекстуры[:fit[:x,y[:#подложка[:#тинт]]]]'; radius/borderWidth - small|middle|large; отступы (padding/margin) - строка чисел через пробел: 'все' | 'гориз верт' | 'лево верх право низ'; тень - 'offsetX offsetY blur spread #цвет'; спрайт - 'КлючАтласа zone func [резерв | лево верх право низ]'; текст - textSize tiny|small|medium, textAlign left|center|right, textValign top|middle|bottom, textWrap true|false, textWeight normal|bold. ПРИОРИТЕТЫ (ТЗ 0.1): явное значение в коде -> этот файл -> дефолты компонента. Спец-значения: 'none' (= пустая строка/отсутствие ключа) - не задано, смотрится дальше по приоритетам; 'off' - явно выключено, обрывает цепочку (поддержан у background/radius/borderWidth/borderColor/borderFill/padding/margin/gap/shadow/sprite/textShadow). Ключи с префиксом '_' игнорируются.",
+
+  "palette": {
+    "surface": "#1A1713",
+    "surfaceAlt": "#2E2A23",
+    "accent": "#BE9E63",
+    "borderColor": "#675F50",
+    "textColor": "#E8E3D8",
+    "textMuted": "#A39C8B"
+  },
+
+  "metrics": {
+    "radiusSmall": 4,
+    "radiusMiddle": 8,
+    "radiusLarge": 16,
+    "borderSmall": 1,
+    "borderMiddle": 2,
+    "borderLarge": 3,
+    "maxWindowHeightFraction": 0.85
+  },
+
+  "text": {
+    "textSize": "small",
+    "textColor": "#E8E3D8",
+    "textAlign": "left",
+    "textValign": "top",
+    "textWrap": "true"
+  },
+
+  "field": {
+    "background": "#2E2A23",
+    "radius": "small",
+    "borderWidth": "small",
+    "borderColor": "#675F5059",
+    "borderFill": "",
+    "padding": "12",
+    "margin": "",
+    "gap": 8,
+    "shadow": "",
+    "sprite": ""
+  },
+
+  "button": {
+    "radius": "small",
+    "padding": "12 7"
+  },
+
+  "divider": {
+    "background": "#E8E3D82E"
+  },
+
+  "popover": {
+    "background": "#1A1713",
+    "radius": "small",
+    "borderWidth": "small",
+    "borderColor": "#675F50",
+    "padding": "10",
+    "shadow": "0 2 8 0 #00000073",
+    "sprite": ""
+  },
+
+  "menu": {
+    "background": "#1A1713",
+    "radius": "small",
+    "borderWidth": "small",
+    "borderColor": "#675F50",
+    "padding": "4",
+    "shadow": "0 2 8 0 #00000073"
+  },
+
+  "tooltip": {
+    "background": "#1A1713",
+    "radius": "small",
+    "borderWidth": "small",
+    "borderColor": "#675F50",
+    "padding": "8",
+    "shadow": "0 2 8 0 #00000073"
+  },
+
+  "_windows_comment": "ОКНА (ТЗ §7) РАЗДЕЛЕНЫ: каждый тип (window/modal/messagebox/confirm) темизируется НЕЗАВИСИМО. Скаляры background/radius/borderWidth/borderColor/padding/sprite - ПАНЕЛЬ окна (пусто/none = нативная подложка RimWorld; задан фон/sprite = своя панель). sectionGap - зазор зон. Вложенные части: title (заголовок), divider (разделитель шапки/тела), header/footer (зазоры рядов). useSprites - брать рамку из assets/{тип}/panel. Ниже - демонстрация раздельной стилизации.",
+
+  "window": {
+    "_comment": "Базовое окно-хост (UiWindow). По умолчанию нативная подложка; свой стиль/спрайт задаётся здесь.",
+    "background": "none",
+    "sprite": "none",
+    "useSprites": false
+  },
+
+  "modal": {
+    "_comment": "Модальное окно (ModalWindow). Стандартный заголовок по центру.",
+    "background": "none",
+    "sectionGap": 10,
+    "title": { "textColor": "#E8E3D8", "textSize": "medium", "textAlign": "center", "textValign": "middle" },
+    "divider": { "background": "#E8E3D826" },
+    "header": { "gap": 8 },
+    "footer": { "gap": 8 },
+    "useSprites": false
+  },
+
+  "messagebox": {
+    "_comment": "Окно-сообщение (MessageWindow) - СВОЙ стиль: тёпло-золотой заголовок (info), чуть шире зазор.",
+    "background": "none",
+    "sectionGap": 12,
+    "title": { "textColor": "#D8BE86", "textSize": "medium", "textAlign": "center", "textValign": "middle" },
+    "divider": { "background": "#D8BE8640" },
+    "header": { "gap": 8 },
+    "footer": { "gap": 10 },
+    "useSprites": false
+  },
+
+  "confirm": {
+    "_comment": "Окно-подтверждение (ConfirmWindow) - СВОЙ стиль: красноватый заголовок и разделитель.",
+    "background": "none",
+    "sectionGap": 12,
+    "title": { "textColor": "#E68A82", "textSize": "medium", "textAlign": "center", "textValign": "middle" },
+    "divider": { "background": "#E68A8240" },
+    "header": { "gap": 8 },
+    "footer": { "gap": 10 },
+    "useSprites": false
+  },
+
+  "buttonPresets": {
+    "defaultBg": "#4A443A",
+    "dangerBg": "#9E3D38",
+    "warningBg": "#B38A2E",
+    "successBg": "#47804D",
+    "text": "#F5F2EA",
+    "textDisabled": "#D9D9D980",
+    "hoverShift": 0.08,
+    "pressShift": -0.07
+  },
+
+  "menuItems": {
+    "_comment": "Пункты меню (DropdownMenu/ContextMenu/Menu). textColor/textSize - текст пункта; hover - подсветка; disabledText - отключённый; separator - разделитель (Menu); headerColor - заголовок группы (Menu); height/iconSlot/minWidth - метрики.",
+    "textColor": "#E8E3D8",
+    "textSize": "small",
+    "hover": "#FFFFFF1A",
+    "disabledText": "#A6A6A699",
+    "separator": "#E8E3D826",
+    "headerColor": "#A39C8B",
+    "height": 26,
+    "iconSlot": 22,
+    "minWidth": 140
+  },
+
+  "input": {
+    "_comment": "Скаляры bg/border/borderFocus/placeholder - палитровый уровень (питают дефолты рамки и селектов). Вложенные части (слоты): frame (+frame_focus/frame_disabled), text (стиль текста), icon (цвет иконок InputText). frame.sprite/frame_focus.sprite - спрайты рамки через тему.",
+    "bg": "#1D1A14",
+    "border": "#78705F",
+    "borderFocus": "#BE9E63",
+    "placeholder": "#969080CC",
+    "frame": { "radius": "small", "borderWidth": "small", "background": "#1D1A14", "borderColor": "#78705F", "sprite": "none" },
+    "frame_focus": { "borderColor": "#BE9E63" },
+    "frame_disabled": { "background": "#80808040" },
+    "text": { "textColor": "#E8E3D8" },
+    "icon": { "textColor": "#A39C8B" }
+  },
+
+  "inputnumber": {
+    "_comment": "Кнопки +/- справа от поля. Части: button (+_hover/_disabled), button_icon (цвет значка).",
+    "button": { "radius": "small", "background": "#4A443A" },
+    "button_hover": { "background": "#575044" },
+    "button_disabled": { "background": "#80808073" },
+    "button_icon": { "textColor": "#FFFFFF" }
+  },
+
+  "select": {
+    "_comment": "Общее для Select/CascadeSelect/TreeSelect. Поле: field (+_focus/_disabled; field.sprite - спрайт рамки), text (текст значения), placeholder, chevron (цвет стрелки). Список (Select): panel (overlay), item (текст пункта), item_hover, item_selected, scrollbar.",
+    "field": { "radius": "small", "borderWidth": "small", "background": "#1D1A14", "borderColor": "#78705F", "sprite": "none" },
+    "field_focus": { "borderColor": "#BE9E63" },
+    "field_disabled": { "background": "#80808040" },
+    "text": { "textColor": "#E8E3D8", "textValign": "middle" },
+    "placeholder": { "textColor": "#969080CC", "textValign": "middle" },
+    "chevron": { "textColor": "#A39C8B" },
+    "panel": { "background": "#1A1713", "radius": "small", "borderWidth": "small", "borderColor": "#675F50", "padding": "4", "shadow": "0 2 8 0 #00000073" },
+    "item": { "radius": "small", "textColor": "#E8E3D8", "textValign": "middle" },
+    "item_hover": { "radius": "small", "background": "#FFFFFF1A" },
+    "item_selected": { "radius": "small", "background": "#BE9E634D" },
+    "scrollbar": { "radius": "small", "background": "#FFFFFF33" }
+  },
+
+  "selectbutton": {
+    "_comment": "Слитый ряд сегментов-кнопок. Части: segment (+_active/_hover/_disabled), text (+_disabled).",
+    "segment": { "radius": "small", "background": "#4A443A" },
+    "segment_hover": { "background": "#575044" },
+    "segment_active": { "background": "#BE9E63" },
+    "segment_disabled": { "background": "#80808073" },
+    "text": { "textColor": "#F5F2EA" },
+    "text_disabled": { "textColor": "#CCCCCC80" }
+  },
+
+  "list": {
+    "_comment": "Общее для ListBox/OrderList/PickList. Части: frame (рамка списка), row (текст строки), row_hover, row_selected, row_disabled (текст), scrollbar; button (+_hover/_disabled) и button_icon - кнопки переноса/порядка; title - заголовки колонок PickList.",
+    "frame": { "radius": "small", "borderWidth": "small", "background": "#1D1A14", "borderColor": "#78705F" },
+    "row": { "textColor": "#E8E3D8", "textValign": "middle" },
+    "row_hover": { "background": "#FFFFFF1A" },
+    "row_selected": { "background": "#BE9E634D" },
+    "row_disabled": { "textColor": "#80808073", "textValign": "middle" },
+    "scrollbar": { "radius": "small", "background": "#FFFFFF2E" },
+    "button": { "radius": "small", "background": "#4A443A" },
+    "button_hover": { "background": "#575044" },
+    "button_disabled": { "background": "#80808073" },
+    "button_icon": { "textColor": "#FFFFFF" },
+    "title": { "textColor": "#A39C8B", "textSize": "tiny", "textValign": "middle" }
+  },
+
+  "tree": {
+    "_comment": "Дерево с раскрытием/выбором/чекбоксами. Части: frame, row (текст), row_hover, row_selected, chevron (стрелка ветви), check/check_on (бокс тристейта), check_mark (галочка/минус), scrollbar.",
+    "frame": { "radius": "small", "borderWidth": "small", "background": "#1D1A14", "borderColor": "#78705F" },
+    "row": { "textColor": "#E8E3D8", "textValign": "middle" },
+    "row_hover": { "background": "#FFFFFF1A" },
+    "row_selected": { "background": "#BE9E634D" },
+    "chevron": { "textColor": "#A39C8B" },
+    "check": { "radius": "small", "borderWidth": "small", "background": "#23201A", "borderColor": "#78705F" },
+    "check_on": { "background": "#BE9E63" },
+    "check_mark": { "textColor": "#FFFFFF" },
+    "scrollbar": { "radius": "small", "background": "#FFFFFF2E" }
+  },
+
+  "table": {
+    "_comment": "Общее для DataTable/TreeTable. Части: frame, header (фон шапки), header_text, sort_arrow (стрелка сортировки), row_odd (зебра), row_hover, row_selected, gridline (линии сетки), scrollbar (верт.), hscroll_track/hscroll_handle (+_active) (гориз. скролл), chevron (ветви TreeTable).",
+    "frame": { "radius": "small", "borderWidth": "small", "background": "#1A1713", "borderColor": "#675F5099" },
+    "header": { "background": "#2E2A23" },
+    "header_text": { "textColor": "#E8E3D8", "textValign": "middle" },
+    "sort_arrow": { "textColor": "#BE9E63" },
+    "row_odd": { "background": "#FFFFFF08" },
+    "row_hover": { "background": "#FFFFFF1A" },
+    "row_selected": { "background": "#BE9E6347" },
+    "gridline": { "background": "#675F5040" },
+    "scrollbar": { "radius": "small", "background": "#FFFFFF2E" },
+    "hscroll_track": { "radius": "small", "background": "#FFFFFF0D" },
+    "hscroll_handle": { "radius": "small", "background": "#FFFFFF2E" },
+    "hscroll_handle_active": { "background": "#FFFFFF59" },
+    "chevron": { "textColor": "#A39C8B" }
+  },
+
+  "panel": {
+    "_comment": "Панель с шапкой и телом. Части: frame (общая рамка; frame.sprite - 9-slice), header (+_hover), title, chevron (для сворачиваемой).",
+    "frame": { "radius": "small", "borderWidth": "small", "background": "#1A1713", "borderColor": "#675F5099", "sprite": "none" },
+    "header": { "radius": "small", "background": "#2E2A23" },
+    "header_hover": { "background": "#38332B" },
+    "title": { "textColor": "#E8E3D8", "textValign": "middle" },
+    "chevron": { "textColor": "#A39C8B" }
+  },
+
+  "accordion": {
+    "_comment": "Секции заголовок+тело. Части: header (+_hover), title, chevron, body (рамка тела секции).",
+    "header": { "radius": "small", "background": "#2E2A23" },
+    "header_hover": { "background": "#38332B" },
+    "title": { "textColor": "#E8E3D8", "textValign": "middle" },
+    "chevron": { "textColor": "#A39C8B" },
+    "body": { "radius": "small", "borderWidth": "small", "background": "#1A1713", "borderColor": "#675F5066" }
+  },
+
+  "tabs": {
+    "_comment": "Вкладки + тело активной. Части: body (тело/фон под активной; tab.sprite/tab_active.sprite - 9-slice), tab (+_active/_hover), tab_text (+_active/_disabled), strip (акцентная полоса).",
+    "body": { "borderWidth": "small", "background": "#2E2A23", "borderColor": "#675F5080" },
+    "tab": { "radius": "small", "background": "#23201A", "sprite": "none" },
+    "tab_active": { "background": "#2E2A23", "sprite": "none" },
+    "tab_hover": { "background": "#322D25" },
+    "tab_text": { "textColor": "#A39C8B" },
+    "tab_text_active": { "textColor": "#E8E3D8" },
+    "tab_text_disabled": { "textColor": "#80808073" },
+    "strip": { "background": "#BE9E63" }
+  },
+
+  "colorpicker": {
+    "_comment": "Выбор цвета (HSB-квадрат + полоса тона; сами цвета палитры - содержимое, не тема). Части: field (рамка поля-образца), panel (overlay). hex-значение - редактируемое поле (слоты input/*).",
+    "field": { "radius": "small", "borderWidth": "small", "borderColor": "#78705F" },
+    "panel": { "background": "#1A1713", "radius": "small", "borderWidth": "small", "borderColor": "#675F50", "padding": "8", "shadow": "0 2 8 0 #00000073" }
+  },
+
+  "control": {
+    "bg": "#23201A",
+    "border": "#78705F",
+    "accent": "#BE9E63",
+    "handle": "#DBD4C6",
+    "disabled": "#80808073"
+  },
+
+  "checkbox": {
+    "_comment": "Полные слоты компонента (ТЗ 0.1): корень - ряд [бокс][подпись] (gap), части - box (+состояния _hover/_on/_disabled), check (галочка, цвет через textColor), label (+_disabled). 'none' = не задано (дальше по приоритетам), 'off' = выключить.",
+    "gap": 8,
+    "box": {
+      "width": 18,
+      "height": 18,
+      "background": "#23201A",
+      "radius": "small",
+      "borderWidth": "small",
+      "borderColor": "#78705F",
+      "borderFill": "none",
+      "padding": "none",
+      "margin": "none",
+      "shadow": "none",
+      "sprite": "none"
+    },
+    "box_hover": {
+      "borderColor": "#BE9E63"
+    },
+    "box_on": {
+      "background": "#BE9E63"
+    },
+    "box_disabled": {
+      "background": "#80808073"
+    },
+    "check": {
+      "textColor": "#FFFFFF"
+    },
+    "label": {
+      "textColor": "#E8E3D8",
+      "textSize": "none",
+      "textAlign": "none",
+      "textValign": "none",
+      "textWrap": "none",
+      "textWeight": "none",
+      "textFont": "none",
+      "textShadow": "none"
+    },
+    "label_disabled": {
+      "textColor": "#80808073"
+    }
+  },
+
+  "radio": {
+    "_comment": "Ряд [кружок][подпись]; точка (dot) - заливка-круг. Части: circle (+_hover/_on/_disabled), dot (+_disabled), label (+_disabled).",
+    "gap": 8,
+    "circle": {
+      "width": 18,
+      "height": 18,
+      "background": "#23201A",
+      "radius": "middle",
+      "borderWidth": "small",
+      "borderColor": "#78705F"
+    },
+    "circle_hover": { "borderColor": "#BE9E63" },
+    "circle_on": { "borderColor": "#BE9E63" },
+    "circle_disabled": { "background": "#80808073" },
+    "dot": { "width": 8, "height": 8, "radius": "middle", "background": "#BE9E63" },
+    "dot_disabled": { "background": "#FFFFFF73" },
+    "label": { "textColor": "#E8E3D8" },
+    "label_disabled": { "textColor": "#80808073" }
+  },
+
+  "switch": {
+    "_comment": "Пилюля: track (+_hover/_on/_disabled) и knob (ползунок, размер из высоты трека). track.sprite/knob.sprite - включить спрайты через тему.",
+    "gap": 8,
+    "track": {
+      "width": 38,
+      "height": 20,
+      "background": "#23201A",
+      "radius": "middle",
+      "borderWidth": "small",
+      "borderColor": "#78705F",
+      "sprite": "none"
+    },
+    "track_hover": { "borderColor": "#BE9E63" },
+    "track_on": { "background": "#BE9E63" },
+    "track_disabled": { "background": "#80808073" },
+    "knob": { "radius": "middle", "background": "#DBD4C6", "sprite": "none" },
+    "knob_disabled": { "background": "#B3B3B380" },
+    "label": { "textColor": "#E8E3D8" },
+    "label_disabled": { "textColor": "#80808073" }
+  },
+
+  "slider": {
+    "_comment": "Трек -> заливка -> ручки; значение над ручкой, подписи концов, деления (tick/tick_major). track/fill/handle.sprite - спрайты через тему.",
+    "track": { "height": 8, "radius": "small", "background": "#23201A", "sprite": "none" },
+    "track_disabled": { "background": "#80808073" },
+    "fill": { "radius": "small", "background": "#BE9E63", "sprite": "none" },
+    "handle": { "width": 16, "height": 16, "radius": "middle", "background": "#DBD4C6", "sprite": "none" },
+    "handle_active": { "background": "#FFFFFF" },
+    "handle_disabled": { "background": "#B3B3B380" },
+    "value": { "textColor": "#E8E3D8", "textSize": "tiny" },
+    "value_disabled": { "textColor": "#80808073" },
+    "ends": { "textColor": "#A39C8B", "textSize": "tiny" },
+    "tick": { "background": "#A39C8B73" },
+    "tick_major": { "background": "#A39C8BE6" }
+  },
+
+  "label": {
+    "_comment": "Колонка: [ряд иконка+текст+звёздочка] + подсказка. Части: row (ряд), text, star (маркер '*'), hint (строка-подсказка).",
+    "gap": 2,
+    "row": { "gap": 6 },
+    "text": { "textColor": "#E8E3D8", "textValign": "middle" },
+    "star": { "textColor": "#9E3D38", "textValign": "middle" },
+    "hint": { "textColor": "#A39C8B", "textSize": "tiny", "textWrap": "true" }
+  },
+
+  "tag": {
+    "_comment": "Пилюля-метка; ФОН = severity (Info/Success/Warn/Error, из палитры/пресетов) - через слот не задаётся. Части: корень (gap/padding), text.",
+    "gap": 4,
+    "padding": "8 3",
+    "text": { "textColor": "#FFFFFF", "textSize": "tiny", "textValign": "middle" }
+  },
+
+  "chip": {
+    "_comment": "Интерактивная пилюля [иконка][текст][крестик]. Части: корень (gap/padding/radius/background), text, close (цвет крестика через textColor).",
+    "gap": 6,
+    "padding": "10 4",
+    "radius": "middle",
+    "background": "#2E2A23",
+    "text": { "textColor": "#E8E3D8", "textValign": "middle" },
+    "close": { "textColor": "#E8E3D8" }
+  },
+
+  "badge": {
+    "_comment": "Кружок-счётчик; ФОН = severity. Части: корень (radius), text.",
+    "radius": "middle",
+    "text": { "textColor": "#FFFFFF", "textSize": "tiny" }
+  },
+
+  "message": {
+    "_comment": "Плашка-уведомление [иконка severity][текст][крестик]; фон/бордюр = тон severity. Части: корень (gap/padding/radius/borderWidth), text, close.",
+    "gap": 8,
+    "padding": "10 7",
+    "radius": "small",
+    "borderWidth": "small",
+    "text": { "textColor": "#E8E3D8", "textValign": "middle", "textWrap": "true" },
+    "close": { "textColor": "#E8E3D8" }
+  },
+
+  "progressbar": {
+    "_comment": "Трек -> заливка -> текст процента. Части: track, fill (track/fill.sprite - спрайты через тему), text.",
+    "track": { "radius": "small", "background": "#23201A", "sprite": "none" },
+    "fill": { "radius": "small", "background": "#BE9E63", "sprite": "none" },
+    "text": { "textColor": "#FFFFFF", "textSize": "tiny" }
+  },
+
+  "spinner": {
+    "_comment": "Вращающееся кольцо; цвет кольца - background слота.",
+    "background": "#BE9E63"
+  },
+
+  "meter": {
+    "_comment": "Полоса цветных сегментов + легенда; цвета сегментов задаются ДАННЫМИ (не темой). Части: track, legend.",
+    "track": { "radius": "small", "background": "#23201A" },
+    "legend": { "textColor": "#A39C8B", "textSize": "tiny" }
+  }
+}

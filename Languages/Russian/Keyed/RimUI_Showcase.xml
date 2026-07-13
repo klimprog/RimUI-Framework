@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimUI.Showcase.Nav.Grid>Сетка</RimUI.Showcase.Nav.Grid>
+  <RimUI.Showcase.Nav.Grid.Columns>12 колонок</RimUI.Showcase.Nav.Grid.Columns>
+  <RimUI.Showcase.Nav.Grid.CellSpan>Объединение ячеек</RimUI.Showcase.Nav.Grid.CellSpan>
+  <RimUI.Showcase.Nav.Grid.NestedFlex>Вложенность + Flex</RimUI.Showcase.Nav.Grid.NestedFlex>
+  <RimUI.Showcase.Nav.Styles>Стили</RimUI.Showcase.Nav.Styles>
+  <RimUI.Showcase.Nav.Styles.Radius>Скругление</RimUI.Showcase.Nav.Styles.Radius>
+  <RimUI.Showcase.Nav.Styles.Border>Бордюр</RimUI.Showcase.Nav.Styles.Border>
+  <RimUI.Showcase.Nav.Styles.Gradients>Градиенты</RimUI.Showcase.Nav.Styles.Gradients>
+  <RimUI.Showcase.Nav.Styles.Shadows>Тени</RimUI.Showcase.Nav.Styles.Shadows>
+  <RimUI.Showcase.Nav.Styles.Opacity>Прозрачность</RimUI.Showcase.Nav.Styles.Opacity>
+  <RimUI.Showcase.Nav.Styles.SpriteFrame>Спрайт-рамка (9-slice)</RimUI.Showcase.Nav.Styles.SpriteFrame>
+  <RimUI.Showcase.Nav.Styles.Typography>Типографика</RimUI.Showcase.Nav.Styles.Typography>
+  <RimUI.Showcase.Nav.Forms>Формы</RimUI.Showcase.Nav.Forms>
+  <RimUI.Showcase.Nav.Forms.Label>Label (подпись поля)</RimUI.Showcase.Nav.Forms.Label>
+  <RimUI.Showcase.Nav.Selection>Выбор</RimUI.Showcase.Nav.Selection>
+  <RimUI.Showcase.Nav.Indicators>Индикация</RimUI.Showcase.Nav.Indicators>
+  <RimUI.Showcase.Nav.Containers>Контейнеры</RimUI.Showcase.Nav.Containers>
+  <RimUI.Showcase.Nav.Data>Данные</RimUI.Showcase.Nav.Data>
+  <RimUI.Showcase.Nav.Overlays>Оверлеи</RimUI.Showcase.Nav.Overlays>
+  <RimUI.Showcase.Nav.Overlays.Icons>Иконки</RimUI.Showcase.Nav.Overlays.Icons>
+  <RimUI.Showcase.Nav.Windows>Окна</RimUI.Showcase.Nav.Windows>
+  <RimUI.Showcase.Shell.Title>RimUI Framework — примеры</RimUI.Showcase.Shell.Title>
+  <RimUI.Showcase.Shell.ThemeDefault>Тема: Default</RimUI.Showcase.Shell.ThemeDefault>
+  <RimUI.Showcase.Shell.ThemeSprites>Тема: Default + спрайты</RimUI.Showcase.Shell.ThemeSprites>
+  <RimUI.Showcase.Shell.ThemeReset>Тема: сброс к дефолтам</RimUI.Showcase.Shell.ThemeReset>
+  <RimUI.Showcase.Theme.TemplateCopied>[RimUI] Шаблон темы ({0} симв.) скопирован в буфер обмена</RimUI.Showcase.Theme.TemplateCopied>
+  <RimUI.Showcase.Theme.ApplyError>[RimUI] Тема не применена: {0}</RimUI.Showcase.Theme.ApplyError>
+  <RimUI.Showcase.Grid.Columns.Title>Сетка 12 колонок</RimUI.Showcase.Grid.Columns.Title>
+  <RimUI.Showcase.Grid.Columns.Desc>12-колоночная сетка: элементу задаётся ширина от 1 до 12 колонок (span), а при нехватке места элементы сами переносятся на новую строку.</RimUI.Showcase.Grid.Columns.Desc>
+  <RimUI.Showcase.Grid.Span.Title>3 x 2 строки</RimUI.Showcase.Grid.Span.Title>
+  <RimUI.Showcase.Grid.Span.Desc>Ячейки сетки можно объединять по горизонтали (span — сколько колонок занять) и по вертикали (rowSpan — сколько строк занять), а остальные ячейки автоматически обтекают объединённую.</RimUI.Showcase.Grid.Span.Desc>
+  <RimUI.Showcase.Grid.Span.Note>rowSpan = 2 слева</RimUI.Showcase.Grid.Span.Note>
+  <RimUI.Showcase.Grid.Nested.Desc>Внутри одной ячейки сетки можно построить свою вложенную сетку (слева) или flex-раскладку с растяжением и распределением по краям (space-between, справа).</RimUI.Showcase.Grid.Nested.Desc>
+  <RimUI.Showcase.Style.Radius.Title>Скругление углов</RimUI.Showcase.Style.Radius.Title>
+  <RimUI.Showcase.Style.Radius.Desc>Скругление углов элемента задаётся значением из темы: none (без скругления), small, middle или large — конкретные пиксельные размеры настраиваются в самой теме.</RimUI.Showcase.Style.Radius.Desc>
+  <RimUI.Showcase.Style.Gradients.Vertical>вертикальный</RimUI.Showcase.Style.Gradients.Vertical>
+  <RimUI.Showcase.Style.Gradients.Horizontal>горизонт.</RimUI.Showcase.Style.Gradients.Horizontal>
+  <RimUI.Showcase.Style.Gradients.Diagonal>диагональ</RimUI.Showcase.Style.Gradients.Diagonal>
+  <RimUI.Showcase.Style.Gradients.BorderGradientLabel>бордюр-градиент</RimUI.Showcase.Style.Gradients.BorderGradientLabel>
+  <RimUI.Showcase.Style.Gradients.ThreeColors>3 цвета</RimUI.Showcase.Style.Gradients.ThreeColors>
+  <RimUI.Showcase.Style.Gradients.Desc>Фон элемента можно закрасить линейным градиентом — вертикальным, горизонтальным или по диагонали; у рамки градиент задаётся отдельно от фона.</RimUI.Showcase.Style.Gradients.Desc>
+  <RimUI.Showcase.Style.Gradients.BgLabel>градиент ФОНА</RimUI.Showcase.Style.Gradients.BgLabel>
+  <RimUI.Showcase.Style.Gradients.BorderLabel>градиент БОРДЮРА</RimUI.Showcase.Style.Gradients.BorderLabel>
+  <RimUI.Showcase.Style.Shadows.Desc>Тень рисуется под элементом с настраиваемым размытием, смещением и прозрачностью; фон здесь специально сделан светлым, чтобы тень было хорошо видно.</RimUI.Showcase.Style.Shadows.Desc>
+  <RimUI.Showcase.Style.Opacity.Desc>Фон элемента может быть полупрозрачным — три примера с разной альфой (0.25 / 0.5 / 0.75) показаны поверх пёстрой подложки, чтобы прозрачность была хорошо заметна.</RimUI.Showcase.Style.Opacity.Desc>
+  <RimUI.Showcase.Style.Opacity.Label>alpha фона</RimUI.Showcase.Style.Opacity.Label>
+  <RimUI.Showcase.Style.SpriteFrame.Title>Спрайт-рамка (9-slice с запасом)</RimUI.Showcase.Style.SpriteFrame.Title>
+  <RimUI.Showcase.Style.SpriteFrame.Desc>Рамка собрана из спрайт-листа (9-slice) с запасом под декор: синим показана функциональная часть рамки, внутри которой располагается контент, а золотым — декоративный запас, выходящий за пределы функциональной рамки наружу.</RimUI.Showcase.Style.SpriteFrame.Desc>
+  <RimUI.Showcase.Style.Typography.Tiny>Размер Tiny</RimUI.Showcase.Style.Typography.Tiny>
+  <RimUI.Showcase.Style.Typography.Small>Размер Small (дефолт)</RimUI.Showcase.Style.Typography.Small>
+  <RimUI.Showcase.Style.Typography.Medium>Размер Medium</RimUI.Showcase.Style.Typography.Medium>
+  <RimUI.Showcase.Style.Typography.Bold>Жирный (Bold)</RimUI.Showcase.Style.Typography.Bold>
+  <RimUI.Showcase.Style.Typography.Pixel20>Пиксельный размер 20px</RimUI.Showcase.Style.Typography.Pixel20>
+  <RimUI.Showcase.Style.Typography.OsFont>Шрифт ОС: Consolas 16px</RimUI.Showcase.Style.Typography.OsFont>
+  <RimUI.Showcase.Style.Typography.TextShadow>Тень текста (2,2)</RimUI.Showcase.Style.Typography.TextShadow>
+  <RimUI.Showcase.Style.Typography.ColorBoldShadow>Цветная тень + жирный</RimUI.Showcase.Style.Typography.ColorBoldShadow>
+  <RimUI.Showcase.Style.Typography.Desc>Размер текста, жирность, свой шрифт операционной системы, точный пиксельный размер и тень текста — всё это настраивается через стиль текстового элемента.</RimUI.Showcase.Style.Typography.Desc>
+  <RimUI.Showcase.Style.Typography.Variants>варианты</RimUI.Showcase.Style.Typography.Variants>
+  <RimUI.Showcase.Label.Desc>Подпись поля ввода: можно добавить иконку слева, пометить поле обязательным звёздочкой и вывести строку-подсказку под подписью.</RimUI.Showcase.Label.Desc>
+  <RimUI.Showcase.Label.Normal>обычная</RimUI.Showcase.Label.Normal>
+  <RimUI.Showcase.Label.ColonistName>Имя колониста</RimUI.Showcase.Label.ColonistName>
+  <RimUI.Showcase.Label.RequiredHintIcon>обязательная + подсказка + иконка</RimUI.Showcase.Label.RequiredHintIcon>
+  <RimUI.Showcase.Label.Password>Пароль</RimUI.Showcase.Label.Password>
+  <RimUI.Showcase.Label.PasswordHint>Не короче 8 символов</RimUI.Showcase.Label.PasswordHint>
+  <RimUI.Showcase.Checkbox.Desc>Флажок: клик по нему переключает значение да/нет. Значение можно хранить в самом элементе или брать из вашего кода, есть отключённое состояние, а вид бокса можно задать спрайтом из темы.</RimUI.Showcase.Checkbox.Desc>
+  <RimUI.Showcase.Checkbox.Enabled>Включён (клик переключает)</RimUI.Showcase.Checkbox.Enabled>
+  <RimUI.Showcase.Checkbox.AnotherOne>Ещё один</RimUI.Showcase.Checkbox.AnotherOne>
+  <RimUI.Showcase.Checkbox.Disabled>Отключён</RimUI.Showcase.Checkbox.Disabled>
+  <RimUI.Showcase.Checkbox.StyledBox>Стилевой бокс</RimUI.Showcase.Checkbox.StyledBox>
+  <RimUI.Showcase.Radio.Easy>Легко</RimUI.Showcase.Radio.Easy>
+  <RimUI.Showcase.Radio.Normal>Норма</RimUI.Showcase.Radio.Normal>
+  <RimUI.Showcase.Radio.Hardcore>Хардкор</RimUI.Showcase.Radio.Hardcore>
+  <RimUI.Showcase.Radio.Desc>Радиокнопки объединяются в группу общим значением: клик по одной из них снимает выбор с остальных в той же группе. Вид кружка и точки внутри можно задать спрайтом из темы.</RimUI.Showcase.Radio.Desc>
+  <RimUI.Showcase.Radio.Group>группа</RimUI.Showcase.Radio.Group>
+  <RimUI.Showcase.Switch.Desc>Переключатель-«пилюля»: клик по нему переключает состояние вкл/выкл, ползунок плавно едет к нужному краю. Есть отключённое состояние, вид можно задать спрайтом из темы.</RimUI.Showcase.Switch.Desc>
+  <RimUI.Showcase.Switch.Toggle>Включатель</RimUI.Showcase.Switch.Toggle>
+  <RimUI.Showcase.Switch.Style>Стиль</RimUI.Showcase.Switch.Style>
+  <RimUI.Showcase.ToggleButton.Desc>Кнопка-переключатель с двумя подписями — например «Вкл»/«Выкл»: клик переключает состояние, и подпись на кнопке меняется вместе с ним.</RimUI.Showcase.ToggleButton.Desc>
+  <RimUI.Showcase.ToggleButton.On>Вкл</RimUI.Showcase.ToggleButton.On>
+  <RimUI.Showcase.ToggleButton.Off>Выкл</RimUI.Showcase.ToggleButton.Off>
+  <RimUI.Showcase.ToggleButton.Pause>Пауза</RimUI.Showcase.ToggleButton.Pause>
+  <RimUI.Showcase.ToggleButton.Play>Игра</RimUI.Showcase.ToggleButton.Play>
+  <RimUI.Showcase.Slider.Desc>Ползунок: перетаскивайте ручку мышью, чтобы изменить значение. Поддерживает шаг, единицы измерения, деления шкалы, подписи по краям, диапазон значений (две ручки одновременно) и отключённое состояние.</RimUI.Showcase.Slider.Desc>
+  <RimUI.Showcase.Slider.Single>одиночный (шаг 5, %, деления, подписи)</RimUI.Showcase.Slider.Single>
+  <RimUI.Showcase.Slider.Range>диапазон (две ручки)</RimUI.Showcase.Slider.Range>
+  <RimUI.Showcase.Slider.Disabled>отключён</RimUI.Showcase.Slider.Disabled>
+  <RimUI.Showcase.Slider.WithEndLabels>с подписями концов</RimUI.Showcase.Slider.WithEndLabels>
+  <RimUI.Showcase.InputText.Desc>Однострочное поле ввода: можно задать плейсхолдер (подсказку, которая исчезает при вводе), привязать значение к вашей переменной, добавить иконку, сделать поле только для чтения, отключить его или задать спрайт рамки.</RimUI.Showcase.InputText.Desc>
+  <RimUI.Showcase.InputText.Placeholder>плейсхолдер</RimUI.Showcase.InputText.Placeholder>
+  <RimUI.Showcase.InputText.EnterName>Введите имя...</RimUI.Showcase.InputText.EnterName>
+  <RimUI.Showcase.InputText.WithIcon>с иконкой</RimUI.Showcase.InputText.WithIcon>
+  <RimUI.Showcase.InputText.Search>Поиск</RimUI.Showcase.InputText.Search>
+  <RimUI.Showcase.InputText.ReadOnly>только чтение</RimUI.Showcase.InputText.ReadOnly>
+  <RimUI.Showcase.InputText.Disabled>отключено</RimUI.Showcase.InputText.Disabled>
+  <RimUI.Showcase.InputText.EnterText>введите текст</RimUI.Showcase.InputText.EnterText>
+  <RimUI.Showcase.InputNumber.Desc>Числовое поле с кнопками +/− по краям: поддерживает целые и дробные значения, свой шаг изменения и границы допустимого диапазона.</RimUI.Showcase.InputNumber.Desc>
+  <RimUI.Showcase.InputNumber.IntRange>целое 0..100</RimUI.Showcase.InputNumber.IntRange>
+  <RimUI.Showcase.InputNumber.FloatRange>дробное −10..10, шаг 0.5</RimUI.Showcase.InputNumber.FloatRange>
+  <RimUI.Showcase.Textarea.Desc>Многострочное поле ввода фиксированной высоты (заданное число видимых строк) — для длинных текстов.</RimUI.Showcase.Textarea.Desc>
+  <RimUI.Showcase.Textarea.FourLines>4 строки</RimUI.Showcase.Textarea.FourLines>
+  <RimUI.Showcase.Textarea.MultilineText>Многострочный текст...</RimUI.Showcase.Textarea.MultilineText>
+  <RimUI.Showcase.Select.ItemNumber>Пункт номер {0}</RimUI.Showcase.Select.ItemNumber>
+  <RimUI.Showcase.Select.Desc>Выпадающий список: клик по полю открывает панель с вариантами, клик по варианту выбирает его и закрывает панель. Поддерживает плейсхолдер, длинные списки со скроллом и поиском, свой спрайт рамки и отключённое состояние.</RimUI.Showcase.Select.Desc>
+  <RimUI.Showcase.Select.ShortList>короткий список</RimUI.Showcase.Select.ShortList>
+  <RimUI.Showcase.Select.Colonist>Колонист</RimUI.Showcase.Select.Colonist>
+  <RimUI.Showcase.Select.Alien>Пришелец</RimUI.Showcase.Select.Alien>
+  <RimUI.Showcase.Select.Mechanoid>Механоид</RimUI.Showcase.Select.Mechanoid>
+  <RimUI.Showcase.Select.Animal>Животное</RimUI.Showcase.Select.Animal>
+  <RimUI.Showcase.Select.ChooseType>Выбери тип...</RimUI.Showcase.Select.ChooseType>
+  <RimUI.Showcase.Select.LongList>длинный (скролл + поиск)</RimUI.Showcase.Select.LongList>
+  <RimUI.Showcase.Select.FortyItems>40 пунктов</RimUI.Showcase.Select.FortyItems>
+  <RimUI.Showcase.Select.Variant>вариант</RimUI.Showcase.Select.Variant>
+  <RimUI.Showcase.Select.Unavailable>недоступен</RimUI.Showcase.Select.Unavailable>
+  <RimUI.Showcase.MultiSelect.Shooter>Стрелок</RimUI.Showcase.MultiSelect.Shooter>
+  <RimUI.Showcase.MultiSelect.Cook>Повар</RimUI.Showcase.MultiSelect.Cook>
+  <RimUI.Showcase.MultiSelect.Doctor>Медик</RimUI.Showcase.MultiSelect.Doctor>
+  <RimUI.Showcase.MultiSelect.Builder>Строитель</RimUI.Showcase.MultiSelect.Builder>
+  <RimUI.Showcase.MultiSelect.Gardener>Садовод</RimUI.Showcase.MultiSelect.Gardener>
+  <RimUI.Showcase.MultiSelect.Miner>Шахтёр</RimUI.Showcase.MultiSelect.Miner>
+  <RimUI.Showcase.MultiSelect.Scientist>Учёный</RimUI.Showcase.MultiSelect.Scientist>
+  <RimUI.Showcase.MultiSelect.Hunter>Охотник</RimUI.Showcase.MultiSelect.Hunter>
+  <RimUI.Showcase.MultiSelect.Artist>Художник</RimUI.Showcase.MultiSelect.Artist>
+  <RimUI.Showcase.MultiSelect.Trader>Торговец</RimUI.Showcase.MultiSelect.Trader>
+  <RimUI.Showcase.MultiSelect.Desc>Выбор нескольких значений из списка: клик по варианту добавляет или убирает его из выбора. Выбранные показаны чипами с крестиком прямо в поле (не поместившиеся сворачиваются в «+N»); панель после выбора не закрывается, есть поиск и лимит на число выбранных.</RimUI.Showcase.MultiSelect.Desc>
+  <RimUI.Showcase.MultiSelect.NoLimitSearch>без лимита + поиск</RimUI.Showcase.MultiSelect.NoLimitSearch>
+  <RimUI.Showcase.MultiSelect.SkillsPlaceholder>Навыки...</RimUI.Showcase.MultiSelect.SkillsPlaceholder>
+  <RimUI.Showcase.MultiSelect.UpToThree>До трёх...</RimUI.Showcase.MultiSelect.UpToThree>
+  <RimUI.Showcase.MultiTreeSelect.LeavesPlaceholder>Листья дерева...</RimUI.Showcase.MultiTreeSelect.LeavesPlaceholder>
+  <RimUI.Showcase.MultiTreeSelect.Weapons>Оружие</RimUI.Showcase.MultiTreeSelect.Weapons>
+  <RimUI.Showcase.MultiTreeSelect.Ranged>Дальнобойное</RimUI.Showcase.MultiTreeSelect.Ranged>
+  <RimUI.Showcase.MultiTreeSelect.Rifle>Винтовка</RimUI.Showcase.MultiTreeSelect.Rifle>
+  <RimUI.Showcase.MultiTreeSelect.Bow>Лук</RimUI.Showcase.MultiTreeSelect.Bow>
+  <RimUI.Showcase.MultiTreeSelect.Melee>Ближнее</RimUI.Showcase.MultiTreeSelect.Melee>
+  <RimUI.Showcase.MultiTreeSelect.Sword>Меч</RimUI.Showcase.MultiTreeSelect.Sword>
+  <RimUI.Showcase.MultiTreeSelect.Club>Дубинка</RimUI.Showcase.MultiTreeSelect.Club>
+  <RimUI.Showcase.MultiTreeSelect.Clothing>Одежда</RimUI.Showcase.MultiTreeSelect.Clothing>
+  <RimUI.Showcase.MultiTreeSelect.Parka>Парка</RimUI.Showcase.MultiTreeSelect.Parka>
+  <RimUI.Showcase.MultiTreeSelect.Hat>Шляпа</RimUI.Showcase.MultiTreeSelect.Hat>
+  <RimUI.Showcase.MultiTreeSelect.Desc>Выбор нескольких листьев дерева: клик по листу переключает его выбор, выбранные показаны чипами в поле; есть поиск по названиям листьев.</RimUI.Showcase.MultiTreeSelect.Desc>
+  <RimUI.Showcase.MultiTreeSelect.TreeWithChips>дерево с чипами</RimUI.Showcase.MultiTreeSelect.TreeWithChips>
+  <RimUI.Showcase.SelectButton.Desc>Слитый ряд сегментов-кнопок для выбора ровно одного значения: клик по сегменту делает его активным, остальные становятся неактивными.</RimUI.Showcase.SelectButton.Desc>
+  <RimUI.Showcase.SelectButton.Segments>сегменты</RimUI.Showcase.SelectButton.Segments>
+  <RimUI.Showcase.SelectButton.Day>День</RimUI.Showcase.SelectButton.Day>
+  <RimUI.Showcase.SelectButton.Week>Неделя</RimUI.Showcase.SelectButton.Week>
+  <RimUI.Showcase.SelectButton.Month>Месяц</RimUI.Showcase.SelectButton.Month>
+  <RimUI.Showcase.TreeSelect.NodePlaceholder>Узел дерева...</RimUI.Showcase.TreeSelect.NodePlaceholder>
+  <RimUI.Showcase.TreeSelect.Desc>Поле-селект, но вместо плоского списка в выпадающей панели — дерево: раскрывайте ветки и кликайте по нужному узлу, чтобы выбрать его.</RimUI.Showcase.TreeSelect.Desc>
+  <RimUI.Showcase.TreeSelect.TreeInPanel>дерево в панели</RimUI.Showcase.TreeSelect.TreeInPanel>
+  <RimUI.Showcase.CascadeSelect.RegionPlaceholder>Регион...</RimUI.Showcase.CascadeSelect.RegionPlaceholder>
+  <RimUI.Showcase.CascadeSelect.Temperate>Умеренный</RimUI.Showcase.CascadeSelect.Temperate>
+  <RimUI.Showcase.CascadeSelect.Forest>Лес</RimUI.Showcase.CascadeSelect.Forest>
+  <RimUI.Showcase.CascadeSelect.Hills>Холмы</RimUI.Showcase.CascadeSelect.Hills>
+  <RimUI.Showcase.CascadeSelect.Harsh>Суровый</RimUI.Showcase.CascadeSelect.Harsh>
+  <RimUI.Showcase.CascadeSelect.Tundra>Тундра</RimUI.Showcase.CascadeSelect.Tundra>
+  <RimUI.Showcase.CascadeSelect.Desert>Пустыня</RimUI.Showcase.CascadeSelect.Desert>
+  <RimUI.Showcase.CascadeSelect.Normal>Обычная</RimUI.Showcase.CascadeSelect.Normal>
+  <RimUI.Showcase.CascadeSelect.Extreme>Экстремальная</RimUI.Showcase.CascadeSelect.Extreme>
+  <RimUI.Showcase.CascadeSelect.Desc>Каскадный выбор через вложенные подменю: наведение на пункт с дочерними вариантами раскрывает следующий уровень сбоку, клик по конечному пункту завершает выбор.</RimUI.Showcase.CascadeSelect.Desc>
+  <RimUI.Showcase.CascadeSelect.Cascade>каскад</RimUI.Showcase.CascadeSelect.Cascade>
+  <RimUI.Showcase.ColorPicker.Desc>Выбор цвета: квадрат HSB (тон/насыщенность/яркость) и полоса тона рядом, ползунок прозрачности и поле для ручного ввода hex-кода цвета. Пипетки — взять цвет прямо с экрана — нет.</RimUI.Showcase.ColorPicker.Desc>
+  <RimUI.Showcase.ColorPicker.Active>активный</RimUI.Showcase.ColorPicker.Active>
+  <RimUI.Showcase.Tag.Desc>Неинтерактивная цветная плашка для статусов: цвет задаётся уровнем важности (severity), можно добавить иконку. Клики не обрабатывает.</RimUI.Showcase.Tag.Desc>
+  <RimUI.Showcase.Chip.Desc>Интерактивная пилюля на нейтральном фоне: можно добавить иконку, а крестиком справа — по-настоящему убрать чип (например, снять выбранный тег).</RimUI.Showcase.Chip.Desc>
+  <RimUI.Showcase.Chip.Plain>обычные</RimUI.Showcase.Chip.Plain>
+  <RimUI.Showcase.Chip.Normal>Обычный</RimUI.Showcase.Chip.Normal>
+  <RimUI.Showcase.Chip.WithIcon>С иконкой</RimUI.Showcase.Chip.WithIcon>
+  <RimUI.Showcase.Chip.Removable>удаляемые (клик по крестику убирает чип)</RimUI.Showcase.Chip.Removable>
+  <RimUI.Showcase.Chip.Doctor>Врач</RimUI.Showcase.Chip.Doctor>
+  <RimUI.Showcase.Badge.Desc>Кружок-счётчик поверх другого элемента: показывает число или просто точку без текста — например, индикатор непрочитанного.</RimUI.Showcase.Badge.Desc>
+  <RimUI.Showcase.Badge.WithBadge>С бейджем</RimUI.Showcase.Badge.WithBadge>
+  <RimUI.Showcase.InlineMessage.Desc>Плашка-уведомление прямо в потоке интерфейса (не всплывающая): цвет и иконка зависят от уровня важности (severity), можно сделать закрываемой крестиком, вид можно задать спрайтом из темы.</RimUI.Showcase.InlineMessage.Desc>
+  <RimUI.Showcase.InlineMessage.Info>Информационное сообщение.</RimUI.Showcase.InlineMessage.Info>
+  <RimUI.Showcase.InlineMessage.Warning>Предупреждение (закрываемое).</RimUI.Showcase.InlineMessage.Warning>
+  <RimUI.Showcase.InlineMessage.Error>Сообщение об ошибке.</RimUI.Showcase.InlineMessage.Error>
+  <RimUI.Showcase.Meter.Steel>Сталь</RimUI.Showcase.Meter.Steel>
+  <RimUI.Showcase.Meter.Wood>Дерево</RimUI.Showcase.Meter.Wood>
+  <RimUI.Showcase.Meter.Gold>Золото</RimUI.Showcase.Meter.Gold>
+  <RimUI.Showcase.Meter.Desc>Полоса, поделённая на сегменты по долям (например, состав ресурса на складе), с легендой под ней. Цвет каждого сегмента задаёте вы сами вместе с данными.</RimUI.Showcase.Meter.Desc>
+  <RimUI.Showcase.ProgressBar.Desc>Полоса прогресса: показывает значение от 0 до 1 либо работает в режиме «неопределённо» (бегущая анимация без конкретного значения, когда прогресс заранее неизвестен). Вид можно задать спрайтом из темы.</RimUI.Showcase.ProgressBar.Desc>
+  <RimUI.Showcase.ProgressBar.AnimatedValue>значение (анимация)</RimUI.Showcase.ProgressBar.AnimatedValue>
+  <RimUI.Showcase.Spinner.SpinFromTime>вращение от времени кадра</RimUI.Showcase.Spinner.SpinFromTime>
+  <RimUI.Showcase.Spinner.Desc>Вращающееся кольцо-индикатор загрузки: настраивается размер, скорость вращения и цвет.</RimUI.Showcase.Spinner.Desc>
+  <RimUI.Showcase.Spinner.Spinners>спиннеры</RimUI.Showcase.Spinner.Spinners>
+  <RimUI.Showcase.Panel.ButtonInBody>Кнопка в теле</RimUI.Showcase.Panel.ButtonInBody>
+  <RimUI.Showcase.Panel.Desc>Панель с заголовком и телом произвольного содержимого; можно сделать сворачиваемой — клик по шапке прячет и снова показывает тело.</RimUI.Showcase.Panel.Desc>
+  <RimUI.Showcase.Panel.PlainPanel>Обычная панель</RimUI.Showcase.Panel.PlainPanel>
+  <RimUI.Showcase.Panel.BodyIsAnyElement>Тело — любой элемент.</RimUI.Showcase.Panel.BodyIsAnyElement>
+  <RimUI.Showcase.Panel.Collapsible>сворачиваемая (клик по шапке)</RimUI.Showcase.Panel.Collapsible>
+  <RimUI.Showcase.Panel.CollapsibleLabel>Сворачиваемая</RimUI.Showcase.Panel.CollapsibleLabel>
+  <RimUI.Showcase.Panel.HeaderClickCollapses>Клик по шапке сворачивает.</RimUI.Showcase.Panel.HeaderClickCollapses>
+  <RimUI.Showcase.Panel.PanelLabel>панель</RimUI.Showcase.Panel.PanelLabel>
+  <RimUI.Showcase.Panel.PanelTitle>Панель</RimUI.Showcase.Panel.PanelTitle>
+  <RimUI.Showcase.Panel.PanelContent>Содержимое панели.</RimUI.Showcase.Panel.PanelContent>
+  <RimUI.Showcase.Accordion.General>Общее</RimUI.Showcase.Accordion.General>
+  <RimUI.Showcase.Accordion.Section1>Секция 1.</RimUI.Showcase.Accordion.Section1>
+  <RimUI.Showcase.Accordion.Combat>Бой</RimUI.Showcase.Accordion.Combat>
+  <RimUI.Showcase.Accordion.Section2>Секция 2 — открытие закрывает другие.</RimUI.Showcase.Accordion.Section2>
+  <RimUI.Showcase.Accordion.Misc>Разное</RimUI.Showcase.Accordion.Misc>
+  <RimUI.Showcase.Accordion.Section3>Секция 3.</RimUI.Showcase.Accordion.Section3>
+  <RimUI.Showcase.Accordion.Desc>Секции «заголовок + тело»: клик по заголовку раскрывает секцию. При Multiple=false раскрытие одной секции автоматически закрывает остальные.</RimUI.Showcase.Accordion.Desc>
+  <RimUI.Showcase.Accordion.Sections>секции</RimUI.Showcase.Accordion.Sections>
+  <RimUI.Showcase.Tabs.WeaponTab>Вкладка оружия.</RimUI.Showcase.Tabs.WeaponTab>
+  <RimUI.Showcase.Tabs.Armor>Броня</RimUI.Showcase.Tabs.Armor>
+  <RimUI.Showcase.Tabs.ArmorTab>Вкладка брони.</RimUI.Showcase.Tabs.ArmorTab>
+  <RimUI.Showcase.Tabs.Unavailable>Недоступна.</RimUI.Showcase.Tabs.Unavailable>
+  <RimUI.Showcase.Tabs.Desc>Вкладки: клик по заголовку переключает активную вкладку. Расположить их можно на любой стороне — сверху, снизу, слева или справа; активная вкладка визуально сливается с телом.</RimUI.Showcase.Tabs.Desc>
+  <RimUI.Showcase.Tabs.Top>сверху</RimUI.Showcase.Tabs.Top>
+  <RimUI.Showcase.Tabs.Bottom>снизу</RimUI.Showcase.Tabs.Bottom>
+  <RimUI.Showcase.Tabs.LeftRight>слева | справа</RimUI.Showcase.Tabs.LeftRight>
+  <RimUI.Showcase.ListBox.Cooking>Готовка</RimUI.Showcase.ListBox.Cooking>
+  <RimUI.Showcase.ListBox.Construction>Стройка</RimUI.Showcase.ListBox.Construction>
+  <RimUI.Showcase.ListBox.Growing>Растения</RimUI.Showcase.ListBox.Growing>
+  <RimUI.Showcase.ListBox.Mining>Шахта</RimUI.Showcase.ListBox.Mining>
+  <RimUI.Showcase.ListBox.Cleaning>Уборка</RimUI.Showcase.ListBox.Cleaning>
+  <RimUI.Showcase.ListBox.Research>Исследования</RimUI.Showcase.ListBox.Research>
+  <RimUI.Showcase.ListBox.Doctoring>Врачевание</RimUI.Showcase.ListBox.Doctoring>
+  <RimUI.Showcase.ListBox.Hunting>Охота</RimUI.Showcase.ListBox.Hunting>
+  <RimUI.Showcase.ListBox.Hauling>Транспорт</RimUI.Showcase.ListBox.Hauling>
+  <RimUI.Showcase.ListBox.Desc>Список: клик по строке выбирает её, Ctrl+клик добавляет или убирает строку из выбора, Shift+клик выбирает диапазон между двумя кликами, а на двойной клик можно назначить своё действие.</RimUI.Showcase.ListBox.Desc>
+  <RimUI.Showcase.ListBox.ListLabel>список</RimUI.Showcase.ListBox.ListLabel>
+  <RimUI.Showcase.OrderList.Desc>Список с изменяемым порядком строк: переставляйте их кнопками вверх/вниз или перетаскиванием мышью.</RimUI.Showcase.OrderList.Desc>
+  <RimUI.Showcase.OrderList.OrderLabel>порядок</RimUI.Showcase.OrderList.OrderLabel>
+  <RimUI.Showcase.PickList.Pistol>Пистолет</RimUI.Showcase.PickList.Pistol>
+  <RimUI.Showcase.PickList.Grenade>Граната</RimUI.Showcase.PickList.Grenade>
+  <RimUI.Showcase.PickList.Knife>Нож</RimUI.Showcase.PickList.Knife>
+  <RimUI.Showcase.PickList.Desc>Перенос элементов между двумя списками: кнопками между колонками или двойным кликом по элементу; Ctrl/Shift позволяют выделить сразу несколько элементов и перенести их одним действием.</RimUI.Showcase.PickList.Desc>
+  <RimUI.Showcase.PickList.SourceTarget>источник ↔ выбор</RimUI.Showcase.PickList.SourceTarget>
+  <RimUI.Showcase.PickList.Base>База</RimUI.Showcase.PickList.Base>
+  <RimUI.Showcase.PickList.Storage>Склад</RimUI.Showcase.PickList.Storage>
+  <RimUI.Showcase.PickList.Food>Еда</RimUI.Showcase.PickList.Food>
+  <RimUI.Showcase.PickList.Medicine>Медицина</RimUI.Showcase.PickList.Medicine>
+  <RimUI.Showcase.PickList.Bedrooms>Жилые</RimUI.Showcase.PickList.Bedrooms>
+  <RimUI.Showcase.PickList.Room1>Комната 1</RimUI.Showcase.PickList.Room1>
+  <RimUI.Showcase.PickList.Room2>Комната 2</RimUI.Showcase.PickList.Room2>
+  <RimUI.Showcase.PickList.Perimeter>Периметр</RimUI.Showcase.PickList.Perimeter>
+  <RimUI.Showcase.PickList.Turrets>Турели</RimUI.Showcase.PickList.Turrets>
+  <RimUI.Showcase.PickList.Walls>Стены</RimUI.Showcase.PickList.Walls>
+  <RimUI.Showcase.Tree.Desc>Дерево с раскрывающимися ветками: слева — мультивыбор строк с поиском по листьям, справа — чекбоксы, отмечающие узел вместе со всеми его дочерними.</RimUI.Showcase.Tree.Desc>
+  <RimUI.Showcase.Tree.SelectionCheckboxes>выбор | чекбоксы</RimUI.Showcase.Tree.SelectionCheckboxes>
+  <RimUI.Showcase.DataTable.Levi>Ливи</RimUI.Showcase.DataTable.Levi>
+  <RimUI.Showcase.DataTable.Goran>Горан</RimUI.Showcase.DataTable.Goran>
+  <RimUI.Showcase.DataTable.Mira>Мира</RimUI.Showcase.DataTable.Mira>
+  <RimUI.Showcase.DataTable.Tess>Тесс</RimUI.Showcase.DataTable.Tess>
+  <RimUI.Showcase.DataTable.Bak>Бак</RimUI.Showcase.DataTable.Bak>
+  <RimUI.Showcase.DataTable.Yona>Йона</RimUI.Showcase.DataTable.Yona>
+  <RimUI.Showcase.DataTable.Kara>Кара</RimUI.Showcase.DataTable.Kara>
+  <RimUI.Showcase.DataTable.Drew>Дрю</RimUI.Showcase.DataTable.Drew>
+  <RimUI.Showcase.DataTable.Piper>Пайпер</RimUI.Showcase.DataTable.Piper>
+  <RimUI.Showcase.DataTable.Sten>Стен</RimUI.Showcase.DataTable.Sten>
+  <RimUI.Showcase.DataTable.Shooting>Стрельба</RimUI.Showcase.DataTable.Shooting>
+  <RimUI.Showcase.DataTable.Skill>Навык</RimUI.Showcase.DataTable.Skill>
+  <RimUI.Showcase.DataTable.Level>Ур.</RimUI.Showcase.DataTable.Level>
+  <RimUI.Showcase.DataTable.Progress>Прогресс</RimUI.Showcase.DataTable.Progress>
+  <RimUI.Showcase.DataTable.Desc>Таблица: чередующаяся заливка строк (зебра), подсветка при наведении, мультивыбор строк, сортировка кликом по заголовку колонки «Ур.», фильтры по колонкам «Колонист»/«Навык» (совмещаются по И), а в ячейках — живые элементы интерфейса, а не просто текст.</RimUI.Showcase.DataTable.Desc>
+  <RimUI.Showcase.DataTable.TableLabel>таблица</RimUI.Showcase.DataTable.TableLabel>
+  <RimUI.Showcase.TreeTable.Category>Категория</RimUI.Showcase.TreeTable.Category>
+  <RimUI.Showcase.TreeTable.Amount>Кол-во</RimUI.Showcase.TreeTable.Amount>
+  <RimUI.Showcase.TreeTable.Weight>Вес</RimUI.Showcase.TreeTable.Weight>
+  <RimUI.Showcase.TreeTable.Price>Цена</RimUI.Showcase.TreeTable.Price>
+  <RimUI.Showcase.TreeTable.Resources>Ресурсы</RimUI.Showcase.TreeTable.Resources>
+  <RimUI.Showcase.TreeTable.Rice>Рис</RimUI.Showcase.TreeTable.Rice>
+  <RimUI.Showcase.TreeTable.Meat>Мясо</RimUI.Showcase.TreeTable.Meat>
+  <RimUI.Showcase.TreeTable.Venison>Оленина</RimUI.Showcase.TreeTable.Venison>
+  <RimUI.Showcase.TreeTable.Desc>Таблица, где первая колонка — раскрывающееся дерево, а остальные — обычные ячейки данных. Сортировка по «Категория»/«Кол-во» переставляет только соседние строки внутри одного родителя, а фильтр по «Категория» ищет среди листьев дерева.</RimUI.Showcase.TreeTable.Desc>
+  <RimUI.Showcase.TreeTable.TreeTableLabel>дерево-таблица</RimUI.Showcase.TreeTable.TreeTableLabel>
+  <RimUI.Showcase.Button.Desc>Кнопка: готовые цветовые пресеты, иконки слева и/или справа от текста, отключённое состояние и всплывающая подсказка (тултип). По ширине не растягивается — только по своему содержимому.</RimUI.Showcase.Button.Desc>
+  <RimUI.Showcase.Button.Presets>пресеты</RimUI.Showcase.Button.Presets>
+  <RimUI.Showcase.Button.DisabledTooltip>отключена / тултип</RimUI.Showcase.Button.DisabledTooltip>
+  <RimUI.Showcase.Button.Unavailable>Недоступна</RimUI.Showcase.Button.Unavailable>
+  <RimUI.Showcase.Button.Hover>Наведи</RimUI.Showcase.Button.Hover>
+  <RimUI.Showcase.Button.NativeTooltip>Нативный тултип RimWorld</RimUI.Showcase.Button.NativeTooltip>
+  <RimUI.Showcase.Button.SpriteTheme>спрайт из темы</RimUI.Showcase.Button.SpriteTheme>
+  <RimUI.Showcase.Button.Left>Слева</RimUI.Showcase.Button.Left>
+  <RimUI.Showcase.Button.Right>Справа</RimUI.Showcase.Button.Right>
+  <RimUI.Showcase.Button.Sprite.Button>Кнопка</RimUI.Showcase.Button.Sprite.Button>
+  <RimUI.Showcase.Button.Sprite.Success>Успех</RimUI.Showcase.Button.Sprite.Success>
+  <RimUI.Showcase.Popover.TextArrowDown>Текст ↓</RimUI.Showcase.Popover.TextArrowDown>
+  <RimUI.Showcase.Popover.BodyText>Строка текста в попапе.\nЗажимается в границах окна.</RimUI.Showcase.Popover.BodyText>
+  <RimUI.Showcase.Popover.PanelArrow>Панель →</RimUI.Showcase.Popover.PanelArrow>
+  <RimUI.Showcase.Popover.InsideOurElements>Внутри — наши элементы:</RimUI.Showcase.Popover.InsideOurElements>
+  <RimUI.Showcase.Popover.Yes>Да</RimUI.Showcase.Popover.Yes>
+  <RimUI.Showcase.Popover.No>Нет</RimUI.Showcase.Popover.No>
+  <RimUI.Showcase.Popover.UpArrow>Вверх ↑</RimUI.Showcase.Popover.UpArrow>
+  <RimUI.Showcase.Popover.OpensUpward>Раскрытие вверх от якоря.</RimUI.Showcase.Popover.OpensUpward>
+  <RimUI.Showcase.Popover.Desc>Всплывающая панель у точки-якоря (обычно у кнопки): открывается по клику, внутри может быть любое содержимое, а клик мимо панели закрывает её.</RimUI.Showcase.Popover.Desc>
+  <RimUI.Showcase.Popover.Placements>размещения</RimUI.Showcase.Popover.Placements>
+  <RimUI.Showcase.DropdownMenu.MenuLabel>Меню ▾</RimUI.Showcase.DropdownMenu.MenuLabel>
+  <RimUI.Showcase.DropdownMenu.Create>Создать</RimUI.Showcase.DropdownMenu.Create>
+  <RimUI.Showcase.DropdownMenu.Open>Открыть</RimUI.Showcase.DropdownMenu.Open>
+  <RimUI.Showcase.DropdownMenu.Unavailable>Недоступно</RimUI.Showcase.DropdownMenu.Unavailable>
+  <RimUI.Showcase.DropdownMenu.Export>Экспорт</RimUI.Showcase.DropdownMenu.Export>
+  <RimUI.Showcase.DropdownMenu.ToPng>В PNG</RimUI.Showcase.DropdownMenu.ToPng>
+  <RimUI.Showcase.DropdownMenu.ToJson>В JSON</RimUI.Showcase.DropdownMenu.ToJson>
+  <RimUI.Showcase.DropdownMenu.More>Ещё</RimUI.Showcase.DropdownMenu.More>
+  <RimUI.Showcase.DropdownMenu.Deeper1>Глубже 1</RimUI.Showcase.DropdownMenu.Deeper1>
+  <RimUI.Showcase.DropdownMenu.Deeper2>Глубже 2</RimUI.Showcase.DropdownMenu.Deeper2>
+  <RimUI.Showcase.DropdownMenu.Exit>Выход</RimUI.Showcase.DropdownMenu.Exit>
+  <RimUI.Showcase.DropdownMenu.Desc>Выпадающее меню у кнопки: клик по кнопке открывает список пунктов, среди которых могут быть отключённые (недоступные) и пункты с вложенными подменю, раскрывающимися при наведении.</RimUI.Showcase.DropdownMenu.Desc>
+  <RimUI.Showcase.DropdownMenu.MenuWord>меню</RimUI.Showcase.DropdownMenu.MenuWord>
+  <RimUI.Showcase.DropdownMenu.Nearby>Рядом</RimUI.Showcase.DropdownMenu.Nearby>
+  <RimUI.Showcase.Menu.File>ФАЙЛ</RimUI.Showcase.Menu.File>
+  <RimUI.Showcase.Menu.Other>ПРОЧЕЕ</RimUI.Showcase.Menu.Other>
+  <RimUI.Showcase.Menu.RightClickHere>Кликни ПРАВОЙ кнопкой сюда</RimUI.Showcase.Menu.RightClickHere>
+  <RimUI.Showcase.Menu.Action>Действие</RimUI.Showcase.Menu.Action>
+  <RimUI.Showcase.Menu.Submenu>Подменю</RimUI.Showcase.Menu.Submenu>
+  <RimUI.Showcase.Menu.Nested>Вложенное</RimUI.Showcase.Menu.Nested>
+  <RimUI.Showcase.Menu.Delete>Удалить</RimUI.Showcase.Menu.Delete>
+  <RimUI.Showcase.Menu.Desc>Меню бывает статичным — встроенным прямо в поток интерфейса (слева), и контекстным — вызываемым правой кнопкой мыши в нужном месте (справа).</RimUI.Showcase.Menu.Desc>
+  <RimUI.Showcase.Menu.StaticContext>статичное | контекстное</RimUI.Showcase.Menu.StaticContext>
+  <RimUI.Showcase.Tooltip.TooltipTemplate>Шаблон подсказки</RimUI.Showcase.Tooltip.TooltipTemplate>
+  <RimUI.Showcase.Tooltip.StyledLine>Строка со стилем</RimUI.Showcase.Tooltip.StyledLine>
+  <RimUI.Showcase.Tooltip.MutedLine>И приглушённая строка</RimUI.Showcase.Tooltip.MutedLine>
+  <RimUI.Showcase.Tooltip.HoverMe>Наведи на меня</RimUI.Showcase.Tooltip.HoverMe>
+  <RimUI.Showcase.Tooltip.ClickThroughTooltip>Клик сквозь тултип</RimUI.Showcase.Tooltip.ClickThroughTooltip>
+  <RimUI.Showcase.Tooltip.ClickPassesThrough>Клик по кнопке проходит: подсказка не ловит ввод.</RimUI.Showcase.Tooltip.ClickPassesThrough>
+  <RimUI.Showcase.Tooltip.Desc>Шаблон подсказки: появляется при наведении курсора, может содержать любое содержимое, следует за курсором и не перехватывает клики — можно кликать «сквозь» неё по элементу под ней.</RimUI.Showcase.Tooltip.Desc>
+  <RimUI.Showcase.Tooltip.Hover>наведи</RimUI.Showcase.Tooltip.Hover>
+  <RimUI.Showcase.Icons.Desc>Встроенный лист иконок: конкретная иконка берётся по индексу через Icons.Get(индекс), поддерживает свой размер, тонирование цветом и поворот; такую же иконку можно вставить и в кнопку.</RimUI.Showcase.Icons.Desc>
+  <RimUI.Showcase.Icons.SetLabel>набор (20px)</RimUI.Showcase.Icons.SetLabel>
+  <RimUI.Showcase.Icons.TintRotateButton>тинт · поворот 45° · в кнопке</RimUI.Showcase.Icons.TintRotateButton>
+  <RimUI.Showcase.ModalWindow.Desc>Модальное окно: шапка (кнопка-гамбургер для меню, заголовок по центру, кнопка закрытия), тело с прокруткой при переполнении и футер с кнопками действий. Перетаскивается мышью за шапку.</RimUI.Showcase.ModalWindow.Desc>
+  <RimUI.Showcase.ModalWindow.OpensSeparateWindow>Открывается отдельным окном.</RimUI.Showcase.ModalWindow.OpensSeparateWindow>
+  <RimUI.Showcase.ModalWindow.OpenButton>Открыть ModalWindow</RimUI.Showcase.ModalWindow.OpenButton>
+  <RimUI.Showcase.MessageWindow.Desc>Окно-сообщение — упрощённая модалка без гамбургер-меню, в футере всего одна кнопка, которая его закрывает. Свой стиль и спрайт рамки можно задать отдельно от обычного модального окна.</RimUI.Showcase.MessageWindow.Desc>
+  <RimUI.Showcase.MessageWindow.OpenButton>Открыть MessageWindow</RimUI.Showcase.MessageWindow.OpenButton>
+  <RimUI.Showcase.MessageWindow.InfoTitle>Информация</RimUI.Showcase.MessageWindow.InfoTitle>
+  <RimUI.Showcase.MessageWindow.InfoDesc>Информационное окно: одна кнопка в футтере закрывает его.</RimUI.Showcase.MessageWindow.InfoDesc>
+  <RimUI.Showcase.ConfirmWindow.Desc>Окно-подтверждение: две кнопки — согласие и отказ, оба варианта приходят вам как отдельные события. Свой стиль и спрайт рамки можно задать отдельно от обычного модального окна.</RimUI.Showcase.ConfirmWindow.Desc>
+  <RimUI.Showcase.ConfirmWindow.OpenButton>Открыть ConfirmWindow</RimUI.Showcase.ConfirmWindow.OpenButton>
+  <RimUI.Showcase.ConfirmWindow.AreYouSure>Вы уверены?</RimUI.Showcase.ConfirmWindow.AreYouSure>
+  <RimUI.Showcase.ConfirmWindow.ConsentDesc>Согласие и отказ — события. «Закрыть» и Esc = отказ.</RimUI.Showcase.ConfirmWindow.ConsentDesc>
+  <RimUI.Showcase.ModalWindow.Example.Desc>Пример полноценной модалки: шапка, тело (здесь — с прокруткой из-за длинного содержимого) и футер. Перетаскивается ТОЛЬКО за шапку, а клавиша Esc закрывает окно.</RimUI.Showcase.ModalWindow.Example.Desc>
+  <RimUI.Showcase.ModalWindow.Example.ContentLine>Строка контента #{0} — проверка скролла рабочей зоны.</RimUI.Showcase.ModalWindow.Example.ContentLine>
+  <RimUI.Showcase.ModalWindow.Example.Title>Заголовок модалки</RimUI.Showcase.ModalWindow.Example.Title>
+  <RimUI.Showcase.ModalWindow.Example.Item1>Пункт 1</RimUI.Showcase.ModalWindow.Example.Item1>
+  <RimUI.Showcase.ModalWindow.Example.Item2>Пункт 2</RimUI.Showcase.ModalWindow.Example.Item2>
+  <RimUI.Showcase.ModalWindow.Example.Apply>Применить</RimUI.Showcase.ModalWindow.Example.Apply>
+  <RimUI.Showcase.ModalWindow.Example.Close>Закрыть</RimUI.Showcase.ModalWindow.Example.Close>
+  <RimUI.Showcase.ProgressBar.GradientFillNote>градиент заливки: обрезка | растяжение</RimUI.Showcase.ProgressBar.GradientFillNote>
+  <RimUI.Showcase.ProgressBar.VerticalNote>вертикальные: заполнение снизу вверх</RimUI.Showcase.ProgressBar.VerticalNote>
+  <RimUI.Showcase.Slider.VerticalNote>вертикальные: одиночный и range (min внизу)</RimUI.Showcase.Slider.VerticalNote>
+  <RimUI.Showcase.Nav.Styles.SpriteTiling>Спрайт-тайлинг</RimUI.Showcase.Nav.Styles.SpriteTiling>
+  <RimUI.Showcase.Style.SpriteTiling.Desc>Тайлинг спрайтов: грани и центр размножаются плитками вместо растяжения; частичная плитка обрезается, а не сжимается. Пример — зубцы и точки, повторяющиеся модулями по 3 единицы.</RimUI.Showcase.Style.SpriteTiling.Desc>
+  <RimUI.Showcase.Style.SpriteTiling.StretchVsRepeat>stretch (зубцы размазаны) | repeat (частокол ровный)</RimUI.Showcase.Style.SpriteTiling.StretchVsRepeat>
+  <RimUI.Showcase.Nav.Animations>Анимации</RimUI.Showcase.Nav.Animations>
+  <RimUI.Showcase.Nav.Animations.Basic>Базовые</RimUI.Showcase.Nav.Animations.Basic>
+  <RimUI.Showcase.Nav.Events>События</RimUI.Showcase.Nav.Events>
+  <RimUI.Showcase.Nav.Events.Basic>Подписки</RimUI.Showcase.Nav.Events.Basic>
+  <RimUI.Showcase.Events.Title>События компонентов</RimUI.Showcase.Events.Title>
+  <RimUI.Showcase.Events.Desc>У любого компонента есть блок Events: подпишитесь на наведение (вход/выход/каждый кадр), клики левой и правой кнопкой, скролл, смену активности и выбор. Колбек получает сам компонент и данные события. События — наблюдатели: собственная логика компонента отрабатывает первой, ваш колбек — после неё.</RimUI.Showcase.Events.Desc>
+  <RimUI.Showcase.Events.ButtonBlock>кнопка: наведение (вход/выход/каждый кадр) и клики ЛКМ/ПКМ</RimUI.Showcase.Events.ButtonBlock>
+  <RimUI.Showcase.Events.DisabledBlock>смена активности: тумблер отключает чекбокс — у чекбокса стреляет событие</RimUI.Showcase.Events.DisabledBlock>
+  <RimUI.Showcase.Events.ListBlock>список: выбор (индекс + значение) и скролл (стреляет, даже когда список сам прокрутился)</RimUI.Showcase.Events.ListBlock>
+  <RimUI.Showcase.Events.LogBlock>журнал событий (последние 8)</RimUI.Showcase.Events.LogBlock>
+  <RimUI.Showcase.Events.LogEmpty>Событий пока нет — понаводите курсор, покликайте и повыбирайте в элементах выше.</RimUI.Showcase.Events.LogEmpty>
+  <RimUI.Showcase.Events.TargetButton>Кнопка-цель</RimUI.Showcase.Events.TargetButton>
+  <RimUI.Showcase.Events.HoverFrames>кадров под курсором (OnHover): {0}</RimUI.Showcase.Events.HoverFrames>
+  <RimUI.Showcase.Events.CheckboxLabel>Наблюдаемый чекбокс</RimUI.Showcase.Events.CheckboxLabel>
+  <RimUI.Showcase.Events.ToggleLabel>Отключить чекбокс</RimUI.Showcase.Events.ToggleLabel>
+  <RimUI.Showcase.Events.HoverEnter>курсор вошёл</RimUI.Showcase.Events.HoverEnter>
+  <RimUI.Showcase.Events.HoverLeave>курсор ушёл</RimUI.Showcase.Events.HoverLeave>
+  <RimUI.Showcase.Events.Click>клик ЛКМ</RimUI.Showcase.Events.Click>
+  <RimUI.Showcase.Events.RightClick>клик ПКМ</RimUI.Showcase.Events.RightClick>
+  <RimUI.Showcase.Events.Scroll>скролл, дельта {0}</RimUI.Showcase.Events.Scroll>
+  <RimUI.Showcase.Events.Selection>выбор: [{0}] {1}</RimUI.Showcase.Events.Selection>
+  <RimUI.Showcase.Events.DisabledOn>отключён</RimUI.Showcase.Events.DisabledOn>
+  <RimUI.Showcase.Events.DisabledOff>снова активен</RimUI.Showcase.Events.DisabledOff>
+  <RimUI.Showcase.Nav.Methods>Методы</RimUI.Showcase.Nav.Methods>
+  <RimUI.Showcase.Nav.Methods.Basic>Значения и стили</RimUI.Showcase.Nav.Methods.Basic>
+  <RimUI.Showcase.Methods.Title>Методы компонентов</RimUI.Showcase.Methods.Title>
+  <RimUI.Showcase.Methods.Desc>Значение и выбор читаются и задаются прямо из кода: GetValue()/SetValue() у полей и переключателей, GetSelected()/SetSelected() у компонентов с выбором. SetStyle("путь", "значение") меняет стиль строкой — пути и форматы те же, что в файле темы; части компонента указываются первым сегментом (например box.borderColor). Опечатка в пути молча игнорируется.</RimUI.Showcase.Methods.Desc>
+  <RimUI.Showcase.Methods.ResultBlock>результат последнего чтения</RimUI.Showcase.Methods.ResultBlock>
+  <RimUI.Showcase.Methods.ResultLabel>результат: {0}</RimUI.Showcase.Methods.ResultLabel>
+  <RimUI.Showcase.Methods.ResultEmpty>результат: — (нажмите одну из кнопок «Прочитать»)</RimUI.Showcase.Methods.ResultEmpty>
+  <RimUI.Showcase.Methods.InputBlock>GetValue() / SetValue(): текстовое поле</RimUI.Showcase.Methods.InputBlock>
+  <RimUI.Showcase.Methods.ReadBtn>Прочитать GetValue()</RimUI.Showcase.Methods.ReadBtn>
+  <RimUI.Showcase.Methods.WriteBtn>Записать SetValue(...)</RimUI.Showcase.Methods.WriteBtn>
+  <RimUI.Showcase.Methods.WriteSample>Привет из кода</RimUI.Showcase.Methods.WriteSample>
+  <RimUI.Showcase.Methods.SelectBlock>GetSelected() / SetSelected(): выпадающий список</RimUI.Showcase.Methods.SelectBlock>
+  <RimUI.Showcase.Methods.ReadSelBtn>Прочитать GetSelected()</RimUI.Showcase.Methods.ReadSelBtn>
+  <RimUI.Showcase.Methods.SetSelBtn>Выбрать «Механоида» из кода</RimUI.Showcase.Methods.SetSelBtn>
+  <RimUI.Showcase.Methods.StyleBlock>SetStyle("путь", "значение"): чекбокс</RimUI.Showcase.Methods.StyleBlock>
+  <RimUI.Showcase.Methods.CheckboxLabel>Подопытный чекбокс</RimUI.Showcase.Methods.CheckboxLabel>
+  <RimUI.Showcase.Methods.StyleBoxBtn>box.borderColor = #FF5050</RimUI.Showcase.Methods.StyleBoxBtn>
+  <RimUI.Showcase.Methods.StyleLabelBtn>label.text.color = #FFD24A</RimUI.Showcase.Methods.StyleLabelBtn>
+  <RimUI.Showcase.Methods.StyleTypoBtn>Опечатка в пути (молча)</RimUI.Showcase.Methods.StyleTypoBtn>
+  <RimUI.Showcase.CircularProgress.Desc>Круговой прогресс-бар: разные формы дуги, точка старта, направление, градиент вдоль дуги, бордюры полосы, текст или иконка в центре.</RimUI.Showcase.CircularProgress.Desc>
+  <RimUI.Showcase.CircularProgress.StartAngles>круг: старт сверху | справа | реверс</RimUI.Showcase.CircularProgress.StartAngles>
+  <RimUI.Showcase.CircularProgress.HalfThreeQuarter>полукруг | три четверти</RimUI.Showcase.CircularProgress.HalfThreeQuarter>
+  <RimUI.Showcase.CircularProgress.GradientBorderIcon>градиент вдоль дуги + бордюры | иконка</RimUI.Showcase.CircularProgress.GradientBorderIcon>
+  <RimUI.Showcase.Animations.Desc>Анимации: оборачиваете любой элемент в Animated и подключаете готовый модуль по имени; свой модуль регистрируется через Animations.Register — точно так же, как встроенные.</RimUI.Showcase.Animations.Desc>
+  <RimUI.Showcase.Animations.FadeIn>Появление</RimUI.Showcase.Animations.FadeIn>
+  <RimUI.Showcase.Animations.SlideInLeft>Въезд слева</RimUI.Showcase.Animations.SlideInLeft>
+  <RimUI.Showcase.Animations.Shake>Тряхнуть</RimUI.Showcase.Animations.Shake>
+  <RimUI.Showcase.Animations.Restart>Перезапустить</RimUI.Showcase.Animations.Restart>
+  <RimUI.Showcase.Animations.Pulse>Пульс</RimUI.Showcase.Animations.Pulse>
+  <RimUI.Showcase.Animations.Blink>Тревога</RimUI.Showcase.Animations.Blink>
+  <RimUI.Showcase.Animations.EntranceNote>появление: fade-in | slide-in-left | fade-in-up | pop-иконка (перезапуск кнопкой)</RimUI.Showcase.Animations.EntranceNote>
+  <RimUI.Showcase.Animations.LoopNote>циклические: pulse | blink</RimUI.Showcase.Animations.LoopNote>
+  <RimUI.Showcase.Animations.ShakeNote>shake — клик по кнопке</RimUI.Showcase.Animations.ShakeNote>
+  <RimUI.Showcase.Nav.Display>Отображение</RimUI.Showcase.Nav.Display>
+  <RimUI.Showcase.SegmentProgress.Desc>Сегментный прогресс-бар: полоса делится на сегменты, каждому можно задать свой цвет; заполняются сегменты целиком, а не плавной полоской. Есть горизонтальный, вертикальный и круговой варианты.</RimUI.Showcase.SegmentProgress.Desc>
+  <RimUI.Showcase.SegmentProgress.HorizontalGradient>горизонтальный (градация зелёный → красный)</RimUI.Showcase.SegmentProgress.HorizontalGradient>
+  <RimUI.Showcase.SegmentProgress.VerticalCircular>вертикальный | круговой</RimUI.Showcase.SegmentProgress.VerticalCircular>
+  <RimUI.Showcase.Image.Desc>Изображение по ключу текстуры: обычные стили (отступы, скругление, рамка), по умолчанию — просто картинка. Режимы вписывания: растянуть, вписать целиком, заполнить с обрезкой.</RimUI.Showcase.Image.Desc>
+  <RimUI.Showcase.Image.Tint>тинт</RimUI.Showcase.Image.Tint>
+  <RimUI.Showcase.Image.FrameRadius>рамка + скругление</RimUI.Showcase.Image.FrameRadius>
+  <RimUI.Showcase.CustomDraw.Desc>Своя отрисовка: OnDraw рисует через команды фреймворка (переносимо между темами и масштабом), OnDrawNative даёт прямой доступ к GUI/Widgets RimWorld, если нужен полный контроль.</RimUI.Showcase.CustomDraw.Desc>
+  <RimUI.Showcase.CustomDraw.OnDrawNote>OnDraw — наши команды (мини-график)</RimUI.Showcase.CustomDraw.OnDrawNote>
+  <RimUI.Showcase.CustomDraw.OnDrawNativeNote>OnDrawNative — сырой IMGUI (Widgets.*)</RimUI.Showcase.CustomDraw.OnDrawNativeNote>
+  <RimUI.Showcase.CustomDraw.RawGuiNote>сырой GUI (Widgets.DrawBoxSolid)</RimUI.Showcase.CustomDraw.RawGuiNote>
+  <RimUI.Showcase.Nav.Audio>Звук</RimUI.Showcase.Nav.Audio>
+  <RimUI.Showcase.Gallery.Desc>Галерея изображений: большой кадр по центру, стрелки по бокам переключают картинку, а внизу — лента миниатюр для быстрого перехода к нужной; можно включить автоматическое перелистывание по таймеру.</RimUI.Showcase.Gallery.Desc>
+  <RimUI.Showcase.Gallery.FrameArrowsThumbs>кадр + стрелки + миниатюры</RimUI.Showcase.Gallery.FrameArrowsThumbs>
+  <RimUI.Showcase.Gallery.AutoAdvance>автоперелистывание (2.5с), без миниатюр</RimUI.Showcase.Gallery.AutoAdvance>
+  <RimUI.Showcase.AudioPlayer.Desc>Аудио-хелпер: плейлист из папки Audio/ вашего мода (ogg/wav/mp3), управление — Play/Pause/Next/Prev/Seek. Это не готовый плеер, а набор методов — интерфейс к нему собираете сами из компонентов фреймворка.</RimUI.Showcase.AudioPlayer.Desc>
+  <RimUI.Showcase.AudioPlayer.NoFiles>нет файлов</RimUI.Showcase.AudioPlayer.NoFiles>
+  <RimUI.Showcase.AudioPlayer.NoFilesHint>Положите файлы .ogg/.wav/.mp3 в папку Audio/ мода, чтобы увидеть плеер здесь.</RimUI.Showcase.AudioPlayer.NoFilesHint>
+  <RimUI.Showcase.AudioPlayer.PlayPause>Играть/Пауза</RimUI.Showcase.AudioPlayer.PlayPause>
+  <RimUI.Showcase.AudioPlayer.NowPlaying>сейчас играет</RimUI.Showcase.AudioPlayer.NowPlaying>
+  <RimUI.Showcase.AudioPlayer.TrackPosition>позиция в треке</RimUI.Showcase.AudioPlayer.TrackPosition>
+  <RimUI.Showcase.AudioPlayer.Controls>управление</RimUI.Showcase.AudioPlayer.Controls>
+  <RimUI.Showcase.Animations.FadeInUp>Fade In Up</RimUI.Showcase.Animations.FadeInUp>
+  <RimUI.Showcase.Animations.Pop>Pop</RimUI.Showcase.Animations.Pop>
+  <RimUI.Showcase.Animations.Flash>Flash</RimUI.Showcase.Animations.Flash>
+  <RimUI.Showcase.Animations.HoverLabel>Наведи</RimUI.Showcase.Animations.HoverLabel>
+  <RimUI.Showcase.Animations.HoverNote>плавный переход при наведении (хелпер HoverFade)</RimUI.Showcase.Animations.HoverNote>
+  <RimUI.Showcase.NodeCanvas.Desc>Поле блоков и связей: блоки свободно перетаскиваются (при перекрытии верхний задаётся Z-индексом), связи — плавные кривые от выхода (справа) ко входу (слева) с лимитами по типу блока; всё состояние можно сохранить и загрузить в виде JSON.</RimUI.Showcase.NodeCanvas.Desc>
+  <RimUI.Showcase.NodeCanvas.ControlsHint>drag — перемещение; »-кнопка — выбрать тип связи и кликнуть по подсвеченному кандидату (ПКМ — отмена); ПКМ по линии — удалить; ПКМ по пустому — добавить блок; крестик — удалить блок</RimUI.Showcase.NodeCanvas.ControlsHint>
+  <RimUI.Showcase.NodeCanvas.AddBlock>Добавить блок</RimUI.Showcase.NodeCanvas.AddBlock>
+  <RimUI.Showcase.NodeCanvas.DeleteLink>Удалить связь</RimUI.Showcase.NodeCanvas.DeleteLink>
+  <RimUI.Showcase.NodeCanvas.BlockWord>Блок</RimUI.Showcase.NodeCanvas.BlockWord>
+  <RimUI.Showcase.NodeCanvas.DeleteBlockTitle>Удалить блок?</RimUI.Showcase.NodeCanvas.DeleteBlockTitle>
+  <RimUI.Showcase.NodeCanvas.DeleteBlockDesc>Блок и все его связи будут удалены.</RimUI.Showcase.NodeCanvas.DeleteBlockDesc>
+  <RimUI.Showcase.NodeCanvas.ExportJson>Экспорт JSON в буфер</RimUI.Showcase.NodeCanvas.ExportJson>
+  <RimUI.Showcase.NodeCanvas.Flow>Поток</RimUI.Showcase.NodeCanvas.Flow>
+  <RimUI.Showcase.NodeCanvas.Signal>Сигнал</RimUI.Showcase.NodeCanvas.Signal>
+  <RimUI.Showcase.NodeCanvas.Source>Источник</RimUI.Showcase.NodeCanvas.Source>
+  <RimUI.Showcase.NodeCanvas.Process>Процесс</RimUI.Showcase.NodeCanvas.Process>
+  <RimUI.Showcase.NodeCanvas.Sink>Сток</RimUI.Showcase.NodeCanvas.Sink>
+  <RimUI.Showcase.NodeCanvas.Primary>Основные</RimUI.Showcase.NodeCanvas.Primary>
+  <RimUI.Showcase.NodeCanvas.Secondary>Вспомогательные</RimUI.Showcase.NodeCanvas.Secondary>
+  <RimUI.Showcase.NodeCanvas.CopiedMessage>[RimUI] Состояние поля скопировано в буфер обмена</RimUI.Showcase.NodeCanvas.CopiedMessage>
+  <RimUI.Showcase.NodeCanvas.Config.Title>Настройки блока</RimUI.Showcase.NodeCanvas.Config.Title>
+  <RimUI.Showcase.NodeCanvas.Config.NameField>Название</RimUI.Showcase.NodeCanvas.Config.NameField>
+  <RimUI.Showcase.NodeCanvas.Config.ZIndex>Z-индекс</RimUI.Showcase.NodeCanvas.Config.ZIndex>
+  <RimUI.Showcase.NodeCanvas.Config.Color>Цвет</RimUI.Showcase.NodeCanvas.Config.Color>
+  <RimUI.Showcase.NodeCanvas.Config.Type>Тип</RimUI.Showcase.NodeCanvas.Config.Type>
+  <RimUI.Showcase.NodeCanvas.Config.Group>Группа</RimUI.Showcase.NodeCanvas.Config.Group>
+  <RimUI.Showcase.NodeCanvas.Config.NoType>Без типа</RimUI.Showcase.NodeCanvas.Config.NoType>
+  <RimUI.Showcase.NodeCanvas.Config.NoGroup>Без группы</RimUI.Showcase.NodeCanvas.Config.NoGroup>
+  <RimUI.Showcase.NodeCanvas.Config.Close>Закрыть</RimUI.Showcase.NodeCanvas.Config.Close>
+  <RimUI.Showcase.Nav.Charts>Графики</RimUI.Showcase.Nav.Charts>
+  <RimUI.Showcase.Chart.Radar.Desc>Графики: серии данных (в том числе «живые» — обновляются каждый кадр через функцию-провайдер), легенда, автоматическая шкала значений, подсказка при наведении; данные передаются кодом или плоским JSON.</RimUI.Showcase.Chart.Radar.Desc>
+  <RimUI.Showcase.Chart.Radar.Note>Radar: 2 серии кодом; у второй последняя категория — живой провайдер (наведи на вершины)</RimUI.Showcase.Chart.Radar.Note>
+  <RimUI.Showcase.Chart.Polar.Note>PolarArea: данные загружены из JSON-строки (labels + series); легенда — категории (наведи на секторы)</RimUI.Showcase.Chart.Polar.Note>
+  <RimUI.Showcase.Chart.Radar.Speed>Скорость</RimUI.Showcase.Chart.Radar.Speed>
+  <RimUI.Showcase.Chart.Radar.Armor>Броня</RimUI.Showcase.Chart.Radar.Armor>
+  <RimUI.Showcase.Chart.Radar.Damage>Урон</RimUI.Showcase.Chart.Radar.Damage>
+  <RimUI.Showcase.Chart.Radar.Range>Дальность</RimUI.Showcase.Chart.Radar.Range>
+  <RimUI.Showcase.Chart.Radar.Endurance>Выносливость</RimUI.Showcase.Chart.Radar.Endurance>
+  <RimUI.Showcase.Chart.Radar.FighterA>Боец А</RimUI.Showcase.Chart.Radar.FighterA>
+  <RimUI.Showcase.Chart.Radar.FighterB>Боец Б</RimUI.Showcase.Chart.Radar.FighterB>
+  <RimUI.Showcase.Chart.Polar.JsonSample>{ "labels": ["Сон", "Развлечения", "Работа", "Здоровье", "Настроение"], "series": [ { "name": "Колонист", "values": [70, 35, 85, 60, 50] } ] }</RimUI.Showcase.Chart.Polar.JsonSample>
+  <RimUI.Showcase.Animations.PulseSpec>pulse 1.2 loop</RimUI.Showcase.Animations.PulseSpec>
+  <RimUI.Showcase.Animations.FadeSlideSpec>fade-in; slide-in-top</RimUI.Showcase.Animations.FadeSlideSpec>
+  <RimUI.Showcase.Animations.StyleAnimNote>Анимация строкой из стиля/темы (Style.Animation или "animation" в JSON темы) — без единой строки кода</RimUI.Showcase.Animations.StyleAnimNote>
+  <RimUI.Showcase.Chart.Pie.Wood>Дерево</RimUI.Showcase.Chart.Pie.Wood>
+  <RimUI.Showcase.Chart.Pie.Stone>Камень</RimUI.Showcase.Chart.Pie.Stone>
+  <RimUI.Showcase.Chart.Pie.Metal>Металл</RimUI.Showcase.Chart.Pie.Metal>
+  <RimUI.Showcase.Chart.Pie.Cloth>Ткань</RimUI.Showcase.Chart.Pie.Cloth>
+  <RimUI.Showcase.Chart.Pie.Desc>Одна серия данных делит круг на секторы пропорционально значениям категорий; режим Donut — то же самое, но с вырезом-«бубликом» в центре.</RimUI.Showcase.Chart.Pie.Desc>
+  <RimUI.Showcase.Chart.Line.Jan>Янв</RimUI.Showcase.Chart.Line.Jan>
+  <RimUI.Showcase.Chart.Line.Feb>Фев</RimUI.Showcase.Chart.Line.Feb>
+  <RimUI.Showcase.Chart.Line.Mar>Мар</RimUI.Showcase.Chart.Line.Mar>
+  <RimUI.Showcase.Chart.Line.Apr>Апр</RimUI.Showcase.Chart.Line.Apr>
+  <RimUI.Showcase.Chart.Line.May>Май</RimUI.Showcase.Chart.Line.May>
+  <RimUI.Showcase.Chart.Line.Jun>Июн</RimUI.Showcase.Chart.Line.Jun>
+  <RimUI.Showcase.Chart.Line.Mining>Добыча</RimUI.Showcase.Chart.Line.Mining>
+  <RimUI.Showcase.Chart.Line.Trading>Торговля</RimUI.Showcase.Chart.Line.Trading>
+  <RimUI.Showcase.Chart.Line.Desc>Line рисует линию-контур без заливки; Area — то же самое, но с заливкой под кривой до нулевой линии.</RimUI.Showcase.Chart.Line.Desc>
+  <RimUI.Showcase.Chart.Column.Scouting>Скаутинг</RimUI.Showcase.Chart.Column.Scouting>
+  <RimUI.Showcase.Chart.Column.Building>Стройка</RimUI.Showcase.Chart.Column.Building>
+  <RimUI.Showcase.Chart.Column.Cooking>Готовка</RimUI.Showcase.Chart.Column.Cooking>
+  <RimUI.Showcase.Chart.Column.Medicine>Медицина</RimUI.Showcase.Chart.Column.Medicine>
+  <RimUI.Showcase.Chart.Column.ShiftA>Смена А</RimUI.Showcase.Chart.Column.ShiftA>
+  <RimUI.Showcase.Chart.Column.ShiftB>Смена Б</RimUI.Showcase.Chart.Column.ShiftB>
+  <RimUI.Showcase.Chart.Column.Desc>Column показывает данные вертикальными столбцами снизу вверх; Bar — те же данные горизонтальными полосами вбок.</RimUI.Showcase.Chart.Column.Desc>
+  <RimUI.Showcase.Chart.Heatmap.Mon>Пн</RimUI.Showcase.Chart.Heatmap.Mon>
+  <RimUI.Showcase.Chart.Heatmap.Tue>Вт</RimUI.Showcase.Chart.Heatmap.Tue>
+  <RimUI.Showcase.Chart.Heatmap.Wed>Ср</RimUI.Showcase.Chart.Heatmap.Wed>
+  <RimUI.Showcase.Chart.Heatmap.Thu>Чт</RimUI.Showcase.Chart.Heatmap.Thu>
+  <RimUI.Showcase.Chart.Heatmap.Fri>Пт</RimUI.Showcase.Chart.Heatmap.Fri>
+  <RimUI.Showcase.Chart.Heatmap.ColonistA>Колонист А</RimUI.Showcase.Chart.Heatmap.ColonistA>
+  <RimUI.Showcase.Chart.Heatmap.ColonistB>Колонист Б</RimUI.Showcase.Chart.Heatmap.ColonistB>
+  <RimUI.Showcase.Chart.Heatmap.ColonistC>Колонист В</RimUI.Showcase.Chart.Heatmap.ColonistC>
+  <RimUI.Showcase.Chart.Heatmap.Desc>Матрица «колонист × день»: цвет каждой ячейки — интерполяция между MinColor и MaxColor в зависимости от значения ячейки, чем ближе к максимуму, тем ближе цвет к MaxColor.</RimUI.Showcase.Chart.Heatmap.Desc>
+  <RimUI.Showcase.Chart.Heatmap.Caption>Часы отдыха за неделю</RimUI.Showcase.Chart.Heatmap.Caption>
+</LanguageData>

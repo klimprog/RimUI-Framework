@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimUI.Skeleton.Group.Text>Текст</RimUI.Skeleton.Group.Text>
+  <RimUI.Skeleton.Group.Forms>Кнопки/формы</RimUI.Skeleton.Group.Forms>
+  <RimUI.Skeleton.Group.Inputs>Поля ввода</RimUI.Skeleton.Group.Inputs>
+  <RimUI.Skeleton.Group.Selection>Выбор</RimUI.Skeleton.Group.Selection>
+  <RimUI.Skeleton.Group.Indicators>Индикация</RimUI.Skeleton.Group.Indicators>
+  <RimUI.Skeleton.Group.Containers>Контейнеры</RimUI.Skeleton.Group.Containers>
+  <RimUI.Skeleton.Group.Data>Данные</RimUI.Skeleton.Group.Data>
+  <RimUI.Skeleton.Group.Display>Отображение</RimUI.Skeleton.Group.Display>
+  <RimUI.Skeleton.Group.Charts>Диаграммы</RimUI.Skeleton.Group.Charts>
+  <RimUI.Skeleton.ContainerLabel>{0} (контейнер)</RimUI.Skeleton.ContainerLabel>
+  <RimUI.Skeleton.Error.SelectTwoCells>Выдели ≥2 ячейки</RimUI.Skeleton.Error.SelectTwoCells>
+  <RimUI.Skeleton.Error.SelectionMustBeRect>Выделение должно быть сплошным прямоугольником</RimUI.Skeleton.Error.SelectionMustBeRect>
+  <RimUI.Skeleton.Error.NoTopLeftCell>Не найдена верхняя-левая ячейка</RimUI.Skeleton.Error.NoTopLeftCell>
+  <RimUI.Skeleton.Error.SelectMergedCell>Выдели объединённую ячейку</RimUI.Skeleton.Error.SelectMergedCell>
+  <RimUI.Skeleton.Error.SplitVerticalMergeFirst>Разбей объединённые по вертикали ячейки в этой строке</RimUI.Skeleton.Error.SplitVerticalMergeFirst>
+  <RimUI.Skeleton.Menu.Delete>Удалить</RimUI.Skeleton.Menu.Delete>
+  <RimUI.Skeleton.Menu.Merge>Объединить</RimUI.Skeleton.Menu.Merge>
+  <RimUI.Skeleton.Menu.Split>Разбить</RimUI.Skeleton.Menu.Split>
+  <RimUI.Skeleton.Header.WorkAreaHint>Рабочая область — сетка 12 колонок</RimUI.Skeleton.Header.WorkAreaHint>
+  <RimUI.Skeleton.AddRowButton>+ строка</RimUI.Skeleton.AddRowButton>
+  <RimUI.Skeleton.Header.Instructions>ЛКМ по ячейке — выделить. ПКМ по пустому месту — объединить/разбить. ПКМ по блоку — удалить. Крестик справа — удалить строку. Контейнеры Field/ScrollBox/Grid принимают вложенные блоки (в т.ч. другие контейнеры).</RimUI.Skeleton.Header.Instructions>
+  <RimUI.Skeleton.Wrapper.Label>Обёртка результата</RimUI.Skeleton.Wrapper.Label>
+  <RimUI.Skeleton.Wrapper.NoWindow>Без окна (Grid)</RimUI.Skeleton.Wrapper.NoWindow>
+  <RimUI.Skeleton.Wrapper.ComponentGroupLabel>Группа компонентов</RimUI.Skeleton.Wrapper.ComponentGroupLabel>
+  <RimUI.Skeleton.ExportButton>Экспорт</RimUI.Skeleton.ExportButton>
+  <RimUI.Skeleton.ResetButton>Сброс</RimUI.Skeleton.ResetButton>
+  <RimUI.Skeleton.ResetConfirmText>Очистить рабочую область до сетки 12×1? Все блоки будут удалены.</RimUI.Skeleton.ResetConfirmText>
+  <RimUI.Skeleton.Wrapper.NoWindowPrefix>Без</RimUI.Skeleton.Wrapper.NoWindowPrefix>
+  <RimUI.Skeleton.CodeGen.RowComment>// Строка {0}</RimUI.Skeleton.CodeGen.RowComment>
+  <RimUI.Skeleton.CopiedMessage>Скелет ({0} ячеек) скопирован в буфер обмена как C#-код</RimUI.Skeleton.CopiedMessage>
+  <RimUI.Skeleton.CodeGen.GridReadyComment>// grid — готов к использованию (без окна)</RimUI.Skeleton.CodeGen.GridReadyComment>
+</LanguageData>

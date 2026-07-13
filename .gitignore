@@ -1,0 +1,8 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# debug symbols (not needed for distribution)
+*.pdb
+*.mdb

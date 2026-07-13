@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimUI.Mod.ThemeLoadFallback>[RimUI] Тема Default не загружена ({0}) — зашитые дефолты.</RimUI.Mod.ThemeLoadFallback>
+  <RimUI.Mod.Settings.ExamplesDesc>Окно примеров — витрина всех компонентов фреймворка (на 100% на самом фреймворке).</RimUI.Mod.Settings.ExamplesDesc>
+  <RimUI.Mod.Settings.OpenExamplesButton>Открыть окно примеров</RimUI.Mod.Settings.OpenExamplesButton>
+  <RimUI.Mod.Settings.SkeletonDesc>Конструктор интерфейсов — визуальная сборка сетки блоков, экспорт готового C#-кода.</RimUI.Mod.Settings.SkeletonDesc>
+  <RimUI.Mod.Settings.OpenSkeletonButton>Открыть конструктор интерфейсов</RimUI.Mod.Settings.OpenSkeletonButton>
+  <RimUI.Mod.Settings.ExportThemeDesc>Экспорт шаблона темы — полный набор слотов и ключей темы в буфер обмена (для правки под себя).</RimUI.Mod.Settings.ExportThemeDesc>
+  <RimUI.Mod.Settings.ExportThemeButton>Экспортировать шаблон темы в буфер обмена</RimUI.Mod.Settings.ExportThemeButton>
+  <RimUI.Dbg.Examples>Окно примеров</RimUI.Dbg.Examples>
+  <RimUI.Dbg.ExportTemplate>Экспорт шаблона темы</RimUI.Dbg.ExportTemplate>
+  <RimUI.Dbg.Skeleton>Конструктор скелета</RimUI.Dbg.Skeleton>
+</LanguageData>

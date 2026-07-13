@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimUI.Showcase.Nav.Grid>Grid</RimUI.Showcase.Nav.Grid>
+  <RimUI.Showcase.Nav.Grid.Columns>12 columns</RimUI.Showcase.Nav.Grid.Columns>
+  <RimUI.Showcase.Nav.Grid.CellSpan>Merged cells</RimUI.Showcase.Nav.Grid.CellSpan>
+  <RimUI.Showcase.Nav.Grid.NestedFlex>Nesting + Flex</RimUI.Showcase.Nav.Grid.NestedFlex>
+  <RimUI.Showcase.Nav.Styles>Styles</RimUI.Showcase.Nav.Styles>
+  <RimUI.Showcase.Nav.Styles.Radius>Corner radius</RimUI.Showcase.Nav.Styles.Radius>
+  <RimUI.Showcase.Nav.Styles.Border>Border</RimUI.Showcase.Nav.Styles.Border>
+  <RimUI.Showcase.Nav.Styles.Gradients>Gradients</RimUI.Showcase.Nav.Styles.Gradients>
+  <RimUI.Showcase.Nav.Styles.Shadows>Shadows</RimUI.Showcase.Nav.Styles.Shadows>
+  <RimUI.Showcase.Nav.Styles.Opacity>Opacity</RimUI.Showcase.Nav.Styles.Opacity>
+  <RimUI.Showcase.Nav.Styles.SpriteFrame>Sprite frame (9-slice)</RimUI.Showcase.Nav.Styles.SpriteFrame>
+  <RimUI.Showcase.Nav.Styles.Typography>Typography</RimUI.Showcase.Nav.Styles.Typography>
+  <RimUI.Showcase.Nav.Forms>Forms</RimUI.Showcase.Nav.Forms>
+  <RimUI.Showcase.Nav.Forms.Label>Label (field label)</RimUI.Showcase.Nav.Forms.Label>
+  <RimUI.Showcase.Nav.Selection>Selection</RimUI.Showcase.Nav.Selection>
+  <RimUI.Showcase.Nav.Indicators>Indicators</RimUI.Showcase.Nav.Indicators>
+  <RimUI.Showcase.Nav.Containers>Containers</RimUI.Showcase.Nav.Containers>
+  <RimUI.Showcase.Nav.Data>Data</RimUI.Showcase.Nav.Data>
+  <RimUI.Showcase.Nav.Overlays>Overlays</RimUI.Showcase.Nav.Overlays>
+  <RimUI.Showcase.Nav.Overlays.Icons>Icons</RimUI.Showcase.Nav.Overlays.Icons>
+  <RimUI.Showcase.Nav.Windows>Windows</RimUI.Showcase.Nav.Windows>
+  <RimUI.Showcase.Shell.Title>RimUI Framework — component showcase</RimUI.Showcase.Shell.Title>
+  <RimUI.Showcase.Shell.ThemeDefault>Theme: Default</RimUI.Showcase.Shell.ThemeDefault>
+  <RimUI.Showcase.Shell.ThemeSprites>Theme: Default + sprites</RimUI.Showcase.Shell.ThemeSprites>
+  <RimUI.Showcase.Shell.ThemeReset>Theme: reset to defaults</RimUI.Showcase.Shell.ThemeReset>
+  <RimUI.Showcase.Theme.TemplateCopied>[RimUI] Copied theme template ({0} chars) to the clipboard</RimUI.Showcase.Theme.TemplateCopied>
+  <RimUI.Showcase.Theme.ApplyError>[RimUI] Could not apply theme: {0}</RimUI.Showcase.Theme.ApplyError>
+  <RimUI.Showcase.Grid.Columns.Title>12-column grid</RimUI.Showcase.Grid.Columns.Title>
+  <RimUI.Showcase.Grid.Columns.Desc>Give each element a span from 1 to 12 columns. When a row runs out of room, the remaining elements wrap automatically.</RimUI.Showcase.Grid.Columns.Desc>
+  <RimUI.Showcase.Grid.Span.Title>3 × 2 rows</RimUI.Showcase.Grid.Span.Title>
+  <RimUI.Showcase.Grid.Span.Desc>Grid cells can span columns horizontally and rows vertically. The remaining cells flow around the merged area automatically.</RimUI.Showcase.Grid.Span.Desc>
+  <RimUI.Showcase.Grid.Span.Note>rowSpan = 2 on the left</RimUI.Showcase.Grid.Span.Note>
+  <RimUI.Showcase.Grid.Nested.Desc>A grid cell can contain another grid (left) or a stretching flex layout with space-between distribution (right).</RimUI.Showcase.Grid.Nested.Desc>
+  <RimUI.Showcase.Style.Radius.Title>Corner radius</RimUI.Showcase.Style.Radius.Title>
+  <RimUI.Showcase.Style.Radius.Desc>Corner radius comes from the theme: none, small, middle, or large. The theme defines the actual pixel values.</RimUI.Showcase.Style.Radius.Desc>
+  <RimUI.Showcase.Style.Gradients.Vertical>vertical</RimUI.Showcase.Style.Gradients.Vertical>
+  <RimUI.Showcase.Style.Gradients.Horizontal>horizontal</RimUI.Showcase.Style.Gradients.Horizontal>
+  <RimUI.Showcase.Style.Gradients.Diagonal>diagonal</RimUI.Showcase.Style.Gradients.Diagonal>
+  <RimUI.Showcase.Style.Gradients.BorderGradientLabel>border gradient</RimUI.Showcase.Style.Gradients.BorderGradientLabel>
+  <RimUI.Showcase.Style.Gradients.ThreeColors>3 colors</RimUI.Showcase.Style.Gradients.ThreeColors>
+  <RimUI.Showcase.Style.Gradients.Desc>An element can use a vertical, horizontal, or diagonal linear gradient. The border gradient is configured separately from the background.</RimUI.Showcase.Style.Gradients.Desc>
+  <RimUI.Showcase.Style.Gradients.BgLabel>BACKGROUND gradient</RimUI.Showcase.Style.Gradients.BgLabel>
+  <RimUI.Showcase.Style.Gradients.BorderLabel>BORDER gradient</RimUI.Showcase.Style.Gradients.BorderLabel>
+  <RimUI.Showcase.Style.Shadows.Desc>Shadows support custom blur, offset, and opacity. This example uses a light backdrop so the shadow is easy to see.</RimUI.Showcase.Style.Shadows.Desc>
+  <RimUI.Showcase.Style.Opacity.Desc>Backgrounds can be translucent. These three examples use alpha values of 0.25, 0.5, and 0.75 over a busy backdrop.</RimUI.Showcase.Style.Opacity.Desc>
+  <RimUI.Showcase.Style.Opacity.Label>background alpha</RimUI.Showcase.Style.Opacity.Label>
+  <RimUI.Showcase.Style.SpriteFrame.Title>Sprite frame (9-slice with overflow)</RimUI.Showcase.Style.SpriteFrame.Title>
+  <RimUI.Showcase.Style.SpriteFrame.Desc>This frame comes from a 9-sliced sprite sheet with room for decoration. Blue marks the functional content area; gold marks decorative overflow outside it.</RimUI.Showcase.Style.SpriteFrame.Desc>
+  <RimUI.Showcase.Style.Typography.Tiny>Tiny size</RimUI.Showcase.Style.Typography.Tiny>
+  <RimUI.Showcase.Style.Typography.Small>Small size (default)</RimUI.Showcase.Style.Typography.Small>
+  <RimUI.Showcase.Style.Typography.Medium>Medium size</RimUI.Showcase.Style.Typography.Medium>
+  <RimUI.Showcase.Style.Typography.Bold>Bold</RimUI.Showcase.Style.Typography.Bold>
+  <RimUI.Showcase.Style.Typography.Pixel20>Exact size: 20 px</RimUI.Showcase.Style.Typography.Pixel20>
+  <RimUI.Showcase.Style.Typography.OsFont>OS font: Consolas 16 px</RimUI.Showcase.Style.Typography.OsFont>
+  <RimUI.Showcase.Style.Typography.TextShadow>Text shadow (2, 2)</RimUI.Showcase.Style.Typography.TextShadow>
+  <RimUI.Showcase.Style.Typography.ColorBoldShadow>Colored shadow + bold</RimUI.Showcase.Style.Typography.ColorBoldShadow>
+  <RimUI.Showcase.Style.Typography.Desc>Text size, weight, OS font, exact pixel size, and shadow are all controlled through the text element's style.</RimUI.Showcase.Style.Typography.Desc>
+  <RimUI.Showcase.Style.Typography.Variants>variants</RimUI.Showcase.Style.Typography.Variants>
+  <RimUI.Showcase.Label.Desc>A field label can include a leading icon, a required-field asterisk, and a hint below the main label.</RimUI.Showcase.Label.Desc>
+  <RimUI.Showcase.Label.Normal>regular</RimUI.Showcase.Label.Normal>
+  <RimUI.Showcase.Label.ColonistName>Colonist name</RimUI.Showcase.Label.ColonistName>
+  <RimUI.Showcase.Label.RequiredHintIcon>required + hint + icon</RimUI.Showcase.Label.RequiredHintIcon>
+  <RimUI.Showcase.Label.Password>Password</RimUI.Showcase.Label.Password>
+  <RimUI.Showcase.Label.PasswordHint>At least 8 characters</RimUI.Showcase.Label.PasswordHint>
+  <RimUI.Showcase.Checkbox.Desc>A checkbox toggles a yes/no value. State can live in the element or come from your code; disabled state and theme sprites are supported.</RimUI.Showcase.Checkbox.Desc>
+  <RimUI.Showcase.Checkbox.Enabled>Enabled (click to toggle)</RimUI.Showcase.Checkbox.Enabled>
+  <RimUI.Showcase.Checkbox.AnotherOne>Another one</RimUI.Showcase.Checkbox.AnotherOne>
+  <RimUI.Showcase.Checkbox.Disabled>Disabled</RimUI.Showcase.Checkbox.Disabled>
+  <RimUI.Showcase.Checkbox.StyledBox>Custom box style</RimUI.Showcase.Checkbox.StyledBox>
+  <RimUI.Showcase.Radio.Easy>Easy</RimUI.Showcase.Radio.Easy>
+  <RimUI.Showcase.Radio.Normal>Normal</RimUI.Showcase.Radio.Normal>
+  <RimUI.Showcase.Radio.Hardcore>Hardcore</RimUI.Showcase.Radio.Hardcore>
+  <RimUI.Showcase.Radio.Desc>Radio buttons share one group value, so selecting one clears the others in that group. The ring and inner dot can use theme sprites.</RimUI.Showcase.Radio.Desc>
+  <RimUI.Showcase.Radio.Group>group</RimUI.Showcase.Radio.Group>
+  <RimUI.Showcase.Switch.Desc>A pill-shaped switch toggles on and off; its thumb glides to the active side. Disabled state and theme sprites are supported.</RimUI.Showcase.Switch.Desc>
+  <RimUI.Showcase.Switch.Toggle>Toggle</RimUI.Showcase.Switch.Toggle>
+  <RimUI.Showcase.Switch.Style>Style</RimUI.Showcase.Switch.Style>
+  <RimUI.Showcase.ToggleButton.Desc>A toggle button has two captions, such as On and Off. Clicking it flips the state and swaps the caption.</RimUI.Showcase.ToggleButton.Desc>
+  <RimUI.Showcase.ToggleButton.On>On</RimUI.Showcase.ToggleButton.On>
+  <RimUI.Showcase.ToggleButton.Off>Off</RimUI.Showcase.ToggleButton.Off>
+  <RimUI.Showcase.ToggleButton.Pause>Pause</RimUI.Showcase.ToggleButton.Pause>
+  <RimUI.Showcase.ToggleButton.Play>Play</RimUI.Showcase.ToggleButton.Play>
+  <RimUI.Showcase.Slider.Desc>Drag the thumb to change the value. Sliders support steps, units, tick marks, end labels, two-thumb ranges, and disabled state.</RimUI.Showcase.Slider.Desc>
+  <RimUI.Showcase.Slider.Single>single (step 5, %, ticks, labels)</RimUI.Showcase.Slider.Single>
+  <RimUI.Showcase.Slider.Range>range (two thumbs)</RimUI.Showcase.Slider.Range>
+  <RimUI.Showcase.Slider.Disabled>disabled</RimUI.Showcase.Slider.Disabled>
+  <RimUI.Showcase.Slider.WithEndLabels>with end labels</RimUI.Showcase.Slider.WithEndLabels>
+  <RimUI.Showcase.InputText.Desc>A single-line input can have a placeholder, a bound value, an icon, read-only or disabled state, and a custom frame sprite.</RimUI.Showcase.InputText.Desc>
+  <RimUI.Showcase.InputText.Placeholder>placeholder</RimUI.Showcase.InputText.Placeholder>
+  <RimUI.Showcase.InputText.EnterName>Enter a name...</RimUI.Showcase.InputText.EnterName>
+  <RimUI.Showcase.InputText.WithIcon>with icon</RimUI.Showcase.InputText.WithIcon>
+  <RimUI.Showcase.InputText.Search>Search</RimUI.Showcase.InputText.Search>
+  <RimUI.Showcase.InputText.ReadOnly>read-only</RimUI.Showcase.InputText.ReadOnly>
+  <RimUI.Showcase.InputText.Disabled>disabled</RimUI.Showcase.InputText.Disabled>
+  <RimUI.Showcase.InputText.EnterText>enter text</RimUI.Showcase.InputText.EnterText>
+  <RimUI.Showcase.InputNumber.Desc>A numeric field with +/− buttons. It supports integers, decimals, custom steps, and min/max limits.</RimUI.Showcase.InputNumber.Desc>
+  <RimUI.Showcase.InputNumber.IntRange>integer, 0..100</RimUI.Showcase.InputNumber.IntRange>
+  <RimUI.Showcase.InputNumber.FloatRange>decimal, −10..10, step 0.5</RimUI.Showcase.InputNumber.FloatRange>
+  <RimUI.Showcase.Textarea.Desc>A fixed-height multiline input for longer text. Height is set as a number of visible rows.</RimUI.Showcase.Textarea.Desc>
+  <RimUI.Showcase.Textarea.FourLines>4 rows</RimUI.Showcase.Textarea.FourLines>
+  <RimUI.Showcase.Textarea.MultilineText>Multiline text...</RimUI.Showcase.Textarea.MultilineText>
+  <RimUI.Showcase.Select.ItemNumber>Item {0}</RimUI.Showcase.Select.ItemNumber>
+  <RimUI.Showcase.Select.Desc>Click the field to open a list, then click an option to select it and close the panel. Supports placeholders, long searchable lists with scrolling, custom frame sprites, and disabled state.</RimUI.Showcase.Select.Desc>
+  <RimUI.Showcase.Select.ShortList>short list</RimUI.Showcase.Select.ShortList>
+  <RimUI.Showcase.Select.Colonist>Colonist</RimUI.Showcase.Select.Colonist>
+  <RimUI.Showcase.Select.Alien>Alien</RimUI.Showcase.Select.Alien>
+  <RimUI.Showcase.Select.Mechanoid>Mechanoid</RimUI.Showcase.Select.Mechanoid>
+  <RimUI.Showcase.Select.Animal>Animal</RimUI.Showcase.Select.Animal>
+  <RimUI.Showcase.Select.ChooseType>Choose a type...</RimUI.Showcase.Select.ChooseType>
+  <RimUI.Showcase.Select.LongList>long list (scroll + search)</RimUI.Showcase.Select.LongList>
+  <RimUI.Showcase.Select.FortyItems>40 items</RimUI.Showcase.Select.FortyItems>
+  <RimUI.Showcase.Select.Variant>variant</RimUI.Showcase.Select.Variant>
+  <RimUI.Showcase.Select.Unavailable>unavailable</RimUI.Showcase.Select.Unavailable>
+  <RimUI.Showcase.MultiSelect.Shooter>Shooter</RimUI.Showcase.MultiSelect.Shooter>
+  <RimUI.Showcase.MultiSelect.Cook>Cook</RimUI.Showcase.MultiSelect.Cook>
+  <RimUI.Showcase.MultiSelect.Doctor>Doctor</RimUI.Showcase.MultiSelect.Doctor>
+  <RimUI.Showcase.MultiSelect.Builder>Builder</RimUI.Showcase.MultiSelect.Builder>
+  <RimUI.Showcase.MultiSelect.Gardener>Grower</RimUI.Showcase.MultiSelect.Gardener>
+  <RimUI.Showcase.MultiSelect.Miner>Miner</RimUI.Showcase.MultiSelect.Miner>
+  <RimUI.Showcase.MultiSelect.Scientist>Researcher</RimUI.Showcase.MultiSelect.Scientist>
+  <RimUI.Showcase.MultiSelect.Hunter>Hunter</RimUI.Showcase.MultiSelect.Hunter>
+  <RimUI.Showcase.MultiSelect.Artist>Artist</RimUI.Showcase.MultiSelect.Artist>
+  <RimUI.Showcase.MultiSelect.Trader>Trader</RimUI.Showcase.MultiSelect.Trader>
+  <RimUI.Showcase.MultiSelect.Desc>Pick several values from one list. Selected items appear as removable chips inside the field; overflow collapses into “+N”. The panel stays open after each pick and supports search and a selection limit.</RimUI.Showcase.MultiSelect.Desc>
+  <RimUI.Showcase.MultiSelect.NoLimitSearch>no limit + search</RimUI.Showcase.MultiSelect.NoLimitSearch>
+  <RimUI.Showcase.MultiSelect.SkillsPlaceholder>Skills...</RimUI.Showcase.MultiSelect.SkillsPlaceholder>
+  <RimUI.Showcase.MultiSelect.UpToThree>Up to three...</RimUI.Showcase.MultiSelect.UpToThree>
+  <RimUI.Showcase.MultiTreeSelect.LeavesPlaceholder>Tree leaves...</RimUI.Showcase.MultiTreeSelect.LeavesPlaceholder>
+  <RimUI.Showcase.MultiTreeSelect.Weapons>Weapons</RimUI.Showcase.MultiTreeSelect.Weapons>
+  <RimUI.Showcase.MultiTreeSelect.Ranged>Ranged</RimUI.Showcase.MultiTreeSelect.Ranged>
+  <RimUI.Showcase.MultiTreeSelect.Rifle>Rifle</RimUI.Showcase.MultiTreeSelect.Rifle>
+  <RimUI.Showcase.MultiTreeSelect.Bow>Bow</RimUI.Showcase.MultiTreeSelect.Bow>
+  <RimUI.Showcase.MultiTreeSelect.Melee>Melee</RimUI.Showcase.MultiTreeSelect.Melee>
+  <RimUI.Showcase.MultiTreeSelect.Sword>Sword</RimUI.Showcase.MultiTreeSelect.Sword>
+  <RimUI.Showcase.MultiTreeSelect.Club>Club</RimUI.Showcase.MultiTreeSelect.Club>
+  <RimUI.Showcase.MultiTreeSelect.Clothing>Apparel</RimUI.Showcase.MultiTreeSelect.Clothing>
+  <RimUI.Showcase.MultiTreeSelect.Parka>Parka</RimUI.Showcase.MultiTreeSelect.Parka>
+  <RimUI.Showcase.MultiTreeSelect.Hat>Hat</RimUI.Showcase.MultiTreeSelect.Hat>
+  <RimUI.Showcase.MultiTreeSelect.Desc>Select multiple leaves from a tree. Clicking a leaf toggles it, selected leaves appear as chips in the field, and search matches leaf names.</RimUI.Showcase.MultiTreeSelect.Desc>
+  <RimUI.Showcase.MultiTreeSelect.TreeWithChips>tree with chips</RimUI.Showcase.MultiTreeSelect.TreeWithChips>
+  <RimUI.Showcase.SelectButton.Desc>A joined row of button segments for choosing exactly one value. Selecting a segment deactivates the rest.</RimUI.Showcase.SelectButton.Desc>
+  <RimUI.Showcase.SelectButton.Segments>segments</RimUI.Showcase.SelectButton.Segments>
+  <RimUI.Showcase.SelectButton.Day>Day</RimUI.Showcase.SelectButton.Day>
+  <RimUI.Showcase.SelectButton.Week>Week</RimUI.Showcase.SelectButton.Week>
+  <RimUI.Showcase.SelectButton.Month>Month</RimUI.Showcase.SelectButton.Month>
+  <RimUI.Showcase.TreeSelect.NodePlaceholder>Tree node...</RimUI.Showcase.TreeSelect.NodePlaceholder>
+  <RimUI.Showcase.TreeSelect.Desc>A select field whose dropdown contains a tree instead of a flat list. Expand branches and click any node to select it.</RimUI.Showcase.TreeSelect.Desc>
+  <RimUI.Showcase.TreeSelect.TreeInPanel>tree in dropdown</RimUI.Showcase.TreeSelect.TreeInPanel>
+  <RimUI.Showcase.CascadeSelect.RegionPlaceholder>Region...</RimUI.Showcase.CascadeSelect.RegionPlaceholder>
+  <RimUI.Showcase.CascadeSelect.Temperate>Temperate</RimUI.Showcase.CascadeSelect.Temperate>
+  <RimUI.Showcase.CascadeSelect.Forest>Forest</RimUI.Showcase.CascadeSelect.Forest>
+  <RimUI.Showcase.CascadeSelect.Hills>Hills</RimUI.Showcase.CascadeSelect.Hills>
+  <RimUI.Showcase.CascadeSelect.Harsh>Harsh</RimUI.Showcase.CascadeSelect.Harsh>
+  <RimUI.Showcase.CascadeSelect.Tundra>Tundra</RimUI.Showcase.CascadeSelect.Tundra>
+  <RimUI.Showcase.CascadeSelect.Desert>Desert</RimUI.Showcase.CascadeSelect.Desert>
+  <RimUI.Showcase.CascadeSelect.Normal>Normal</RimUI.Showcase.CascadeSelect.Normal>
+  <RimUI.Showcase.CascadeSelect.Extreme>Extreme</RimUI.Showcase.CascadeSelect.Extreme>
+  <RimUI.Showcase.CascadeSelect.Desc>Cascading selection through nested submenus. Hovering a parent opens the next level beside it; clicking a leaf completes the selection.</RimUI.Showcase.CascadeSelect.Desc>
+  <RimUI.Showcase.CascadeSelect.Cascade>cascade</RimUI.Showcase.CascadeSelect.Cascade>
+  <RimUI.Showcase.ColorPicker.Desc>Color picker with an HSB square, a hue strip, an alpha slider, and manual hex input. There is no eyedropper for sampling the screen.</RimUI.Showcase.ColorPicker.Desc>
+  <RimUI.Showcase.ColorPicker.Active>active</RimUI.Showcase.ColorPicker.Active>
+  <RimUI.Showcase.Tag.Desc>A non-interactive status label. Severity controls its color, and an icon can be added. Tags do not handle clicks.</RimUI.Showcase.Tag.Desc>
+  <RimUI.Showcase.Chip.Desc>An interactive pill on a neutral background. It can include an icon and a working remove button, useful for clearing selected tags.</RimUI.Showcase.Chip.Desc>
+  <RimUI.Showcase.Chip.Plain>plain</RimUI.Showcase.Chip.Plain>
+  <RimUI.Showcase.Chip.Normal>Plain</RimUI.Showcase.Chip.Normal>
+  <RimUI.Showcase.Chip.WithIcon>With icon</RimUI.Showcase.Chip.WithIcon>
+  <RimUI.Showcase.Chip.Removable>removable (click X to remove)</RimUI.Showcase.Chip.Removable>
+  <RimUI.Showcase.Chip.Doctor>Doctor</RimUI.Showcase.Chip.Doctor>
+  <RimUI.Showcase.Badge.Desc>A circular counter over another element. It can show a number or a plain dot, for example to mark unread items.</RimUI.Showcase.Badge.Desc>
+  <RimUI.Showcase.Badge.WithBadge>With badge</RimUI.Showcase.Badge.WithBadge>
+  <RimUI.Showcase.InlineMessage.Desc>An in-flow notification, not a popup. Severity controls its color and icon; it can be dismissible and use a theme sprite.</RimUI.Showcase.InlineMessage.Desc>
+  <RimUI.Showcase.InlineMessage.Info>Informational message.</RimUI.Showcase.InlineMessage.Info>
+  <RimUI.Showcase.InlineMessage.Warning>Dismissible warning.</RimUI.Showcase.InlineMessage.Warning>
+  <RimUI.Showcase.InlineMessage.Error>Error message.</RimUI.Showcase.InlineMessage.Error>
+  <RimUI.Showcase.Meter.Steel>Steel</RimUI.Showcase.Meter.Steel>
+  <RimUI.Showcase.Meter.Wood>Wood</RimUI.Showcase.Meter.Wood>
+  <RimUI.Showcase.Meter.Gold>Gold</RimUI.Showcase.Meter.Gold>
+  <RimUI.Showcase.Meter.Desc>A bar split into proportional segments, such as the makeup of a stockpile, with a legend below. Each segment color comes from your data.</RimUI.Showcase.Meter.Desc>
+  <RimUI.Showcase.ProgressBar.Desc>A progress bar can show a value from 0 to 1 or run in indeterminate mode when the final progress is unknown. Theme sprites are supported.</RimUI.Showcase.ProgressBar.Desc>
+  <RimUI.Showcase.ProgressBar.AnimatedValue>value (animated)</RimUI.Showcase.ProgressBar.AnimatedValue>
+  <RimUI.Showcase.Spinner.SpinFromTime>rotation driven by frame time</RimUI.Showcase.Spinner.SpinFromTime>
+  <RimUI.Showcase.Spinner.Desc>A spinning loading ring with configurable size, speed, and color.</RimUI.Showcase.Spinner.Desc>
+  <RimUI.Showcase.Spinner.Spinners>spinners</RimUI.Showcase.Spinner.Spinners>
+  <RimUI.Showcase.Panel.ButtonInBody>Button in body</RimUI.Showcase.Panel.ButtonInBody>
+  <RimUI.Showcase.Panel.Desc>A panel with a header and any body content. Collapsible panels hide or reveal their body when the header is clicked.</RimUI.Showcase.Panel.Desc>
+  <RimUI.Showcase.Panel.PlainPanel>Plain panel</RimUI.Showcase.Panel.PlainPanel>
+  <RimUI.Showcase.Panel.BodyIsAnyElement>The body can be any element.</RimUI.Showcase.Panel.BodyIsAnyElement>
+  <RimUI.Showcase.Panel.Collapsible>collapsible (click header)</RimUI.Showcase.Panel.Collapsible>
+  <RimUI.Showcase.Panel.CollapsibleLabel>Collapsible</RimUI.Showcase.Panel.CollapsibleLabel>
+  <RimUI.Showcase.Panel.HeaderClickCollapses>Click the header to collapse.</RimUI.Showcase.Panel.HeaderClickCollapses>
+  <RimUI.Showcase.Panel.PanelLabel>panel</RimUI.Showcase.Panel.PanelLabel>
+  <RimUI.Showcase.Panel.PanelTitle>Panel</RimUI.Showcase.Panel.PanelTitle>
+  <RimUI.Showcase.Panel.PanelContent>Panel content.</RimUI.Showcase.Panel.PanelContent>
+  <RimUI.Showcase.Accordion.General>General</RimUI.Showcase.Accordion.General>
+  <RimUI.Showcase.Accordion.Section1>Section 1.</RimUI.Showcase.Accordion.Section1>
+  <RimUI.Showcase.Accordion.Combat>Combat</RimUI.Showcase.Accordion.Combat>
+  <RimUI.Showcase.Accordion.Section2>Section 2. Opening it closes the others.</RimUI.Showcase.Accordion.Section2>
+  <RimUI.Showcase.Accordion.Misc>Miscellaneous</RimUI.Showcase.Accordion.Misc>
+  <RimUI.Showcase.Accordion.Section3>Section 3.</RimUI.Showcase.Accordion.Section3>
+  <RimUI.Showcase.Accordion.Desc>Each section has a header and body. Clicking the header opens it; with Multiple=false, opening one section closes the others.</RimUI.Showcase.Accordion.Desc>
+  <RimUI.Showcase.Accordion.Sections>sections</RimUI.Showcase.Accordion.Sections>
+  <RimUI.Showcase.Tabs.WeaponTab>Weapons tab.</RimUI.Showcase.Tabs.WeaponTab>
+  <RimUI.Showcase.Tabs.Armor>Armor</RimUI.Showcase.Tabs.Armor>
+  <RimUI.Showcase.Tabs.ArmorTab>Armor tab.</RimUI.Showcase.Tabs.ArmorTab>
+  <RimUI.Showcase.Tabs.Unavailable>Unavailable.</RimUI.Showcase.Tabs.Unavailable>
+  <RimUI.Showcase.Tabs.Desc>Click a tab header to switch content. Tabs can sit on the top, bottom, left, or right; the active tab visually joins the body.</RimUI.Showcase.Tabs.Desc>
+  <RimUI.Showcase.Tabs.Top>top</RimUI.Showcase.Tabs.Top>
+  <RimUI.Showcase.Tabs.Bottom>bottom</RimUI.Showcase.Tabs.Bottom>
+  <RimUI.Showcase.Tabs.LeftRight>left | right</RimUI.Showcase.Tabs.LeftRight>
+  <RimUI.Showcase.ListBox.Cooking>Cooking</RimUI.Showcase.ListBox.Cooking>
+  <RimUI.Showcase.ListBox.Construction>Construction</RimUI.Showcase.ListBox.Construction>
+  <RimUI.Showcase.ListBox.Growing>Growing</RimUI.Showcase.ListBox.Growing>
+  <RimUI.Showcase.ListBox.Mining>Mining</RimUI.Showcase.ListBox.Mining>
+  <RimUI.Showcase.ListBox.Cleaning>Cleaning</RimUI.Showcase.ListBox.Cleaning>
+  <RimUI.Showcase.ListBox.Research>Research</RimUI.Showcase.ListBox.Research>
+  <RimUI.Showcase.ListBox.Doctoring>Doctoring</RimUI.Showcase.ListBox.Doctoring>
+  <RimUI.Showcase.ListBox.Hunting>Hunting</RimUI.Showcase.ListBox.Hunting>
+  <RimUI.Showcase.ListBox.Hauling>Hauling</RimUI.Showcase.ListBox.Hauling>
+  <RimUI.Showcase.ListBox.Desc>Click a row to select it, Ctrl-click to toggle it, Shift-click to select a range, and assign your own action to double-click.</RimUI.Showcase.ListBox.Desc>
+  <RimUI.Showcase.ListBox.ListLabel>list</RimUI.Showcase.ListBox.ListLabel>
+  <RimUI.Showcase.OrderList.Desc>A reorderable list. Move rows with the up/down buttons or drag them with the mouse.</RimUI.Showcase.OrderList.Desc>
+  <RimUI.Showcase.OrderList.OrderLabel>order</RimUI.Showcase.OrderList.OrderLabel>
+  <RimUI.Showcase.PickList.Pistol>Pistol</RimUI.Showcase.PickList.Pistol>
+  <RimUI.Showcase.PickList.Grenade>Grenade</RimUI.Showcase.PickList.Grenade>
+  <RimUI.Showcase.PickList.Knife>Knife</RimUI.Showcase.PickList.Knife>
+  <RimUI.Showcase.PickList.Desc>Move items between two lists using the center buttons or by double-clicking. Ctrl and Shift let you move several items at once.</RimUI.Showcase.PickList.Desc>
+  <RimUI.Showcase.PickList.SourceTarget>source ↔ selection</RimUI.Showcase.PickList.SourceTarget>
+  <RimUI.Showcase.PickList.Base>Base</RimUI.Showcase.PickList.Base>
+  <RimUI.Showcase.PickList.Storage>Storage</RimUI.Showcase.PickList.Storage>
+  <RimUI.Showcase.PickList.Food>Food</RimUI.Showcase.PickList.Food>
+  <RimUI.Showcase.PickList.Medicine>Medicine</RimUI.Showcase.PickList.Medicine>
+  <RimUI.Showcase.PickList.Bedrooms>Bedrooms</RimUI.Showcase.PickList.Bedrooms>
+  <RimUI.Showcase.PickList.Room1>Room 1</RimUI.Showcase.PickList.Room1>
+  <RimUI.Showcase.PickList.Room2>Room 2</RimUI.Showcase.PickList.Room2>
+  <RimUI.Showcase.PickList.Perimeter>Perimeter</RimUI.Showcase.PickList.Perimeter>
+  <RimUI.Showcase.PickList.Turrets>Turrets</RimUI.Showcase.PickList.Turrets>
+  <RimUI.Showcase.PickList.Walls>Walls</RimUI.Showcase.PickList.Walls>
+  <RimUI.Showcase.Tree.Desc>A tree with expandable branches. The left example supports multi-selection and leaf search; the right uses checkboxes that include all descendants.</RimUI.Showcase.Tree.Desc>
+  <RimUI.Showcase.Tree.SelectionCheckboxes>selection | checkboxes</RimUI.Showcase.Tree.SelectionCheckboxes>
+  <RimUI.Showcase.DataTable.Levi>Levi</RimUI.Showcase.DataTable.Levi>
+  <RimUI.Showcase.DataTable.Goran>Goran</RimUI.Showcase.DataTable.Goran>
+  <RimUI.Showcase.DataTable.Mira>Mira</RimUI.Showcase.DataTable.Mira>
+  <RimUI.Showcase.DataTable.Tess>Tess</RimUI.Showcase.DataTable.Tess>
+  <RimUI.Showcase.DataTable.Bak>Buck</RimUI.Showcase.DataTable.Bak>
+  <RimUI.Showcase.DataTable.Yona>Yona</RimUI.Showcase.DataTable.Yona>
+  <RimUI.Showcase.DataTable.Kara>Kara</RimUI.Showcase.DataTable.Kara>
+  <RimUI.Showcase.DataTable.Drew>Drew</RimUI.Showcase.DataTable.Drew>
+  <RimUI.Showcase.DataTable.Piper>Piper</RimUI.Showcase.DataTable.Piper>
+  <RimUI.Showcase.DataTable.Sten>Sten</RimUI.Showcase.DataTable.Sten>
+  <RimUI.Showcase.DataTable.Shooting>Shooting</RimUI.Showcase.DataTable.Shooting>
+  <RimUI.Showcase.DataTable.Skill>Skill</RimUI.Showcase.DataTable.Skill>
+  <RimUI.Showcase.DataTable.Level>Lvl</RimUI.Showcase.DataTable.Level>
+  <RimUI.Showcase.DataTable.Progress>Progress</RimUI.Showcase.DataTable.Progress>
+  <RimUI.Showcase.DataTable.Desc>A table with zebra rows, hover highlighting, multi-selection, sorting by the Lvl header, AND-combined Colonist and Skill filters, and live UI elements inside cells instead of plain text.</RimUI.Showcase.DataTable.Desc>
+  <RimUI.Showcase.DataTable.TableLabel>table</RimUI.Showcase.DataTable.TableLabel>
+  <RimUI.Showcase.TreeTable.Category>Category</RimUI.Showcase.TreeTable.Category>
+  <RimUI.Showcase.TreeTable.Amount>Amount</RimUI.Showcase.TreeTable.Amount>
+  <RimUI.Showcase.TreeTable.Weight>Weight</RimUI.Showcase.TreeTable.Weight>
+  <RimUI.Showcase.TreeTable.Price>Price</RimUI.Showcase.TreeTable.Price>
+  <RimUI.Showcase.TreeTable.Resources>Resources</RimUI.Showcase.TreeTable.Resources>
+  <RimUI.Showcase.TreeTable.Rice>Rice</RimUI.Showcase.TreeTable.Rice>
+  <RimUI.Showcase.TreeTable.Meat>Meat</RimUI.Showcase.TreeTable.Meat>
+  <RimUI.Showcase.TreeTable.Venison>Venison</RimUI.Showcase.TreeTable.Venison>
+  <RimUI.Showcase.TreeTable.Desc>A table whose first column is an expandable tree and whose other columns are regular data cells. Sorting by Category or Amount only reorders siblings under the same parent; the Category filter searches tree leaves.</RimUI.Showcase.TreeTable.Desc>
+  <RimUI.Showcase.TreeTable.TreeTableLabel>tree table</RimUI.Showcase.TreeTable.TreeTableLabel>
+  <RimUI.Showcase.Button.Desc>Buttons support ready-made color presets, icons on either side of the caption, disabled state, and tooltips. They size to their content instead of stretching horizontally.</RimUI.Showcase.Button.Desc>
+  <RimUI.Showcase.Button.Presets>presets</RimUI.Showcase.Button.Presets>
+  <RimUI.Showcase.Button.DisabledTooltip>disabled / tooltip</RimUI.Showcase.Button.DisabledTooltip>
+  <RimUI.Showcase.Button.Unavailable>Unavailable</RimUI.Showcase.Button.Unavailable>
+  <RimUI.Showcase.Button.Hover>Hover me</RimUI.Showcase.Button.Hover>
+  <RimUI.Showcase.Button.NativeTooltip>Native RimWorld tooltip</RimUI.Showcase.Button.NativeTooltip>
+  <RimUI.Showcase.Button.SpriteTheme>theme sprite</RimUI.Showcase.Button.SpriteTheme>
+  <RimUI.Showcase.Button.Left>Left</RimUI.Showcase.Button.Left>
+  <RimUI.Showcase.Button.Right>Right</RimUI.Showcase.Button.Right>
+  <RimUI.Showcase.Button.Sprite.Button>Button</RimUI.Showcase.Button.Sprite.Button>
+  <RimUI.Showcase.Button.Sprite.Success>Success</RimUI.Showcase.Button.Sprite.Success>
+  <RimUI.Showcase.Popover.TextArrowDown>Text ↓</RimUI.Showcase.Popover.TextArrowDown>
+  <RimUI.Showcase.Popover.BodyText>A line of text in the popup.\nClamped to the window bounds.</RimUI.Showcase.Popover.BodyText>
+  <RimUI.Showcase.Popover.PanelArrow>Panel →</RimUI.Showcase.Popover.PanelArrow>
+  <RimUI.Showcase.Popover.InsideOurElements>Contains RimUI elements:</RimUI.Showcase.Popover.InsideOurElements>
+  <RimUI.Showcase.Popover.Yes>Yes</RimUI.Showcase.Popover.Yes>
+  <RimUI.Showcase.Popover.No>No</RimUI.Showcase.Popover.No>
+  <RimUI.Showcase.Popover.UpArrow>Up ↑</RimUI.Showcase.Popover.UpArrow>
+  <RimUI.Showcase.Popover.OpensUpward>Opens upward from its anchor.</RimUI.Showcase.Popover.OpensUpward>
+  <RimUI.Showcase.Popover.Desc>A popup panel anchored to a point, usually a button. It opens on click, can contain anything, and closes when you click outside it.</RimUI.Showcase.Popover.Desc>
+  <RimUI.Showcase.Popover.Placements>placements</RimUI.Showcase.Popover.Placements>
+  <RimUI.Showcase.DropdownMenu.MenuLabel>Menu ▾</RimUI.Showcase.DropdownMenu.MenuLabel>
+  <RimUI.Showcase.DropdownMenu.Create>Create</RimUI.Showcase.DropdownMenu.Create>
+  <RimUI.Showcase.DropdownMenu.Open>Open</RimUI.Showcase.DropdownMenu.Open>
+  <RimUI.Showcase.DropdownMenu.Unavailable>Unavailable</RimUI.Showcase.DropdownMenu.Unavailable>
+  <RimUI.Showcase.DropdownMenu.Export>Export</RimUI.Showcase.DropdownMenu.Export>
+  <RimUI.Showcase.DropdownMenu.ToPng>To PNG</RimUI.Showcase.DropdownMenu.ToPng>
+  <RimUI.Showcase.DropdownMenu.ToJson>To JSON</RimUI.Showcase.DropdownMenu.ToJson>
+  <RimUI.Showcase.DropdownMenu.More>More</RimUI.Showcase.DropdownMenu.More>
+  <RimUI.Showcase.DropdownMenu.Deeper1>Level 1</RimUI.Showcase.DropdownMenu.Deeper1>
+  <RimUI.Showcase.DropdownMenu.Deeper2>Level 2</RimUI.Showcase.DropdownMenu.Deeper2>
+  <RimUI.Showcase.DropdownMenu.Exit>Exit</RimUI.Showcase.DropdownMenu.Exit>
+  <RimUI.Showcase.DropdownMenu.Desc>A button-triggered dropdown whose items can be disabled or open nested submenus on hover.</RimUI.Showcase.DropdownMenu.Desc>
+  <RimUI.Showcase.DropdownMenu.MenuWord>menu</RimUI.Showcase.DropdownMenu.MenuWord>
+  <RimUI.Showcase.DropdownMenu.Nearby>Nearby</RimUI.Showcase.DropdownMenu.Nearby>
+  <RimUI.Showcase.Menu.File>FILE</RimUI.Showcase.Menu.File>
+  <RimUI.Showcase.Menu.Other>OTHER</RimUI.Showcase.Menu.Other>
+  <RimUI.Showcase.Menu.RightClickHere>RIGHT-click here</RimUI.Showcase.Menu.RightClickHere>
+  <RimUI.Showcase.Menu.Action>Action</RimUI.Showcase.Menu.Action>
+  <RimUI.Showcase.Menu.Submenu>Submenu</RimUI.Showcase.Menu.Submenu>
+  <RimUI.Showcase.Menu.Nested>Nested</RimUI.Showcase.Menu.Nested>
+  <RimUI.Showcase.Menu.Delete>Delete</RimUI.Showcase.Menu.Delete>
+  <RimUI.Showcase.Menu.Desc>Menus can be static and embedded in the UI flow (left), or contextual and opened with the right mouse button (right).</RimUI.Showcase.Menu.Desc>
+  <RimUI.Showcase.Menu.StaticContext>static | context</RimUI.Showcase.Menu.StaticContext>
+  <RimUI.Showcase.Tooltip.TooltipTemplate>Tooltip template</RimUI.Showcase.Tooltip.TooltipTemplate>
+  <RimUI.Showcase.Tooltip.StyledLine>Styled line</RimUI.Showcase.Tooltip.StyledLine>
+  <RimUI.Showcase.Tooltip.MutedLine>And a muted line</RimUI.Showcase.Tooltip.MutedLine>
+  <RimUI.Showcase.Tooltip.HoverMe>Hover over me</RimUI.Showcase.Tooltip.HoverMe>
+  <RimUI.Showcase.Tooltip.ClickThroughTooltip>Click through tooltip</RimUI.Showcase.Tooltip.ClickThroughTooltip>
+  <RimUI.Showcase.Tooltip.ClickPassesThrough>The click reaches the button; the tooltip does not capture input.</RimUI.Showcase.Tooltip.ClickPassesThrough>
+  <RimUI.Showcase.Tooltip.Desc>A tooltip template can contain anything, follows the cursor, and does not capture clicks, so you can click the element underneath it.</RimUI.Showcase.Tooltip.Desc>
+  <RimUI.Showcase.Tooltip.Hover>hover</RimUI.Showcase.Tooltip.Hover>
+  <RimUI.Showcase.Icons.Desc>Fetch an icon from the built-in sheet with Icons.Get(index), then set its size, tint, and rotation. The same icons can be placed inside buttons.</RimUI.Showcase.Icons.Desc>
+  <RimUI.Showcase.Icons.SetLabel>set (20 px)</RimUI.Showcase.Icons.SetLabel>
+  <RimUI.Showcase.Icons.TintRotateButton>tint · rotate 45° · in a button</RimUI.Showcase.Icons.TintRotateButton>
+  <RimUI.Showcase.ModalWindow.Desc>A modal has a header with a menu button, centered title, and close button; a body that scrolls when needed; and an action footer. Drag it by the header.</RimUI.Showcase.ModalWindow.Desc>
+  <RimUI.Showcase.ModalWindow.OpensSeparateWindow>Opens as a separate window.</RimUI.Showcase.ModalWindow.OpensSeparateWindow>
+  <RimUI.Showcase.ModalWindow.OpenButton>Open ModalWindow</RimUI.Showcase.ModalWindow.OpenButton>
+  <RimUI.Showcase.MessageWindow.Desc>A message window is a simpler modal with no hamburger menu and a single close action in the footer. It can have its own style and frame sprite.</RimUI.Showcase.MessageWindow.Desc>
+  <RimUI.Showcase.MessageWindow.OpenButton>Open MessageWindow</RimUI.Showcase.MessageWindow.OpenButton>
+  <RimUI.Showcase.MessageWindow.InfoTitle>Information</RimUI.Showcase.MessageWindow.InfoTitle>
+  <RimUI.Showcase.MessageWindow.InfoDesc>An informational window with one footer button that closes it.</RimUI.Showcase.MessageWindow.InfoDesc>
+  <RimUI.Showcase.ConfirmWindow.Desc>A confirmation window has separate accept and reject actions. It can have its own style and frame sprite.</RimUI.Showcase.ConfirmWindow.Desc>
+  <RimUI.Showcase.ConfirmWindow.OpenButton>Open ConfirmWindow</RimUI.Showcase.ConfirmWindow.OpenButton>
+  <RimUI.Showcase.ConfirmWindow.AreYouSure>Are you sure?</RimUI.Showcase.ConfirmWindow.AreYouSure>
+  <RimUI.Showcase.ConfirmWindow.ConsentDesc>Accept and reject are separate events. Close and Esc both count as reject.</RimUI.Showcase.ConfirmWindow.ConsentDesc>
+  <RimUI.Showcase.ModalWindow.Example.Desc>A complete modal with a header, a scrollable body, and a footer. It can only be dragged by the header; Esc closes it.</RimUI.Showcase.ModalWindow.Example.Desc>
+  <RimUI.Showcase.ModalWindow.Example.ContentLine>Content line #{0} — testing body scrolling.</RimUI.Showcase.ModalWindow.Example.ContentLine>
+  <RimUI.Showcase.ModalWindow.Example.Title>Modal title</RimUI.Showcase.ModalWindow.Example.Title>
+  <RimUI.Showcase.ModalWindow.Example.Item1>Item 1</RimUI.Showcase.ModalWindow.Example.Item1>
+  <RimUI.Showcase.ModalWindow.Example.Item2>Item 2</RimUI.Showcase.ModalWindow.Example.Item2>
+  <RimUI.Showcase.ModalWindow.Example.Apply>Apply</RimUI.Showcase.ModalWindow.Example.Apply>
+  <RimUI.Showcase.ModalWindow.Example.Close>Close</RimUI.Showcase.ModalWindow.Example.Close>
+  <RimUI.Showcase.ProgressBar.GradientFillNote>gradient fill: clipped | stretched</RimUI.Showcase.ProgressBar.GradientFillNote>
+  <RimUI.Showcase.ProgressBar.VerticalNote>vertical: fills from bottom to top</RimUI.Showcase.ProgressBar.VerticalNote>
+  <RimUI.Showcase.Slider.VerticalNote>vertical: single and range (min at bottom)</RimUI.Showcase.Slider.VerticalNote>
+  <RimUI.Showcase.Nav.Styles.SpriteTiling>Sprite tiling</RimUI.Showcase.Nav.Styles.SpriteTiling>
+  <RimUI.Showcase.Style.SpriteTiling.Desc>Sprite edges and centers can repeat as tiles instead of stretching. Partial tiles are clipped, not squashed. This example repeats teeth and dots in 3-unit modules.</RimUI.Showcase.Style.SpriteTiling.Desc>
+  <RimUI.Showcase.Style.SpriteTiling.StretchVsRepeat>stretch (smeared teeth) | repeat (even picket)</RimUI.Showcase.Style.SpriteTiling.StretchVsRepeat>
+  <RimUI.Showcase.Nav.Animations>Animations</RimUI.Showcase.Nav.Animations>
+  <RimUI.Showcase.Nav.Animations.Basic>Basics</RimUI.Showcase.Nav.Animations.Basic>
+  <RimUI.Showcase.Nav.Events>Events</RimUI.Showcase.Nav.Events>
+  <RimUI.Showcase.Nav.Events.Basic>Subscriptions</RimUI.Showcase.Nav.Events.Basic>
+  <RimUI.Showcase.Events.Title>Component events</RimUI.Showcase.Events.Title>
+  <RimUI.Showcase.Events.Desc>Every component has an Events block for hover enter/leave/per-frame, left and right clicks, scrolling, disabled-state changes, and selection. The callback receives the component and event data. Events are observers: built-in behavior runs first, then your callback.</RimUI.Showcase.Events.Desc>
+  <RimUI.Showcase.Events.ButtonBlock>button: hover enter/leave/per-frame and LMB/RMB clicks</RimUI.Showcase.Events.ButtonBlock>
+  <RimUI.Showcase.Events.DisabledBlock>disabled state: the switch disables the checkbox, which fires an event</RimUI.Showcase.Events.DisabledBlock>
+  <RimUI.Showcase.Events.ListBlock>list: selection (index + value) and scroll, including internal scrolling</RimUI.Showcase.Events.ListBlock>
+  <RimUI.Showcase.Events.LogBlock>event log (latest 8)</RimUI.Showcase.Events.LogBlock>
+  <RimUI.Showcase.Events.LogEmpty>No events yet. Hover, click, and select items above.</RimUI.Showcase.Events.LogEmpty>
+  <RimUI.Showcase.Events.TargetButton>Target button</RimUI.Showcase.Events.TargetButton>
+  <RimUI.Showcase.Events.HoverFrames>frames under cursor (OnHover): {0}</RimUI.Showcase.Events.HoverFrames>
+  <RimUI.Showcase.Events.CheckboxLabel>Observed checkbox</RimUI.Showcase.Events.CheckboxLabel>
+  <RimUI.Showcase.Events.ToggleLabel>Disable checkbox</RimUI.Showcase.Events.ToggleLabel>
+  <RimUI.Showcase.Events.HoverEnter>cursor entered</RimUI.Showcase.Events.HoverEnter>
+  <RimUI.Showcase.Events.HoverLeave>cursor left</RimUI.Showcase.Events.HoverLeave>
+  <RimUI.Showcase.Events.Click>LMB click</RimUI.Showcase.Events.Click>
+  <RimUI.Showcase.Events.RightClick>RMB click</RimUI.Showcase.Events.RightClick>
+  <RimUI.Showcase.Events.Scroll>scroll, delta {0}</RimUI.Showcase.Events.Scroll>
+  <RimUI.Showcase.Events.Selection>selection: [{0}] {1}</RimUI.Showcase.Events.Selection>
+  <RimUI.Showcase.Events.DisabledOn>disabled</RimUI.Showcase.Events.DisabledOn>
+  <RimUI.Showcase.Events.DisabledOff>active again</RimUI.Showcase.Events.DisabledOff>
+  <RimUI.Showcase.Nav.Methods>Methods</RimUI.Showcase.Nav.Methods>
+  <RimUI.Showcase.Nav.Methods.Basic>Values and styles</RimUI.Showcase.Nav.Methods.Basic>
+  <RimUI.Showcase.Methods.Title>Component methods</RimUI.Showcase.Methods.Title>
+  <RimUI.Showcase.Methods.Desc>Read and write values directly from code with GetValue()/SetValue() on fields and toggles, or GetSelected()/SetSelected() on selection components. SetStyle("path", "value") changes styles using the same paths and formats as a theme file; put the component part first, for example box.borderColor. Invalid paths are silently ignored.</RimUI.Showcase.Methods.Desc>
+  <RimUI.Showcase.Methods.ResultBlock>last read result</RimUI.Showcase.Methods.ResultBlock>
+  <RimUI.Showcase.Methods.ResultLabel>result: {0}</RimUI.Showcase.Methods.ResultLabel>
+  <RimUI.Showcase.Methods.ResultEmpty>result: — (click one of the Read buttons)</RimUI.Showcase.Methods.ResultEmpty>
+  <RimUI.Showcase.Methods.InputBlock>GetValue() / SetValue(): text field</RimUI.Showcase.Methods.InputBlock>
+  <RimUI.Showcase.Methods.ReadBtn>Read GetValue()</RimUI.Showcase.Methods.ReadBtn>
+  <RimUI.Showcase.Methods.WriteBtn>Write SetValue(...)</RimUI.Showcase.Methods.WriteBtn>
+  <RimUI.Showcase.Methods.WriteSample>Hello from code</RimUI.Showcase.Methods.WriteSample>
+  <RimUI.Showcase.Methods.SelectBlock>GetSelected() / SetSelected(): dropdown</RimUI.Showcase.Methods.SelectBlock>
+  <RimUI.Showcase.Methods.ReadSelBtn>Read GetSelected()</RimUI.Showcase.Methods.ReadSelBtn>
+  <RimUI.Showcase.Methods.SetSelBtn>Select Mechanoid from code</RimUI.Showcase.Methods.SetSelBtn>
+  <RimUI.Showcase.Methods.StyleBlock>SetStyle("path", "value"): checkbox</RimUI.Showcase.Methods.StyleBlock>
+  <RimUI.Showcase.Methods.CheckboxLabel>Test checkbox</RimUI.Showcase.Methods.CheckboxLabel>
+  <RimUI.Showcase.Methods.StyleBoxBtn>box.borderColor = #FF5050</RimUI.Showcase.Methods.StyleBoxBtn>
+  <RimUI.Showcase.Methods.StyleLabelBtn>label.text.color = #FFD24A</RimUI.Showcase.Methods.StyleLabelBtn>
+  <RimUI.Showcase.Methods.StyleTypoBtn>Typo in path (silently ignored)</RimUI.Showcase.Methods.StyleTypoBtn>
+  <RimUI.Showcase.CircularProgress.Desc>A circular progress bar with configurable arc shape, start point, direction, along-arc gradient, track borders, and centered text or icon.</RimUI.Showcase.CircularProgress.Desc>
+  <RimUI.Showcase.CircularProgress.StartAngles>circle: start top | right | reverse</RimUI.Showcase.CircularProgress.StartAngles>
+  <RimUI.Showcase.CircularProgress.HalfThreeQuarter>semicircle | three-quarter</RimUI.Showcase.CircularProgress.HalfThreeQuarter>
+  <RimUI.Showcase.CircularProgress.GradientBorderIcon>along-arc gradient + borders | icon</RimUI.Showcase.CircularProgress.GradientBorderIcon>
+  <RimUI.Showcase.Animations.Desc>Wrap any element in Animated and attach a built-in module by name. Custom modules are registered through Animations.Register in exactly the same way.</RimUI.Showcase.Animations.Desc>
+  <RimUI.Showcase.Animations.FadeIn>Fade in</RimUI.Showcase.Animations.FadeIn>
+  <RimUI.Showcase.Animations.SlideInLeft>Slide in from left</RimUI.Showcase.Animations.SlideInLeft>
+  <RimUI.Showcase.Animations.Shake>Shake</RimUI.Showcase.Animations.Shake>
+  <RimUI.Showcase.Animations.Restart>Restart</RimUI.Showcase.Animations.Restart>
+  <RimUI.Showcase.Animations.Pulse>Pulse</RimUI.Showcase.Animations.Pulse>
+  <RimUI.Showcase.Animations.Blink>Alert</RimUI.Showcase.Animations.Blink>
+  <RimUI.Showcase.Animations.EntranceNote>entrance: fade-in | slide-in-left | fade-in-up | pop icon (restart with button)</RimUI.Showcase.Animations.EntranceNote>
+  <RimUI.Showcase.Animations.LoopNote>loops: pulse | blink</RimUI.Showcase.Animations.LoopNote>
+  <RimUI.Showcase.Animations.ShakeNote>shake — click the button</RimUI.Showcase.Animations.ShakeNote>
+  <RimUI.Showcase.Nav.Display>Display</RimUI.Showcase.Nav.Display>
+  <RimUI.Showcase.SegmentProgress.Desc>A segmented progress bar fills whole segments rather than a continuous strip. Each segment can have its own color; horizontal, vertical, and circular layouts are available.</RimUI.Showcase.SegmentProgress.Desc>
+  <RimUI.Showcase.SegmentProgress.HorizontalGradient>horizontal (green → red scale)</RimUI.Showcase.SegmentProgress.HorizontalGradient>
+  <RimUI.Showcase.SegmentProgress.VerticalCircular>vertical | circular</RimUI.Showcase.SegmentProgress.VerticalCircular>
+  <RimUI.Showcase.Image.Desc>Display an image by texture key with regular spacing, radius, and border styles. Fit modes include stretch, contain, and cover with cropping.</RimUI.Showcase.Image.Desc>
+  <RimUI.Showcase.Image.Tint>tint</RimUI.Showcase.Image.Tint>
+  <RimUI.Showcase.Image.FrameRadius>border + radius</RimUI.Showcase.Image.FrameRadius>
+  <RimUI.Showcase.CustomDraw.Desc>Custom drawing: OnDraw uses framework commands that work across themes and UI scales; OnDrawNative gives direct access to RimWorld GUI/Widgets when you need full control.</RimUI.Showcase.CustomDraw.Desc>
+  <RimUI.Showcase.CustomDraw.OnDrawNote>OnDraw — framework commands (mini chart)</RimUI.Showcase.CustomDraw.OnDrawNote>
+  <RimUI.Showcase.CustomDraw.OnDrawNativeNote>OnDrawNative — raw IMGUI (Widgets.*)</RimUI.Showcase.CustomDraw.OnDrawNativeNote>
+  <RimUI.Showcase.CustomDraw.RawGuiNote>raw GUI (Widgets.DrawBoxSolid)</RimUI.Showcase.CustomDraw.RawGuiNote>
+  <RimUI.Showcase.Nav.Audio>Audio</RimUI.Showcase.Nav.Audio>
+  <RimUI.Showcase.Gallery.Desc>An image gallery with a large central frame, side arrows, and a thumbnail strip for quick navigation. It can also advance automatically on a timer.</RimUI.Showcase.Gallery.Desc>
+  <RimUI.Showcase.Gallery.FrameArrowsThumbs>frame + arrows + thumbnails</RimUI.Showcase.Gallery.FrameArrowsThumbs>
+  <RimUI.Showcase.Gallery.AutoAdvance>auto-advance (2.5 s), no thumbnails</RimUI.Showcase.Gallery.AutoAdvance>
+  <RimUI.Showcase.AudioPlayer.Desc>An audio helper for playlists stored in your mod's Audio/ folder (ogg/wav/mp3), with Play/Pause/Next/Prev/Seek methods. It is not a ready-made player UI; build that from RimUI components.</RimUI.Showcase.AudioPlayer.Desc>
+  <RimUI.Showcase.AudioPlayer.NoFiles>no files</RimUI.Showcase.AudioPlayer.NoFiles>
+  <RimUI.Showcase.AudioPlayer.NoFilesHint>Put .ogg, .wav, or .mp3 files in the mod's Audio/ folder to try the player here.</RimUI.Showcase.AudioPlayer.NoFilesHint>
+  <RimUI.Showcase.AudioPlayer.PlayPause>Play/Pause</RimUI.Showcase.AudioPlayer.PlayPause>
+  <RimUI.Showcase.AudioPlayer.NowPlaying>now playing</RimUI.Showcase.AudioPlayer.NowPlaying>
+  <RimUI.Showcase.AudioPlayer.TrackPosition>track position</RimUI.Showcase.AudioPlayer.TrackPosition>
+  <RimUI.Showcase.AudioPlayer.Controls>controls</RimUI.Showcase.AudioPlayer.Controls>
+  <RimUI.Showcase.Animations.FadeInUp>Fade In Up</RimUI.Showcase.Animations.FadeInUp>
+  <RimUI.Showcase.Animations.Pop>Pop</RimUI.Showcase.Animations.Pop>
+  <RimUI.Showcase.Animations.Flash>Flash</RimUI.Showcase.Animations.Flash>
+  <RimUI.Showcase.Animations.HoverLabel>Hover me</RimUI.Showcase.Animations.HoverLabel>
+  <RimUI.Showcase.Animations.HoverNote>smooth hover transition (HoverFade helper)</RimUI.Showcase.Animations.HoverNote>
+  <RimUI.Showcase.NodeCanvas.Desc>A draggable node-and-link canvas. Z-index controls overlap order; smooth links run from a node's output on the right to another node's input on the left, with per-type limits. The entire canvas can be saved to and loaded from JSON.</RimUI.Showcase.NodeCanvas.Desc>
+  <RimUI.Showcase.NodeCanvas.ControlsHint>drag — move; » — choose a link type, then click a highlighted target (RMB cancels); RMB a link — delete; RMB empty space — add node; X — delete node</RimUI.Showcase.NodeCanvas.ControlsHint>
+  <RimUI.Showcase.NodeCanvas.AddBlock>Add node</RimUI.Showcase.NodeCanvas.AddBlock>
+  <RimUI.Showcase.NodeCanvas.DeleteLink>Delete link</RimUI.Showcase.NodeCanvas.DeleteLink>
+  <RimUI.Showcase.NodeCanvas.BlockWord>Node</RimUI.Showcase.NodeCanvas.BlockWord>
+  <RimUI.Showcase.NodeCanvas.DeleteBlockTitle>Delete node?</RimUI.Showcase.NodeCanvas.DeleteBlockTitle>
+  <RimUI.Showcase.NodeCanvas.DeleteBlockDesc>The node and all of its links will be deleted.</RimUI.Showcase.NodeCanvas.DeleteBlockDesc>
+  <RimUI.Showcase.NodeCanvas.ExportJson>Copy JSON</RimUI.Showcase.NodeCanvas.ExportJson>
+  <RimUI.Showcase.NodeCanvas.Flow>Flow</RimUI.Showcase.NodeCanvas.Flow>
+  <RimUI.Showcase.NodeCanvas.Signal>Signal</RimUI.Showcase.NodeCanvas.Signal>
+  <RimUI.Showcase.NodeCanvas.Source>Source</RimUI.Showcase.NodeCanvas.Source>
+  <RimUI.Showcase.NodeCanvas.Process>Process</RimUI.Showcase.NodeCanvas.Process>
+  <RimUI.Showcase.NodeCanvas.Sink>Sink</RimUI.Showcase.NodeCanvas.Sink>
+  <RimUI.Showcase.NodeCanvas.Primary>Primary</RimUI.Showcase.NodeCanvas.Primary>
+  <RimUI.Showcase.NodeCanvas.Secondary>Secondary</RimUI.Showcase.NodeCanvas.Secondary>
+  <RimUI.Showcase.NodeCanvas.CopiedMessage>[RimUI] Copied canvas state to the clipboard</RimUI.Showcase.NodeCanvas.CopiedMessage>
+  <RimUI.Showcase.NodeCanvas.Config.Title>Node settings</RimUI.Showcase.NodeCanvas.Config.Title>
+  <RimUI.Showcase.NodeCanvas.Config.NameField>Name</RimUI.Showcase.NodeCanvas.Config.NameField>
+  <RimUI.Showcase.NodeCanvas.Config.ZIndex>Z-index</RimUI.Showcase.NodeCanvas.Config.ZIndex>
+  <RimUI.Showcase.NodeCanvas.Config.Color>Color</RimUI.Showcase.NodeCanvas.Config.Color>
+  <RimUI.Showcase.NodeCanvas.Config.Type>Type</RimUI.Showcase.NodeCanvas.Config.Type>
+  <RimUI.Showcase.NodeCanvas.Config.Group>Group</RimUI.Showcase.NodeCanvas.Config.Group>
+  <RimUI.Showcase.NodeCanvas.Config.NoType>No type</RimUI.Showcase.NodeCanvas.Config.NoType>
+  <RimUI.Showcase.NodeCanvas.Config.NoGroup>No group</RimUI.Showcase.NodeCanvas.Config.NoGroup>
+  <RimUI.Showcase.NodeCanvas.Config.Close>Close</RimUI.Showcase.NodeCanvas.Config.Close>
+  <RimUI.Showcase.Nav.Charts>Charts</RimUI.Showcase.Nav.Charts>
+  <RimUI.Showcase.Chart.Radar.Desc>Charts support multiple data series, including live values updated every frame through a provider, plus legends, automatic value scales, and hover tooltips. Supply data from code or flat JSON.</RimUI.Showcase.Chart.Radar.Desc>
+  <RimUI.Showcase.Chart.Radar.Note>Radar: 2 code-defined series; the last value in series 2 is live (hover the vertices)</RimUI.Showcase.Chart.Radar.Note>
+  <RimUI.Showcase.Chart.Polar.Note>PolarArea: data loaded from a JSON string (labels + series); categories in the legend (hover sectors)</RimUI.Showcase.Chart.Polar.Note>
+  <RimUI.Showcase.Chart.Radar.Speed>Speed</RimUI.Showcase.Chart.Radar.Speed>
+  <RimUI.Showcase.Chart.Radar.Armor>Armor</RimUI.Showcase.Chart.Radar.Armor>
+  <RimUI.Showcase.Chart.Radar.Damage>Damage</RimUI.Showcase.Chart.Radar.Damage>
+  <RimUI.Showcase.Chart.Radar.Range>Range</RimUI.Showcase.Chart.Radar.Range>
+  <RimUI.Showcase.Chart.Radar.Endurance>Endurance</RimUI.Showcase.Chart.Radar.Endurance>
+  <RimUI.Showcase.Chart.Radar.FighterA>Fighter A</RimUI.Showcase.Chart.Radar.FighterA>
+  <RimUI.Showcase.Chart.Radar.FighterB>Fighter B</RimUI.Showcase.Chart.Radar.FighterB>
+  <RimUI.Showcase.Chart.Polar.JsonSample>{ "labels": ["Sleep", "Recreation", "Work", "Health", "Mood"], "series": [ { "name": "Colonist", "values": [70, 35, 85, 60, 50] } ] }</RimUI.Showcase.Chart.Polar.JsonSample>
+  <RimUI.Showcase.Animations.PulseSpec>pulse 1.2 loop</RimUI.Showcase.Animations.PulseSpec>
+  <RimUI.Showcase.Animations.FadeSlideSpec>fade-in; slide-in-top</RimUI.Showcase.Animations.FadeSlideSpec>
+  <RimUI.Showcase.Animations.StyleAnimNote>Define an animation as a string in a style or theme (Style.Animation or "animation" in theme JSON), with no extra code</RimUI.Showcase.Animations.StyleAnimNote>
+  <RimUI.Showcase.Chart.Pie.Wood>Wood</RimUI.Showcase.Chart.Pie.Wood>
+  <RimUI.Showcase.Chart.Pie.Stone>Stone</RimUI.Showcase.Chart.Pie.Stone>
+  <RimUI.Showcase.Chart.Pie.Metal>Metal</RimUI.Showcase.Chart.Pie.Metal>
+  <RimUI.Showcase.Chart.Pie.Cloth>Cloth</RimUI.Showcase.Chart.Pie.Cloth>
+  <RimUI.Showcase.Chart.Pie.Desc>A single series divides the circle into sectors proportional to category values. Donut mode does the same with a cutout in the center.</RimUI.Showcase.Chart.Pie.Desc>
+  <RimUI.Showcase.Chart.Line.Jan>Jan</RimUI.Showcase.Chart.Line.Jan>
+  <RimUI.Showcase.Chart.Line.Feb>Feb</RimUI.Showcase.Chart.Line.Feb>
+  <RimUI.Showcase.Chart.Line.Mar>Mar</RimUI.Showcase.Chart.Line.Mar>
+  <RimUI.Showcase.Chart.Line.Apr>Apr</RimUI.Showcase.Chart.Line.Apr>
+  <RimUI.Showcase.Chart.Line.May>May</RimUI.Showcase.Chart.Line.May>
+  <RimUI.Showcase.Chart.Line.Jun>Jun</RimUI.Showcase.Chart.Line.Jun>
+  <RimUI.Showcase.Chart.Line.Mining>Mining</RimUI.Showcase.Chart.Line.Mining>
+  <RimUI.Showcase.Chart.Line.Trading>Trading</RimUI.Showcase.Chart.Line.Trading>
+  <RimUI.Showcase.Chart.Line.Desc>Line draws an unfilled outline; Area uses the same curve but fills the space down to the zero line.</RimUI.Showcase.Chart.Line.Desc>
+  <RimUI.Showcase.Chart.Column.Scouting>Scouting</RimUI.Showcase.Chart.Column.Scouting>
+  <RimUI.Showcase.Chart.Column.Building>Construction</RimUI.Showcase.Chart.Column.Building>
+  <RimUI.Showcase.Chart.Column.Cooking>Cooking</RimUI.Showcase.Chart.Column.Cooking>
+  <RimUI.Showcase.Chart.Column.Medicine>Medicine</RimUI.Showcase.Chart.Column.Medicine>
+  <RimUI.Showcase.Chart.Column.ShiftA>Shift A</RimUI.Showcase.Chart.Column.ShiftA>
+  <RimUI.Showcase.Chart.Column.ShiftB>Shift B</RimUI.Showcase.Chart.Column.ShiftB>
+  <RimUI.Showcase.Chart.Column.Desc>Column draws values as vertical bars rising upward; Bar displays the same data as horizontal bars.</RimUI.Showcase.Chart.Column.Desc>
+  <RimUI.Showcase.Chart.Heatmap.Mon>Mon</RimUI.Showcase.Chart.Heatmap.Mon>
+  <RimUI.Showcase.Chart.Heatmap.Tue>Tue</RimUI.Showcase.Chart.Heatmap.Tue>
+  <RimUI.Showcase.Chart.Heatmap.Wed>Wed</RimUI.Showcase.Chart.Heatmap.Wed>
+  <RimUI.Showcase.Chart.Heatmap.Thu>Thu</RimUI.Showcase.Chart.Heatmap.Thu>
+  <RimUI.Showcase.Chart.Heatmap.Fri>Fri</RimUI.Showcase.Chart.Heatmap.Fri>
+  <RimUI.Showcase.Chart.Heatmap.ColonistA>Colonist A</RimUI.Showcase.Chart.Heatmap.ColonistA>
+  <RimUI.Showcase.Chart.Heatmap.ColonistB>Colonist B</RimUI.Showcase.Chart.Heatmap.ColonistB>
+  <RimUI.Showcase.Chart.Heatmap.ColonistC>Colonist C</RimUI.Showcase.Chart.Heatmap.ColonistC>
+  <RimUI.Showcase.Chart.Heatmap.Desc>A colonist × day matrix. Each cell interpolates between MinColor and MaxColor according to its value; values near the maximum approach MaxColor.</RimUI.Showcase.Chart.Heatmap.Desc>
+  <RimUI.Showcase.Chart.Heatmap.Caption>Recreation hours this week</RimUI.Showcase.Chart.Heatmap.Caption>
+</LanguageData>

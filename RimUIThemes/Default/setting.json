@@ -1,0 +1,12 @@
+{
+  "name": "Default",
+
+  "_comment": "Манифест темы (ТЗ 4.7, 0.1). Структура каталога: RimUIThemes/{имя}/setting.json + style/{набор}.json + assets/. 'assets' - подпапка текстур темы (ключи спрайтов/картинок в наборах стилей резолвятся сюда, если не найдены через ContentFinder). 'styleSets' - все наборы стилей через пробел, каждый = файл style/{имя}.json. 'defaultStyle' - набор по умолчанию при выборе темы без набора. 'icons' (опционально) - свой лист иконок темы: ключ текстуры (резолвится и в assets), 'iconsCell'/'iconsColumns' - размер ячейки и число колонок (по умолчанию 48 и 8; между ячейками 1px прозрачный разрыв - единый стандарт спрайт-листов ТЗ 0.2); пустая строка = лист фреймворка RimUI/Icons.",
+
+  "assets": "assets",
+  "icons": "",
+  "iconsCell": -1,
+  "iconsColumns": -1,
+  "defaultStyle": "default",
+  "styleSets": "default sprites"
+}

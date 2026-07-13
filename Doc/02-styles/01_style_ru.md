@@ -1,0 +1,182 @@
+![RimUI Framework](../../About/Preview.png)
+
+**RimUI Framework** — ядро `0.6.7` · мод `0.1.0` · RimWorld `1.6`
+
+---
+
+[Оглавление](../index_ru.md) - Стили и спрайты | Пред.: [FlexBox](../01-grid/03_flexbox_ru.md) | След.: [SpriteFrame — спрайт-рамка и тайлинг](02_spriteframe_ru.md) | [English](01_style_en.md)
+
+---
+
+# Style — модель стиля
+
+Каждый элемент (`UiElement`) имеет публичное поле `Style Style` — это данные, ничего не рисуют
+сами по себе. Резолв (что взять из явно заданного стиля, а что добрать из темы) происходит на
+каждом кадре, поэтому смена темы «на лету» подхватывается даже уже открытыми окнами. `null` у
+большинства полей означает «не задано — взять из слота темы»; явные `Fill.Off`/`BoxShadow.Off`/
+`BorderWidth.None` — осознанное отключение, обрывающее цепочку приоритетов.
+
+`RimUI.Styling.Style` (sealed class)
+
+## Пример
+
+```csharp
+el.Style.Margin = new Thickness(8f);
+el.Style.Padding = new Thickness(12f, 8f);
+el.Style.Width = 200f;                 // 0 = авто (по контенту/долям сетки)
+el.Style.Background = Fill.Solid(new ColorRGBA(0.2f, 0.3f, 0.5f, 1f));
+el.Style.Radius = BorderRadius.Middle;
+el.Style.BorderWidth = BorderWidth.Small;
+el.Style.BorderColor = ColorRGBA.White.WithAlpha(0.4f);
+el.Style.Shadow = new BoxShadow { Offset = new Vec2(0, 2), Blur = 8f, Color = new ColorRGBA(0, 0, 0, 0.45f) };
+el.Style.Text = new TextStyle { Align = TextAlign.Center, Color = ColorRGBA.White };
+```
+
+## Параметры
+
+| Параметр | Тип | По умолчанию | Описание |
+|---|---|---|---|
+| `Margin` | `Thickness` | `Thickness.Zero` | Внешний отступ. |
+| `Padding` | `Thickness` | `Thickness.Zero` | Внутренний отступ. |
+| `Width` | `float` | `0` | Явная ширина; 0 = авто. Округляется к ближайшему кратному 3 (см. «Кратность 3» ниже). |
+| `Height` | `float` | `0` | Явная высота; 0 = авто. Та же кратность 3. |
+| `MinHeight` | `float` | `0` | Нижняя граница высоты, когда `Height` не задан. |
+| `Mode` | `StyleMode` (`Styled`\|`Sprite`) | `Styled` | Путь оформления; на практике переключается наличием `Sprite` автоматически. |
+| `Background` | `Fill` | `null` | Заливка фона (`null` = из темы). |
+| `Radius` | `BorderRadius?` (`None`\|`Small`\|`Middle`\|`Large`) | `null` | Скругление углов; пиксели — из темы. |
+| `BorderWidth` | `BorderWidth?` (`None`\|`Small`\|`Middle`\|`Large`) | `null` | Толщина рамки. |
+| `BorderColor` | `ColorRGBA?` | `null` | Цвет сплошной рамки. |
+| `BorderFill` | `Fill` | `null` | Заливка рамки (для градиента рамки отдельно от фона). |
+| `Shadow` | `BoxShadow` | `null` | Тень под элементом. |
+| `Sprite` | `SpriteFrame` | `null` | Спрайт-рамка (9-slice); см. страницу «Спрайт-рамка и тайлинг». При наличии — фон/бордюр/радиус/градиент из этого же `Style` игнорируются. |
+| `AlignItems` | `AlignItems` (`Start`\|`Center`\|`End`\|`Stretch`) | `Stretch` | Выравнивание детей по поперечной оси (для контейнеров). |
+| `AlignSelf` | `AlignItems?` (те же значения, что у `AlignItems` выше) | `null` | Перекрытие выравнивания для конкретного ребёнка (аналог CSS `align-self`). |
+| `JustifyContent` | `JustifyContent` (`Start`\|`Center`\|`End`\|`SpaceBetween`\|`SpaceAround`\|`SpaceEvenly`) | `Start` | Распределение детей по главной оси. |
+| `Gap` | `float` | `0` | Зазор между детьми контейнера. |
+| `Left`/`Top`/`Right`/`Bottom` | `float?` | `null` | Абсолютное позиционирование относительно родителя (аналог CSS left/top/right/bottom). |
+| `Anchor` | `Anchor` (`TopLeft`\|`TopCenter`\|`TopRight`\|`MiddleLeft`\|`MiddleCenter`\|`MiddleRight`\|`BottomLeft`\|`BottomCenter`\|`BottomRight`) | `TopLeft` | Точка привязки, когда смещения не заданы — все 9 положений сетки 3×3. |
+| `OverflowX`/`OverflowY` | `Overflow` (`Visible`\|`Clip`\|`Scroll`) | `Visible` | Поведение при переполнении. |
+| `Text` | `TextStyle` | `null` | Стиль текста (размер/цвет/выравнивание/тень); см. таблицу ниже. |
+| `Animation` | `string` | `null` | Строка-спека анимации (например `"pulse 1.2 loop"`); см. раздел «Анимации». |
+
+### TextStyle (поле `Style.Text`)
+
+| Параметр | Тип | По умолчанию | Описание |
+|---|---|---|---|
+| `Size` | `FontSize` (`Tiny`\|`Small`\|`Medium`) | `Small` | Нативный размер шрифта RimWorld. |
+| `Weight` | `FontWeight` (`Normal`\|`Bold`) | `Normal` | Жирность. |
+| `Color` | `ColorRGBA` | `White` | Цвет текста. |
+| `Align` | `TextAlign` (`Left`\|`Center`\|`Right`) | `Left` | Горизонтальное выравнивание. |
+| `VAlign` | `VerticalAlign` (`Top`\|`Middle`\|`Bottom`) | `Top` | Вертикальное выравнивание. |
+| `Wrap` | `bool` | `true` | Перенос строк. |
+| `FontFamily` | `string` | `null` | Имя шрифта ОС; `null` = нативный шрифт игры. |
+| `PixelSize` | `float` | `0` | Точный размер в пикселях поверх `Size`; 0 = натуральный. Надёжен от `Tiny`/`Small`, не от `Medium` (нативное ограничение RimWorld). |
+| `ShadowOffset` | `Vec2` | `(1,1)` | Смещение тени текста. |
+| `ShadowColor` | `ColorRGBA` | прозрачный | Цвет тени; альфа 0 = тени нет. |
+
+### Fill (поле `Style.Background`/`BorderFill`)
+
+| Параметр | Тип | Описание |
+|---|---|---|
+| `Kind` | `FillKind` (`None`\|`Solid`\|`Gradient`\|`Image`) | Тип заливки. |
+| `Color` | `ColorRGBA` | Цвет для `Solid`. |
+| `Direction` | `GradientDirection` (`Vertical`\|`Horizontal`\|`Diagonal`) | Направление градиента. |
+| `Stops` | `GradientStop[]` | Точки градиента (offset 0..1, цвет). |
+| `SpriteKey` | `string` | Ключ текстуры для `Image`. |
+| `Fit` | `ImageFit` (`Stretch`\|`Cover`\|`Contain`\|`Auto`) | Масштабирование картинки. |
+| `ImageAnchor` | `Vec2` | Точка привязки картинки 0..1 (0.5,0.5 = центр). |
+| `ImageTint` | `ColorRGBA` | Тонирование картинки. |
+| `BackColor` | `ColorRGBA` | Подложка под картинкой (если у неё есть прозрачность). |
+
+## Кратность 3 (для `Width`/`Height`)
+
+Явно заданные `Width`/`Height` округляются к ближайшему кратному 3 единицам. Причина —
+декоративный модуль спрайт-тайлинга: 3 единицы = 12px на текстуре, и при тайлинге грани/фон
+размножаются целыми плитками без обрезки декора. Отступы (`Margin`/`Padding`) кратности не
+подчиняются. Округление — `Math.Round(v/3, MidpointRounding.AwayFromZero) * 3`:
+
+| Вход | Результат |
+|---|---|
+| 1 | 0 |
+| 2 | 3 |
+| 28 | 27 |
+| 29 | 30 |
+| 30 | 30 |
+| 31 | 30 |
+
+**Важная ловушка**: `Width = 0` трактуется системой как «не задано / авто» (см. ниже про
+`StyleMerge`). Любое значение из диапазона `(0, 1.5)` округляется в `0` и потому НЕЗАМЕТНО
+превращается в авто-ширину, а не в маленький явный размер — например `Style.Width = 1f`
+фактически будет проигнорирован. Порог переключения — `1.5`: при `v/3 = 0.5` округление
+`AwayFromZero` даёт `1` → результат `3`; при `v` чуть меньше `1.5` результат `0`.
+
+## Точный порядок резолва (StyleMerge)
+
+Итоговый стиль элемента на каждом кадре собирается из двух явных слоёв: **код элемента** (`Style`)
+поверх **слота темы** (уже включающего в себя приоритет «файл темы поверх зашитых дефолтов» —
+это заложено ещё на этапе загрузки темы, до того как элемент вообще видит слот). Правило «что
+считается незаданным» зависит от типа поля:
+
+- Ссылочные/`nullable` поля (`Background`, `Radius`, `BorderWidth`, `BorderColor`, `BorderFill`)
+  — обычное `own ?? слот`.
+- `Text` (`TextStyle`) мержится ЦЕЛИКОМ ОБЪЕКТОМ, не по отдельным полям — если у элемента задан
+  свой `Style.Text`, весь `TextStyle` слота (размер, выравнивание, шрифт, тень…) отбрасывается
+  разом, а не мержится точечно.
+- `Width`/`Height` — «не задано» = `0` (см. ловушку выше).
+- `Margin`/`Padding` — любая ОТРИЦАТЕЛЬНАЯ компонента = явный `Off` (обрывает цепочку в ноль);
+  любая НЕНУЛЕВАЯ компонента = «задано» (берём `own`); все нули — проваливаемся в слот.
+- `AlignItems`/`JustifyContent` — «не задано» определяется сравнением с ДЕФОЛТНЫМ значением
+  enum'а (`Stretch`/`Start`). Следствие: **нельзя явно задать `AlignItems.Stretch` или
+  `JustifyContent.Start`, чтобы переопределить непустой слот темы** — такое значение неотличимо
+  от «не задано» и всё равно провалится на слот.
+- `Gap` — отрицательное значение = явный `Off` → `0`; положительное — берём `own`; ноль —
+  проваливаемся в слот.
+- `Animation` — `own ?? слот`, но **пустая строка `""` — не `null`**, поэтому явно перекрывает и
+  выключает анимацию слота (в JSON темы это соответствует значению `"off"`).
+- Позиционирование (`Left/Top/Right/Bottom/Anchor`) и переполнение (`OverflowX/OverflowY`) —
+  берутся ТОЛЬКО из кода элемента, тема на них не влияет вообще (в JSON темы не поддерживаются).
+- `AlignSelf` в общем механизме резолва не участвует вовсе — читается напрямую из сырого
+  `Style` ребёнка внутри `FlexBox` (см. страницу «FlexBox»), слот темы задать его не может.
+
+## Стили
+
+Это и есть модель стилей — страница описывает саму себя. Слоты темы для конкретных компонентов
+перечислены на страницах этих компонентов.
+
+## Методы
+
+| Метод | Возвращает | Описание |
+|---|---|---|
+| `Clone()` | `Style` | Глубокая копия (включая вложенный `Text`). |
+| `static SnapUnit(float v)` | `float` | Округление размера к ближайшему кратному 3 (0/отрицательное = не трогать). |
+| `SetExactSize(float w, float h)` | `void` | Служебная установка ТОЧНОГО размера без кратности 3 — для вычисленных размеров раскладки (зоны окон, панели оверлеев), где округление дало бы зазор/налезание. |
+| `HasVisualBackground` (свойство) | `bool` | Есть ли видимый фон (для отрисовки). |
+| `HasVisualBorder` (свойство) | `bool` | Есть ли видимая рамка. |
+
+## События
+
+Не применимо — `Style` это данные, не интерактивный элемент.
+
+## Поддержка механик
+
+| Механика | Поддержка | Пояснение |
+|---|---|---|
+| Слоты темы | Да | Всё, что не задано явно (`null`), добирается из слота темы компонента. |
+| Спрайт-рамка | Да | Поле `Sprite`; см. отдельную страницу «Спрайт-рамка и тайлинг». |
+| Анимация строкой | Да | Поле `Animation`. |
+| «Явное выключение» (`off`) | Да | `Fill.Off`, `BoxShadow.Off`, `BorderWidth.None` обрывают цепочку приоритетов. |
+
+
+---
+
+[Оглавление](../index_ru.md) - Стили и спрайты | Пред.: [FlexBox](../01-grid/03_flexbox_ru.md) | След.: [SpriteFrame — спрайт-рамка и тайлинг](02_spriteframe_ru.md) | [English](01_style_en.md)
+
+## Поддержать автора
+Если тебе нравится RimUI Framework, можешь поддержать разработку:
+
+[DonationAlerts](https://www.donationalerts.com/r/klimprog)
+[Boosty](https://boosty.to/klimprog/donate)
+
+**USDT (TRC20):** `TA4zq9F4TTrSQXjEESMBk8juQMGNLXX4B5`
+
+Спасибо! ❤️

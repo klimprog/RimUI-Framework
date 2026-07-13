@@ -1,0 +1,56 @@
+{
+  "name": "RimUI Default (sprites)",
+
+  "_comment": "Набор стилей со СПРАЙТАМИ (ТЗ 0.2 §4). Спрайт задаётся полем sprite в слоте стиля: строка 'КлючАтласа [N]' (N = размер угла/грани, единицы; из плитки берётся N*4 px, лист = 3x3 плитки). Рамочные компоненты (9-slice) — N задан; плоские (бокс/кружок/ручка/бейдж) — без N (рисуются целиком). Палитра/цвета — из зашитых дефолтов (как в default).",
+
+  "checkbox": { "box": { "sprite": "checkbox/box_off" }, "box_on": { "sprite": "checkbox/box_on" }, "check": { "sprite": "checkbox/check" } },
+  "radio": { "circle": { "sprite": "radio/circle_off" }, "circle_on": { "sprite": "radio/circle_on" }, "dot": { "sprite": "radio/dot" } },
+  "switch": {
+    "track": { "sprite": "switch/track_off 3" },
+    "track_on": { "sprite": "switch/track_on 3" },
+    "knob": { "sprite": "switch/knob" }
+  },
+  "slider": {
+    "track": { "sprite": "slider/track 2" },
+    "fill": { "sprite": "slider/fill 2" },
+    "handle": { "sprite": "slider/handle" }
+  },
+
+  "input": {
+    "frame": { "sprite": "input/frame 3" },
+    "frame_focus": { "sprite": "input/frame_focus 3" }
+  },
+  "button": { "sprite": "button/bg 3" },
+  "tag": { "sprite": "tag/bg 3" },
+  "chip": { "sprite": "chip/bg 3" },
+  "badge": { "sprite": "badge/bg" },
+  "message": { "sprite": "message/panel 3" },
+  "progressbar": {
+    "track": { "sprite": "progressbar/track 2" },
+    "fill": { "sprite": "progressbar/fill 2" }
+  },
+  "meter": { "track": { "sprite": "meter/track 2" } },
+
+  "select": {
+    "field": { "sprite": "input/frame 3" },
+    "field_focus": { "sprite": "input/frame_focus 3" },
+    "panel": { "sprite": "select/panel 3" }
+  },
+  "list": { "frame": { "sprite": "list/frame 3" } },
+  "tree": { "frame": { "sprite": "tree/frame 3" } },
+  "table": { "frame": { "sprite": "table/frame 3" } },
+  "accordion": { "header": { "sprite": "accordion/header 3" } },
+  "menu": { "sprite": "menu/panel 3" },
+  "panel": { "frame": { "sprite": "panel/frame 3" } },
+  "tabs": {
+    "tab": { "sprite": "tabs/tab 3" },
+    "tab_active": { "sprite": "tabs/tab_active 3" }
+  },
+  "colorpicker": { "panel": { "sprite": "colorpicker/panel 3" } },
+  "inputnumber": { "button": { "sprite": "inputnumber/button 2" } },
+
+  "window": { "sprite": "window/panel 5" },
+  "modal": { "sprite": "modal/panel 5" },
+  "messagebox": { "sprite": "messagebox/panel 5" },
+  "confirm": { "sprite": "confirm/panel 5" }
+}

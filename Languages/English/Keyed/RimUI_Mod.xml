@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimUI.Mod.ThemeLoadFallback>[RimUI] Could not load the Default theme ({0}); using built-in defaults.</RimUI.Mod.ThemeLoadFallback>
+  <RimUI.Mod.Settings.ExamplesDesc>A live showcase of every framework component, built entirely with RimUI itself.</RimUI.Mod.Settings.ExamplesDesc>
+  <RimUI.Mod.Settings.OpenExamplesButton>Open component showcase</RimUI.Mod.Settings.OpenExamplesButton>
+  <RimUI.Mod.Settings.SkeletonDesc>Visually assemble a UI grid and export ready-to-use C# code.</RimUI.Mod.Settings.SkeletonDesc>
+  <RimUI.Mod.Settings.OpenSkeletonButton>Open UI builder</RimUI.Mod.Settings.OpenSkeletonButton>
+  <RimUI.Mod.Settings.ExportThemeDesc>Copy a complete theme template, including every slot and key, so you can customize it.</RimUI.Mod.Settings.ExportThemeDesc>
+  <RimUI.Mod.Settings.ExportThemeButton>Copy theme template</RimUI.Mod.Settings.ExportThemeButton>
+  <RimUI.Dbg.Examples>Component showcase</RimUI.Dbg.Examples>
+  <RimUI.Dbg.ExportTemplate>Export theme template</RimUI.Dbg.ExportTemplate>
+  <RimUI.Dbg.Skeleton>UI builder</RimUI.Dbg.Skeleton>
+</LanguageData>

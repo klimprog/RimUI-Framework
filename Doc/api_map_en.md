@@ -1,0 +1,221 @@
+![RimUI Framework](../About/Preview.png)
+
+**RimUI Framework** — core `0.6.7` · mod `0.1.0` · RimWorld `1.6`
+
+---
+
+# API map
+
+[Table of contents](index_en.md) | [Русский](api_map_ru.md)
+
+- Grid
+  - [Grid](01-grid/01_grid_en.md)
+    - Methods: `Cell(GridCell cell)`, `Cell(int colSpan, UiElement content)`, `Cell(int colSpan, int rowSpan, UiElement content)`, `int CellCount (свойство)`, `GridCell CellAt(int i)`, `RemoveCellAt(int i)`, `ClearCells()`
+  - [GridCell](01-grid/02_gridcell_en.md)
+    - Methods: `GridCell(int colSpan = 12, int rowSpan = 1) (конструктор)`, `With(UiElement content)`, `SetContent(UiElement content)`
+    - Events: `OnDragStart`, `OnDragOut`, `OnDropIn`
+  - [FlexBox](01-grid/03_flexbox_en.md)
+    - Methods: `FlexBox(Axis axis = Axis.Column) (конструктор)`, `Add(UiElement child, float grow = 0f)`, `RemoveChildAt(int i)`, `InsertChild(int i, UiElement el, float grow = 0f)`
+    - Events: `OnDragStart`, `OnDragOut`, `OnDropIn`
+- Styles and sprites
+  - [Style — style model](02-styles/01_style_en.md)
+    - Methods: `Clone()`, `static SnapUnit(float v)`, `SetExactSize(float w, float h)`, `HasVisualBackground (свойство)`, `HasVisualBorder (свойство)`
+  - [SpriteFrame — sprite frames and tiling](02-styles/02_spriteframe_en.md)
+    - Methods: `SpriteFrame() (конструктор)`, `SpriteFrame(string atlasKey) (конструктор)`, `SpriteFrame(string atlasKey, float corner) (конструктор)`, `SpriteFrame(string atlasKey, Thickness edge, Thickness reserve) (конструктор)`, `static SpriteFrame.Off (поле)`
+- Themes
+  - [Theme — themes and theme files](03-themes/01_theme_en.md)
+    - Methods: `ThemeManager.LoadTheme(string name, string modRootDir, out string error)`, `Theme.Slot(string path)`, `Theme.RadiusPx(BorderRadius r)`, `Theme.BorderPx(BorderWidth w)`, `static Theme.BuildDefault()`
+- Animations
+  - [Animations — module registry](04-animations/01_animations_en.md)
+    - Methods: `static Register(string name, IUiAnimation anim)`, `static Get(string name)`, `static EaseOut(float k)`, `static EaseIn(float k)`, `static EaseInOut(float k)`
+  - [Animated](04-animations/02_animated_en.md)
+    - Methods: `Animated(UiElement child = null) (конструктор)`, `Play(string name, float duration = 0.3f, bool loop = false, float param = 0f, float delay = 0f)`, `static Wrap(UiElement child, string name, float duration = 0.3f, bool loop = false, float param = 0f)`, `Restart()`
+  - [StyleAnimation](04-animations/03_styleanimation_en.md)
+    - Methods: `static Install()`, `static Parse(string spec)`
+- Forms
+  - [Label](05-forms/01_label_en.md)
+    - Methods: `Label(string content = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Checkbox](05-forms/02_checkbox_en.md)
+    - Methods: `Checkbox(string label = null, Action<bool> onChange = null) (конструктор)`, `GetValue()`, `SetValue(bool v)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [RadioButton](05-forms/03_radiobutton_en.md)
+    - Methods: `RadioButton(string label, object value, Action<object> onSelect = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `OnSelect`, `Events.SelectionChanged`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [ToggleSwitch](05-forms/04_toggleswitch_en.md)
+    - Methods: `ToggleSwitch(Action<bool> onChange = null, string label = null) (конструктор)`, `GetValue()`, `SetValue(bool v)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [ToggleButton](05-forms/05_togglebutton_en.md)
+    - Methods: `ToggleButton(string onText, string offText = null, Action<bool> onChange = null) (конструктор)`, `GetValue()`, `SetValue(bool v)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Slider](05-forms/06_slider_en.md)
+    - Methods: `Slider(float min, float max, Action<float> onChange = null) (конструктор)`, `GetValue()`, `SetValue(float v)`, `GetValueHi()`, `SetValueHi(float v)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `OnChangeHi`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [InputText](05-forms/07_inputtext_en.md)
+    - Methods: `InputText(Action<string> onChange = null) (конструктор)`, `GetValue()`, `SetValue(string v)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [InputNumber](05-forms/08_inputnumber_en.md)
+    - Methods: `InputNumber(double min, double max, Action<double> onChange = null) (конструктор)`, `GetValue()`, `SetValue(double v)`, `SetStyle(string path, string value)`
+    - Events: `OnChangeNum`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Textarea](05-forms/09_textarea_en.md)
+    - Methods: `Textarea(Action<string> onChange = null) (конструктор)`, `GetValue()`, `SetValue(string v)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Field](05-forms/10_field_en.md)
+    - Methods: `Field() (конструктор)`, `Field(Axis axis) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [InputBase](05-forms/11_inputbase_en.md)
+    - Methods: `Focus(LayoutContext ctx)`, `StateOf(UiState s)`, `GetValue()`, `SetValue(string v)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `OnCommit`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+- Selection
+  - [Select&lt;T&gt;](06-selection/01_select_en.md)
+    - Methods: `Select() (конструктор)`, `Select(IEnumerable<T> values, Action<T> onChange = null) (конструктор)`, `Select(IEnumerable<SelectItem<T>> items, Action<T> onChange = null) (конструктор)`, `GetSelected()`, `SetSelected(T value)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [MultiSelect&lt;T&gt;](06-selection/02_multiselect_en.md)
+    - Methods: `MultiSelect() (конструктор)`, `MultiSelect(IEnumerable<SelectItem<T>> items, Action<ICollection<T>> onChange = null) (конструктор)`, `MultiSelect(IEnumerable<T> values, Action<ICollection<T>> onChange = null) (конструктор)`, `GetSelected()`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [MultiTreeSelect](06-selection/03_multitreeselect_en.md)
+    - Methods: `GetSelected()`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [SelectButton&lt;T&gt;](06-selection/04_selectbutton_en.md)
+    - Methods: `SelectButton() (конструктор)`, `SelectButton(IEnumerable<T> values, Action<T> onChange = null) (конструктор)`, `GetSelected()`, `SetSelected(T value)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [TreeSelect](06-selection/05_treeselect_en.md)
+    - Methods: `GetSelected()`, `SetSelected(TreeItem item)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [CascadeSelect](06-selection/06_cascadeselect_en.md)
+    - Methods: `CascadeSelect(Action<object> onChange = null) (конструктор)`, `GetSelected()`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [ColorPicker](06-selection/07_colorpicker_en.md)
+    - Methods: `ColorPicker(Action<ColorRGBA> onChange = null) (конструктор)`, `GetValue()`, `SetValue(ColorRGBA v)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+- Indicators
+  - [Tag](07-indicators/01_tag_en.md)
+    - Methods: `Tag(string content = null, Severity severity = Severity.Info) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Chip](07-indicators/02_chip_en.md)
+    - Methods: `Chip(string content = null, Action onRemove = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `OnRemove`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Badge](07-indicators/03_badge_en.md)
+    - Methods: `Badge(Func<string> value = null) (конструктор)`, `static Count(Func<int> count)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [InlineMessage](07-indicators/04_inlinemessage_en.md)
+    - Methods: `InlineMessage(Severity severity, string content = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `OnClose`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [MeterGroup](07-indicators/05_metergroup_en.md)
+    - Methods: `MeterGroup() (конструктор)`, `MeterGroup(IEnumerable<MeterSegment> segments) (конструктор)`, `Add(float value, ColorRGBA color, string label = null)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [ProgressBar](07-indicators/06_progressbar_en.md)
+    - Methods: `ProgressBar(Func<float> value = null) (конструктор)`, `GetValue()`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [ProgressSpinner](07-indicators/07_progressspinner_en.md)
+    - Methods: `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [CircularProgress](07-indicators/08_circularprogress_en.md)
+    - Methods: `CircularProgress(Func<float> value = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [SegmentProgress](07-indicators/09_segmentprogress_en.md)
+    - Methods: `SegmentProgress(Func<float> value = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Divider](07-indicators/10_divider_en.md)
+    - Methods: `Divider(bool vertical = false, float thickness = 1f, ColorRGBA? color = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+- Containers
+  - [Panel](08-containers/01_panel_en.md)
+    - Methods: `Panel(string title = null, UiElement body = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Accordion](08-containers/02_accordion_en.md)
+    - Methods: `Section(string title, UiElement body, bool startOpen = false)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Tabs](08-containers/03_tabs_en.md)
+    - Methods: `Tab(string title, UiElement body, bool disabled = false)`, `GetSelected()`, `SetSelected(int index)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.SelectionChanged`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+- Data
+  - [ListBox&lt;T&gt;](09-data/01_listbox_en.md)
+    - Methods: `GetSelected()`, `SetSelected(int index)`, `SetStyle(string path, string value)`
+    - Events: `OnSelect`, `OnActivate`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [OrderList&lt;T&gt;](09-data/02_orderlist_en.md)
+    - Methods: `OrderList(Action<List<T>> onReorder = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `OnReorder`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [PickList&lt;T&gt;](09-data/03_picklist_en.md)
+    - Methods: `PickList(Action<List<T>, List<T>> onChange = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Tree](09-data/04_tree_en.md)
+    - Methods: `FocusSearch()`, `St(UiState s)`, `GetSelected()`, `SetStyle(string path, string value)`
+    - Events: `OnSelect`, `OnSelectKeyed`, `OnToggle`, `OnCheck`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [DataTable](09-data/05_datatable_en.md)
+    - Methods: `DataTable(params TableColumn[] columns) (конструктор)`, `Bind<T>(IEnumerable<T> data, Func<T, UiElement[]> rowBuilder)`, `AddRow(params UiElement[] cells)`, `St(UiState s)`, `GetSelected()`, `SetStyle(string path, string value)`
+    - Events: `OnRowClick`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [TreeTable](09-data/06_treetable_en.md)
+    - Methods: `TreeTable(params TableColumn[] columns) (конструктор)`, `St(UiState s)`, `GetSelected()`, `SetStyle(string path, string value)`
+    - Events: `OnSelect`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`, `Events.SelectionChanged`
+  - [ScrollBox](09-data/07_scrollbox_en.md)
+    - Methods: `ScrollBox() (конструктор)`, `ScrollBox(UiElement child) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+- Overlays and menus
+  - [Button](10-overlays/01_button_en.md)
+    - Methods: `Button() (конструктор)`, `static Make(string text, string leftIcon = null, string rightIcon = null)`, `SetStyle(string path, string value)`
+    - Events: `OnClick`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Popover](10-overlays/02_popover_en.md)
+    - Methods: `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [DropdownMenu](10-overlays/03_dropdownmenu_en.md)
+    - Methods: `AddItem(MenuItem item)`, `OpenAt(UiState s, Vec2 pos)`, `SetStyle(string path, string value)`
+    - Events: `MenuItem.OnClick`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Menu](10-overlays/04_menu_en.md)
+    - Methods: `AddItem(MenuItem item)`, `AddHeader(string text)`, `AddSeparator()`, `SetStyle(string path, string value)`
+    - Events: `MenuItem.OnClick`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [ContextMenu](10-overlays/05_contextmenu_en.md)
+    - Methods: `ContextMenu(UiElement target = null) (конструктор)`, `AddItem(MenuItem item)`, `SetStyle(string path, string value)`
+    - Events: `MenuItem.OnClick`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click`, `Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [TooltipBox](10-overlays/06_tooltipbox_en.md)
+    - Methods: `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Icon](10-overlays/07_icon_en.md)
+    - Methods: `Icon(string iconKey) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Icons](10-overlays/08_icons_en.md)
+    - Methods: `static Get(int index, float size = 0f)`, `static Rect(int index)`, `static Configure(string atlasKey, int cell, int columns)`, `static ResetConfig()`
+  - [Text](10-overlays/09_text_en.md)
+    - Methods: `Text(string content) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+- Windows
+  - [UiWindow](11-windows/01_uiwindow_en.md)
+    - Methods: `UiWindow(UiElement root, Theme theme = null) (конструктор)`, `Show()`, `InitialSize (override, свойство)`
+  - [ModalWindow](11-windows/02_modalwindow_en.md)
+    - Methods: `ModalWindow(UiElement body = null, Theme theme = null) (конструктор)`, `InitialSize (override, свойство)`
+    - Events: `OnClose`
+  - [MessageWindow](11-windows/03_messagewindow_en.md)
+    - Methods: `MessageWindow(string title, UiElement body, string buttonText = "ОК", Button button = null, Theme theme = null) (конструктор)`, `static OfText(string title, string text, string buttonText = "ОК", float width = 340f)`
+  - [ConfirmWindow](11-windows/04_confirmwindow_en.md)
+    - Methods: `ConfirmWindow(string title, UiElement body, string acceptText = "Да", string declineText = "Отмена", Button accept = null, Button decline = null, Theme theme = null) (конструктор)`, `static OfText(string title, string text, Action onAccept, Action onDecline = null, float width = 340f)`
+    - Events: `OnAccept`, `OnDecline`
+- Display
+  - [ImageBox](12-display/01_imagebox_en.md)
+    - Methods: `ImageBox(string textureKey = null) (конструктор)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [CustomDraw](12-display/02_customdraw_en.md)
+    - Methods: `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+  - [Gallery](12-display/03_gallery_en.md)
+    - Methods: `GetSelected()`, `SetSelected(int index)`, `SetStyle(string path, string value)`
+    - Events: `OnChange`, `Events.SelectionChanged`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+- Audio
+  - [AudioPlayer](13-audio/01_audioplayer_en.md)
+    - Methods: `AudioPlayer() (конструктор)`, `LoadFolder(string absDir)`, `Load(IList<string> paths)`, `ListNames()`, `Play(int index)`, `Play()`, `Pause()`, `Next()`, `Prev()`, `Seek(float deltaSec)`, `Dispose()`
+- Charts
+  - [Chart - shared chart base](14-charts/01_chart_en.md)
+    - Methods: `SeriesColor(int i)`, `LoadJson(string json, out string error)`, `static NiceMax(float max)`, `static Fmt(float v)`, `SetStyle(string path, string value)`
+    - Events: `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+- NodeCanvas
+  - [NodeCanvas](15-nodecanvas/01_nodecanvas_en.md)
+    - Methods: `Serialize()`, `Deserialize(string json, out string error)`, `SetStyle(string path, string value)`
+    - Events: `Changed`, `OnConfigure`, `ConfirmDelete`, `Events.HoverEnter / Events.HoverLeave`, `Events.Hover`, `Events.Click / Events.RightClick`, `Events.Scroll`, `Events.DisabledChanged`
+## Support the author
+If you enjoy RimUI Framework, you can support its development here:
+
+[DonationAlerts](https://www.donationalerts.com/r/klimprog)
+[Boosty](https://boosty.to/klimprog/donate)
+
+**USDT (TRC20):** `TA4zq9F4TTrSQXjEESMBk8juQMGNLXX4B5`
+
+Thank you! ❤️

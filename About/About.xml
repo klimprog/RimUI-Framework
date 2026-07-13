@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimUI Framework</name>
+  <author>klimprog</author>
+  <packageId>klimprog.rimui</packageId>
+  <modVersion>0.1.0</modVersion>
+  <url>https://github.com/klimprog/RimUI-Framework</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>RimUI Framework — библиотека для мододелов RimWorld для быстрого построения интерфейсов: 12-колоночная сетка, стили (отступы, фон/градиент/изображение, бордюр, скругление, тень), темы. Не патчит ваниль, не требует Harmony.
+
+Сам по себе мод ничего в игру не добавляет — это зависимость для других модов.</description>
+</ModMetaData>
