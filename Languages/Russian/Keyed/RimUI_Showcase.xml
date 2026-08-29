@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <RimUI.Showcase.Nav.Grid>Сетка</RimUI.Showcase.Nav.Grid>
   <RimUI.Showcase.Nav.Grid.Columns>12 колонок</RimUI.Showcase.Nav.Grid.Columns>
@@ -263,6 +263,13 @@
   <RimUI.Showcase.TreeTable.Rice>Рис</RimUI.Showcase.TreeTable.Rice>
   <RimUI.Showcase.TreeTable.Meat>Мясо</RimUI.Showcase.TreeTable.Meat>
   <RimUI.Showcase.TreeTable.Venison>Оленина</RimUI.Showcase.TreeTable.Venison>
+  <RimUI.Showcase.ScrollBox.Desc>Прокрутка любого содержимого: списков, таблиц, широких схем. Работает на уровне ядра — дети раскладываются со сдвигом на прокрутку, отрисовка обрезается клип-зоной. Горизонтальная прокрутка включается флагом Horizontal (по умолчанию выключена, чтобы контент переносился, а не уезжал вбок).</RimUI.Showcase.ScrollBox.Desc>
+  <RimUI.Showcase.ScrollBox.Vertical>Вертикальная (по умолчанию)</RimUI.Showcase.ScrollBox.Vertical>
+  <RimUI.Showcase.ScrollBox.Horizontal>Горизонтальная: Horizontal = true</RimUI.Showcase.ScrollBox.Horizontal>
+  <RimUI.Showcase.ScrollBox.Both>Обе оси: колесо крутит вертикаль, Shift + колесо — горизонталь</RimUI.Showcase.ScrollBox.Both>
+  <RimUI.Showcase.ScrollBox.Row>Строка {0}</RimUI.Showcase.ScrollBox.Row>
+  <RimUI.Showcase.ScrollBox.Col>Колонка {0}</RimUI.Showcase.ScrollBox.Col>
+  <RimUI.Showcase.ScrollBox.Cell>R{0} C{1}</RimUI.Showcase.ScrollBox.Cell>
   <RimUI.Showcase.TreeTable.Desc>Таблица, где первая колонка — раскрывающееся дерево, а остальные — обычные ячейки данных. Сортировка по «Категория»/«Кол-во» переставляет только соседние строки внутри одного родителя, а фильтр по «Категория» ищет среди листьев дерева.</RimUI.Showcase.TreeTable.Desc>
   <RimUI.Showcase.TreeTable.TreeTableLabel>дерево-таблица</RimUI.Showcase.TreeTable.TreeTableLabel>
   <RimUI.Showcase.Button.Desc>Кнопка: готовые цветовые пресеты, иконки слева и/или справа от текста, отключённое состояние и всплывающая подсказка (тултип). По ширине не растягивается — только по своему содержимому.</RimUI.Showcase.Button.Desc>
@@ -498,4 +505,107 @@
   <RimUI.Showcase.Chart.Heatmap.ColonistC>Колонист В</RimUI.Showcase.Chart.Heatmap.ColonistC>
   <RimUI.Showcase.Chart.Heatmap.Desc>Матрица «колонист × день»: цвет каждой ячейки — интерполяция между MinColor и MaxColor в зависимости от значения ячейки, чем ближе к максимуму, тем ближе цвет к MaxColor.</RimUI.Showcase.Chart.Heatmap.Desc>
   <RimUI.Showcase.Chart.Heatmap.Caption>Часы отдыха за неделю</RimUI.Showcase.Chart.Heatmap.Caption>
+  <RimUI.Showcase.Nav.Styles.Cursor>Курсор</RimUI.Showcase.Nav.Styles.Cursor>
+  <RimUI.Showcase.Style.Cursor.Desc>Style.Cursor задаёт СМЫСЛ курсора (стрелка / рука / перетаскивание / каретка / четыре направления ресайза), а текстуру и точку клика подставляет тема. Unity не даёт модам доступа к курсорам ОС, поэтому фреймворк везёт свои ассеты, нарисованные в системном стиле — белое тело с чёрным контуром. Побеждает самый глубокий элемент под мышью; вид применяется один раз за кадр.</RimUI.Showcase.Style.Cursor.Desc>
+  <RimUI.Showcase.Style.Cursor.Kinds>Виды курсора</RimUI.Showcase.Style.Cursor.Kinds>
+  <RimUI.Showcase.Style.Cursor.Arrow>Arrow — обычная стрелка</RimUI.Showcase.Style.Cursor.Arrow>
+  <RimUI.Showcase.Style.Cursor.Hand>Hand — кликабельное</RimUI.Showcase.Style.Cursor.Hand>
+  <RimUI.Showcase.Style.Cursor.Move>Move — перетаскивание</RimUI.Showcase.Style.Cursor.Move>
+  <RimUI.Showcase.Style.Cursor.Text>Text — ввод текста</RimUI.Showcase.Style.Cursor.Text>
+  <RimUI.Showcase.Style.Cursor.Resize>Изменение размера: четыре направления</RimUI.Showcase.Style.Cursor.Resize>
+  <RimUI.Showcase.Style.Cursor.ResizeH>ResizeH — по горизонтали</RimUI.Showcase.Style.Cursor.ResizeH>
+  <RimUI.Showcase.Style.Cursor.ResizeV>ResizeV — по вертикали</RimUI.Showcase.Style.Cursor.ResizeV>
+  <RimUI.Showcase.Style.Cursor.ResizeNWSE>ResizeNWSE — диагональ «\»</RimUI.Showcase.Style.Cursor.ResizeNWSE>
+  <RimUI.Showcase.Style.Cursor.ResizeNESW>ResizeNESW — диагональ «/»</RimUI.Showcase.Style.Cursor.ResizeNESW>
+  <RimUI.Showcase.Style.Cursor.NestArrow>...а этот блок возвращает стрелку (Arrow)</RimUI.Showcase.Style.Cursor.NestArrow>
+  <RimUI.Showcase.Style.Cursor.Auto>Без настройки: курсор из слотов темы</RimUI.Showcase.Style.Cursor.Auto>
+  <RimUI.Showcase.Style.Cursor.Button>Кнопка</RimUI.Showcase.Style.Cursor.Button>
+  <RimUI.Showcase.Style.Cursor.ButtonOff>Недоступна</RimUI.Showcase.Style.Cursor.ButtonOff>
+  <RimUI.Showcase.Style.Cursor.Input>Поле ввода</RimUI.Showcase.Style.Cursor.Input>
+  <RimUI.Showcase.Style.Cursor.Nest>Вложенность: побеждает глубочайший</RimUI.Showcase.Style.Cursor.Nest>
+  <RimUI.Showcase.Style.Cursor.NestOuter>Панель заявляет руку</RimUI.Showcase.Style.Cursor.NestOuter>
+  <RimUI.Showcase.Style.Cursor.NestInner>...а поле внутри — каретку</RimUI.Showcase.Style.Cursor.NestInner>
+  <RimUI.Showcase.OrgChart.Desc>Иерархическая схема: карточки узлов, соединительные линии, сворачивание поддеревьев (кружок на кромке карточки) и выбор узла: одиночный, множественный (MultiSelect) и каскадный на всё поддерево (SelectChildren). Растёт вниз или вправо (Orientation). Выбор отключается целиком (Selectable у схемы) либо у отдельного узла (Selectable у узла). Схема легко становится шире окна, поэтому её заворачивают в ScrollBox с горизонтальной прокруткой — сам компонент не скроллит.</RimUI.Showcase.OrgChart.Desc>
+  <RimUI.Showcase.OrgChart.Basic>Базовая схема: клик по кружку сворачивает ветвь, клик по карточке выбирает</RimUI.Showcase.OrgChart.Basic>
+  <RimUI.Showcase.OrgChart.Horizontal>Горизонтальный рост + множественный выбор с каскадом: клик по отделу отмечает и его подчинённых, повторный клик снимает</RimUI.Showcase.OrgChart.Horizontal>
+  <RimUI.Showcase.OrgChart.Template>Свой шаблон карточки (NodeTemplate)</RimUI.Showcase.OrgChart.Template>
+  <RimUI.Showcase.OrgChart.Governor>Губернатор</RimUI.Showcase.OrgChart.Governor>
+  <RimUI.Showcase.OrgChart.Supply>Снабжение</RimUI.Showcase.OrgChart.Supply>
+  <RimUI.Showcase.OrgChart.Cook>Повар</RimUI.Showcase.OrgChart.Cook>
+  <RimUI.Showcase.OrgChart.Farmer>Фермер</RimUI.Showcase.OrgChart.Farmer>
+  <RimUI.Showcase.OrgChart.Hauler>Грузчик</RimUI.Showcase.OrgChart.Hauler>
+  <RimUI.Showcase.OrgChart.Defense>Оборона</RimUI.Showcase.OrgChart.Defense>
+  <RimUI.Showcase.OrgChart.Shooter>Стрелок</RimUI.Showcase.OrgChart.Shooter>
+  <RimUI.Showcase.OrgChart.Melee>Боец ближнего боя</RimUI.Showcase.OrgChart.Melee>
+  <RimUI.Showcase.OrgChart.Craft>Производство</RimUI.Showcase.OrgChart.Craft>
+  <RimUI.Showcase.OrgChart.Smith>Кузнец</RimUI.Showcase.OrgChart.Smith>
+  <RimUI.Showcase.OrgChart.Tailor>Портной</RimUI.Showcase.OrgChart.Tailor>
+  <RimUI.Showcase.OrgChart.T.Lead>Ирина</RimUI.Showcase.OrgChart.T.Lead>
+  <RimUI.Showcase.OrgChart.T.LeadRole>руководитель</RimUI.Showcase.OrgChart.T.LeadRole>
+  <RimUI.Showcase.OrgChart.T.Medic>Марк</RimUI.Showcase.OrgChart.T.Medic>
+  <RimUI.Showcase.OrgChart.T.MedicRole>врач</RimUI.Showcase.OrgChart.T.MedicRole>
+  <RimUI.Showcase.OrgChart.T.Scout>Лана</RimUI.Showcase.OrgChart.T.Scout>
+  <RimUI.Showcase.OrgChart.T.ScoutRole>разведчик</RimUI.Showcase.OrgChart.T.ScoutRole>
+  <RimUI.Showcase.Rating.Desc>Звёздочный рейтинг: оценка задаётся кликом. Значение дробное, поэтому компонент показывает и половинки, и внешние оценки вроде «4.2 из 5». Повторный клик по текущей оценке снимает её (Cancel), при наведении звёзды показывают, что поставит клик.</RimUI.Showcase.Rating.Desc>
+  <RimUI.Showcase.Rating.Basic>Обычный: пять звёзд, значение во внешней переменной</RimUI.Showcase.Rating.Basic>
+  <RimUI.Showcase.Rating.Half>Половинки (AllowHalf): клик в левую половину звезды</RimUI.Showcase.Rating.Half>
+  <RimUI.Showcase.Rating.Ten>Десять звёзд поменьше</RimUI.Showcase.Rating.Ten>
+  <RimUI.Showcase.Rating.ReadOnly>Только показ (ReadOnly): оценка 4.5</RimUI.Showcase.Rating.ReadOnly>
+  <RimUI.Showcase.Paginator.Desc>Постраничная навигация: стрелки в начало/назад/вперёд/в конец, номера страниц с многоточием, опциональный выбор размера страницы. Нумерация с единицы — как её видит пользователь. Компонент не владеет данными: он сообщает выбранный номер, выборку делает ваш код.</RimUI.Showcase.Paginator.Desc>
+  <RimUI.Showcase.Paginator.WithData>С данными: список ниже перестраивается по номеру страницы</RimUI.Showcase.Paginator.WithData>
+  <RimUI.Showcase.Paginator.Compact>Компактный: без «в начало/в конец», три номера</RimUI.Showcase.Paginator.Compact>
+  <RimUI.Showcase.Paginator.Many>Много страниц: первая и последняя видны всегда</RimUI.Showcase.Paginator.Many>
+  <RimUI.Showcase.Paginator.Item>Запись {0}</RimUI.Showcase.Paginator.Item>
+  <RimUI.Showcase.Paginator.Summary>{0}-{1} из {2}</RimUI.Showcase.Paginator.Summary>
+  <RimUI.Showcase.Timeline.Desc>Лента событий: маркеры на оси, линии между ними, содержимое сбоку. Вертикальная и горизонтальная ориентации; содержимое кладётся с одной стороны либо чередуется. Слева от оси — «противоположная сторона» для даты, времени или статуса.</RimUI.Showcase.Timeline.Desc>
+  <RimUI.Showcase.Timeline.Basic>Обычная: даты слева, события справа</RimUI.Showcase.Timeline.Basic>
+  <RimUI.Showcase.Timeline.Alternate>Чередование сторон (Alternate)</RimUI.Showcase.Timeline.Alternate>
+  <RimUI.Showcase.Timeline.Colors>Свои цвета маркеров и сторона Start</RimUI.Showcase.Timeline.Colors>
+  <RimUI.Showcase.Timeline.Horizontal>Горизонтальная лента</RimUI.Showcase.Timeline.Horizontal>
+  <RimUI.Showcase.Timeline.Landing>Высадка на планету</RimUI.Showcase.Timeline.Landing>
+  <RimUI.Showcase.Timeline.Shelter>Построено убежище</RimUI.Showcase.Timeline.Shelter>
+  <RimUI.Showcase.Timeline.Raid>Первый рейд пиратов</RimUI.Showcase.Timeline.Raid>
+  <RimUI.Showcase.Timeline.Trade>Торговый караван</RimUI.Showcase.Timeline.Trade>
+  <RimUI.Showcase.Timeline.Day1>День 1</RimUI.Showcase.Timeline.Day1>
+  <RimUI.Showcase.Timeline.Day3>День 3</RimUI.Showcase.Timeline.Day3>
+  <RimUI.Showcase.Timeline.Day12>День 12</RimUI.Showcase.Timeline.Day12>
+  <RimUI.Showcase.Timeline.Day20>День 20</RimUI.Showcase.Timeline.Day20>
+  <RimUI.Showcase.Timeline.Done>Заготовка ресурсов завершена</RimUI.Showcase.Timeline.Done>
+  <RimUI.Showcase.Timeline.Now>Идёт строительство</RimUI.Showcase.Timeline.Now>
+  <RimUI.Showcase.Timeline.Next>Запуск корабля</RimUI.Showcase.Timeline.Next>
+  <RimUI.Showcase.Timeline.Stage1>Этап 1</RimUI.Showcase.Timeline.Stage1>
+  <RimUI.Showcase.Timeline.Stage2>Этап 2</RimUI.Showcase.Timeline.Stage2>
+  <RimUI.Showcase.Timeline.Stage3>Этап 3</RimUI.Showcase.Timeline.Stage3>
+  <RimUI.Showcase.Stepper.Desc>Пошаговый мастер: полоса заголовков с индикатором пройденного, содержимое активного шага, переходы вперёд и назад. В линейном режиме прыжок вперёд через шаг запрещён, а шаг может не отпустить дальше, пока не выполнено условие (CanLeave). Назад уйти можно всегда — иначе незаполненная форма стала бы ловушкой.</RimUI.Showcase.Stepper.Desc>
+  <RimUI.Showcase.Stepper.Linear>Линейный с валидацией: шаги 2 и 3 не отпускают дальше, пока не заполнены</RimUI.Showcase.Stepper.Linear>
+  <RimUI.Showcase.Stepper.FreeLabel>Свободный режим: клик по любому шагу, без кнопок</RimUI.Showcase.Stepper.FreeLabel>
+  <RimUI.Showcase.Stepper.Back>Назад</RimUI.Showcase.Stepper.Back>
+  <RimUI.Showcase.Stepper.Next>Далее</RimUI.Showcase.Stepper.Next>
+  <RimUI.Showcase.Stepper.Finish>Готово</RimUI.Showcase.Stepper.Finish>
+  <RimUI.Showcase.Stepper.Done>Мастер завершён</RimUI.Showcase.Stepper.Done>
+  <RimUI.Showcase.Stepper.Step1>Начало</RimUI.Showcase.Stepper.Step1>
+  <RimUI.Showcase.Stepper.Step1Body>Первый шаг ничего не требует — просто нажмите «Далее».</RimUI.Showcase.Stepper.Step1Body>
+  <RimUI.Showcase.Stepper.Step2>Имя</RimUI.Showcase.Stepper.Step2>
+  <RimUI.Showcase.Stepper.NameHint>Пока поле пустое, кнопка «Далее» не сработает.</RimUI.Showcase.Stepper.NameHint>
+  <RimUI.Showcase.Stepper.NamePlaceholder>Название колонии</RimUI.Showcase.Stepper.NamePlaceholder>
+  <RimUI.Showcase.Stepper.Step3>Согласие</RimUI.Showcase.Stepper.Step3>
+  <RimUI.Showcase.Stepper.AgreeHint>Без отметки дальше не пустит, но назад вернуться можно.</RimUI.Showcase.Stepper.AgreeHint>
+  <RimUI.Showcase.Stepper.Agree>Согласен со всем сразу</RimUI.Showcase.Stepper.Agree>
+  <RimUI.Showcase.Stepper.Step4>Итог</RimUI.Showcase.Stepper.Step4>
+  <RimUI.Showcase.Stepper.Step4Body>Последний шаг: кнопка «Далее» превращается в «Готово».</RimUI.Showcase.Stepper.Step4Body>
+  <RimUI.Showcase.Stepper.Free1>Обзор</RimUI.Showcase.Stepper.Free1>
+  <RimUI.Showcase.Stepper.Free1Body>Шаги независимы, поэтому переключаться можно в любом порядке.</RimUI.Showcase.Stepper.Free1Body>
+  <RimUI.Showcase.Stepper.Free2>Настройки</RimUI.Showcase.Stepper.Free2>
+  <RimUI.Showcase.Stepper.Free2Body>Свой значок вместо номера задаётся полем Icon.</RimUI.Showcase.Stepper.Free2Body>
+  <RimUI.Showcase.Stepper.Free3>Проверка</RimUI.Showcase.Stepper.Free3>
+  <RimUI.Showcase.Stepper.Free3Body>Кнопки навигации отключены — управление только заголовками.</RimUI.Showcase.Stepper.Free3Body>
+  <RimUI.Showcase.ConfirmPopup.Desc>Компактное подтверждение прямо у элемента-цели: сообщение и две кнопки, без модального окна на весь экран. Уместно для обратимых локальных действий; для необратимого и важного остаётся ConfirmWindow, которое нельзя не заметить. Закрывается кликом мимо, по кнопке или повторным кликом по цели.</RimUI.Showcase.ConfirmPopup.Desc>
+  <RimUI.Showcase.ConfirmPopup.Label>Подтверждение у кнопки: снизу и справа</RimUI.Showcase.ConfirmPopup.Label>
+  <RimUI.Showcase.ConfirmPopup.Delete>Удалить запись</RimUI.Showcase.ConfirmPopup.Delete>
+  <RimUI.Showcase.ConfirmPopup.DeleteMsg>Удалить выбранную запись? Действие нельзя отменить.</RimUI.Showcase.ConfirmPopup.DeleteMsg>
+  <RimUI.Showcase.ConfirmPopup.Reset>Восстановить</RimUI.Showcase.ConfirmPopup.Reset>
+  <RimUI.Showcase.ConfirmPopup.ResetMsg>Вернуть счётчик к трём записям?</RimUI.Showcase.ConfirmPopup.ResetMsg>
+  <RimUI.Showcase.ConfirmPopup.Yes>Да</RimUI.Showcase.ConfirmPopup.Yes>
+  <RimUI.Showcase.ConfirmPopup.No>Нет</RimUI.Showcase.ConfirmPopup.No>
+  <RimUI.Showcase.ConfirmPopup.Left>Осталось записей: {0}</RimUI.Showcase.ConfirmPopup.Left>
 </LanguageData>

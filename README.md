@@ -4,7 +4,7 @@
 
 [Русский](README_ru.md)
 
-`Core 0.6.2` · `Mod 0.1.0` · RimWorld `1.6`
+`Core 0.7.9` · `Mod 0.2.0` · RimWorld `1.6`
 
 ## Overview
 
@@ -20,6 +20,26 @@ active mods use it, having RimUI installed will not affect the game.
 
 - **Steam Workshop:** [Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3763759074)
 - **Documentation:** [Doc/index_en.md](Doc/index_en.md)
+
+## Compatibility
+
+RimUI Framework is a library, not a content mod. Which means:
+
+- **It does not patch the game.** Harmony is not required, vanilla classes are not overridden and
+  game windows are not replaced. The framework draws only inside windows opened by the mod using it.
+- **It adds and changes no defs.** Not a single item, building, incident or research appears in the
+  game — the `Defs` folder is empty.
+- **It writes nothing to the save.** No `GameComponent`, no `WorldComponent`, no `Scribe` fields:
+  removing the mod does not corrupt existing saves.
+- **No runtime dependencies.** Just the framework's own code, no third-party libraries.
+- **Supports RimWorld 1.6.**
+
+**Load order:** RimUI Framework must load **before** the mods that use it — they declare the
+dependency and `loadAfter` in their own `About.xml`.
+
+**Conflicts.** The library does not interfere with anyone else's interface, so it has nothing to
+conflict over with other UI mods. When several mods use RimUI Framework, they all work with one
+shared copy: the assembly is not duplicated.
 
 ## Tools for modders
 
