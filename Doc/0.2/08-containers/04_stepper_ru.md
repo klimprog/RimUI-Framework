@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.7.9` · мод `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.7.15` · мод `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -51,6 +51,7 @@ new Stepper { Linear = false, ShowNav = false };
 
 | Параметр | Тип | По умолчанию | Описание |
 |---|---|---|---|
+| `Key` | `string` | `null` | Ключ состояния в ID-store (см. «Ключ и состояние» на странице «Архитектура»). Нужен, если элемент пересоздаётся между кадрами или его состояние надо сохранить между пересозданиями. |
 | `Steps` | `List<StepperItem>` (readonly) | пусто | Шаги мастера. |
 | `Active` | `Func<int>` | `null` | Источник активного шага (индекс **с 0**). `null` = шаг живёт в ID-store. |
 | `OnChange` | `Action<int>` | `null` | Активный шаг изменился. |

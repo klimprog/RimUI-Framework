@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.7.9` · mod `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.7.15` · mod `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -26,6 +26,7 @@ new ToggleButton("Pause", "Play", null);   // Arbitrary paired actions work too.
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
+| `Key` | `string` | `null` | State key in the ID store (see "Keys and state" on the Architecture page). Needed when the element is recreated between frames, or when its state must survive such recreation. |
 | `OnText` | `string` | — | Caption in the on state. |
 | `OffText` | `string` | `OnText` when omitted | Caption in the off state. |
 | `OnIcon` | `int` | `-1` | `Icons` index for the on state. |

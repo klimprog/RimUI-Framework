@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.7.9` · мод `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.7.15` · мод `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -28,6 +28,7 @@ pick.Target.Items.Add("Нож");
 
 | Параметр | Тип | По умолчанию | Описание |
 |---|---|---|---|
+| `Key` | `string` | `null` | Ключ состояния в ID-store (см. «Ключ и состояние» на странице «Архитектура»). Нужен, если элемент пересоздаётся между кадрами или его состояние надо сохранить между пересозданиями. |
 | `Source` | `ListBox<T>` (readonly) | новый `ListBox<T>()` | Список «доступные». |
 | `Target` | `ListBox<T>` (readonly) | новый `ListBox<T>()` | Список «выбранные». |
 | `OnChange` | `Action<List<T>, List<T>>` | `null` | Вызывается после каждого переноса, передаёт `(Source.Items, Target.Items)`. |

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.7.9` · mod `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.7.15` · mod `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -14,16 +14,21 @@ This page explains the model everything else is built on. You do not need it to 
 out of ready-made components, but you do need it if you are writing your own component, chasing
 strange behaviour, or running into performance limits.
 
-## Immediate mode: the tree lives for one frame
+## Immediate mode: the frame is recomputed
 
 A conventional (retained) UI is made of long-lived objects: you create a button, put it into a
 panel, and there it stays. Change the data and you must remember to call `button.SetText(...)`,
 or the screen keeps showing the old value.
 
-Here it is the other way round. **Every frame you describe from scratch what the interface should
-look like right now, based on the current data.** The element tree is built, used and thrown away.
-The "data changed but the screen still shows the old thing" mismatch cannot happen: the screen
-always shows what you described this frame.
+Here it works differently. **Every frame the interface is recomputed from the current data.**
+Values are not copied into elements: components read them through delegates (`Func<T>`) at draw
+time. The "data changed but the screen still shows the old thing" mismatch cannot happen: the
+screen always shows what is in your data right now.
+
+> **The element tree itself usually lives on.** The normal path is to build it once
+> (`UiWindow.Root` is set when the window is created) and then leave it alone: there is no need to
+> rebuild the objects, because the data is re-read every frame anyway. Recreating the tree is
+> allowed, but then widget state has to be tied to explicit keys — see "Keys and state" below.
 
 Hence the key consequence: **you never synchronise the UI with your data, because there is
 nothing to fall out of sync.** No change subscriptions, no "please refresh me".
@@ -56,11 +61,9 @@ A single pass could not centre an element without already knowing its width.
 
 ## Where state lives: the ID store
 
-Since the tree dies every frame, where do you keep the scroll position, the text in an input
-field, the expanded branches of a tree? Not in the elements themselves — they will not survive
-the frame.
-
-That kind of state lives in the **ID store** (`UiState`), a "keyed by a stable id" container:
+The scroll position, the text in an input field, the expanded branches of a tree — that is a
+widget's internal machinery. It lives not in the element's fields but in the **ID store**
+(`UiState`), a "keyed by a stable id" container:
 
 ```csharp
 public sealed class MyState : WidgetState
@@ -68,12 +71,35 @@ public sealed class MyState : WidgetState
     public float Scroll;
 }
 
-MyState st = ctx.State.GetOrCreate(ctx.State.MakeId(Key) + "/my", () => new MyState());
+MyState st = ctx.State.GetOrCreate(ctx.State.MakeId(StateKey) + "/my", () => new MyState());
 ```
 
-The key (`Key`) **must be stable across frames** — it is how the state is found again. If the key
-changes, the framework sees a brand new widget with fresh state every frame: the scroll jumps back
-to the top, the input field loses its caret, hover never fires.
+State then survives not only the frame but the recreation of the element — provided the key stayed
+the same.
+
+## Keys and state
+
+`StateKey` (a property of `UiElement`) is **the explicit `Key` if one is set, otherwise an
+automatic key tied to the element object itself**. Hence a simple rule:
+
+| Situation | Is `Key` needed |
+|---|---|
+| The tree is built once and lives on (the normal path) | No, the automatic key is enough |
+| Elements are recreated every frame | **Yes** — otherwise every new object starts with fresh state |
+| State must survive the window or list being rebuilt | **Yes** |
+| A predictable id is wanted (debugging, programmatic control) | Yes |
+
+If a `Key` is set, it **must be stable across frames**: a key derived from the time, a random
+number or the current sort order creates a brand new widget every frame, with fresh state — the
+scroll jumps back to the top, the input field loses its caret, hover never fires.
+
+The key must also be **unique among siblings**: two lists sharing `Key = "list"` in one window
+share one state and scroll in lockstep.
+
+> **Writing your own component? Reach for state through `StateKey`, never through `Key`.**
+> `UiState.MakeId(null)` hands out numbers by call count, and a component touches its state twice
+> per frame (in `Measure` and again in `Emit`) — with `Key = null` it would read the state under
+> one number and write it under another. `StateKey` prevents exactly that.
 
 **Important: your mod's data does not belong in the ID store.** Only the widget's internal
 mechanics live there. The colonist list, the selected item, the text being edited — those are your
@@ -111,8 +137,8 @@ you specified explicitly.
 
 ## What this means for performance
 
-The tree is rebuilt every frame — roughly 60 times per second. Everything you do in the building
-code happens 60 times per second.
+A frame is computed roughly 60 times per second, and everything that runs inside it runs 60 times
+per second: value delegates, handlers, and your own content-building code if you keep it there.
 
 **Do not do this:**
 

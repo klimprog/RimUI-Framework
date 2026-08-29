@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.7.9` · мод `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.7.15` · мод `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -28,6 +28,7 @@ var pop2 = new Popover { Trigger = Button.Make("Панель"), Placement = Over
 
 | Параметр | Тип | По умолчанию | Описание |
 |---|---|---|---|
+| `Key` | `string` | `null` | Ключ состояния в ID-store (см. «Ключ и состояние» на странице «Архитектура»). Нужен, если элемент пересоздаётся между кадрами или его состояние надо сохранить между пересозданиями. |
 | `Trigger` | `UiElement` | `null` | Якорь в потоке (кликабельная зона, открывает/закрывает панель). |
 | `Content` | `UiElement` | `null` | Содержимое панели (любой элемент). |
 | `Placement` | `OverlayPlacement` (`Bottom`\|`Top`\|`Right`\|`Left`) | `Bottom` | Сторона раскрытия относительно якоря. |

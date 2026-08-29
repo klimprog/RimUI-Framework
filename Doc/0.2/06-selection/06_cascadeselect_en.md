@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.7.9` · mod `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.7.15` · mod `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -26,6 +26,7 @@ cas.Items.Add(new CascadeItem("Harsh").Sub(new CascadeItem("Tundra")));
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
+| `Key` | `string` | `null` | State key in the ID store (see "Keys and state" on the Architecture page). Needed when the element is recreated between frames, or when its state must survive such recreation. |
 | `Items` | `List<CascadeItem>` | empty | Root cascade items. |
 | `OnChange` | `Action<object>` | `null` | Receives the selected leaf's `CascadeItem.Value`. |
 | `Placeholder` | `string` | `"-"` | Text shown when nothing is selected. |

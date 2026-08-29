@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.7.9` · mod `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.7.15` · mod `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -24,6 +24,7 @@ new ColorPicker(c => _picked = c) { Value = () => _picked };
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
+| `Key` | `string` | `null` | State key in the ID store (see "Keys and state" on the Architecture page). Needed when the element is recreated between frames, or when its state must survive such recreation. |
 | `Value` | `Func<ColorRGBA>` | `null` | Source of the current color. |
 | `OnChange` | `Action<ColorRGBA>` | `null` | Change callback. |
 | `Disabled` | `bool` | `false` | Disables the control. |

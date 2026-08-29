@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.7.9` · мод `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.7.15` · мод `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -50,6 +50,7 @@ export.OnClick = () => GUIUtility.systemCopyBuffer = canvas.Serialize();
 
 | Параметр | Тип | По умолчанию | Описание |
 |---|---|---|---|
+| `Key` | `string` | `null` | Ключ состояния в ID-store (см. «Ключ и состояние» на странице «Архитектура»). Нужен, если элемент пересоздаётся между кадрами или его состояние надо сохранить между пересозданиями. |
 | `BlockTypes` | `List<CanvasBlockType>` | пусто | Типы блоков и правила связей для них. |
 | `LinkTypes` | `List<CanvasLinkType>` | пусто | Типы связей (имя + цвет). |
 | `Groups` | `List<CanvasGroup>` | пусто | Группы блоков (имя + цвет бордюра). |

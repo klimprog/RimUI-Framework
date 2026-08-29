@@ -3,7 +3,7 @@
   <name>RimUI Framework</name>
   <author>klimprog</author>
   <packageId>klimprog.rimui</packageId>
-  <modVersion>0.2.0</modVersion>
+  <modVersion>0.2.1</modVersion>
   <url>https://github.com/klimprog/RimUI-Framework</url>
   <supportedVersions>
     <li>1.6</li>

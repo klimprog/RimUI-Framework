@@ -4,7 +4,7 @@
 
 [Русский](README_ru.md)
 
-`Core 0.7.9` · `Mod 0.2.0` · RimWorld `1.6`
+`Core 0.7.15` · `Mod 0.2.1` · RimWorld `1.6`
 
 ## Overview
 
@@ -28,7 +28,7 @@ RimUI Framework is a library, not a content mod. Which means:
 - **It does not patch the game.** Harmony is not required, vanilla classes are not overridden and
   game windows are not replaced. The framework draws only inside windows opened by the mod using it.
 - **It adds and changes no defs.** Not a single item, building, incident or research appears in the
-  game — the `Defs` folder is empty.
+  game: the mod has no `Defs` folder at all.
 - **It writes nothing to the save.** No `GameComponent`, no `WorldComponent`, no `Scribe` fields:
   removing the mod does not corrupt existing saves.
 - **No runtime dependencies.** Just the framework's own code, no third-party libraries.

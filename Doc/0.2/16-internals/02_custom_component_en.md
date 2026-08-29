@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.7.9` · mod `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.7.15` · mod `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -46,7 +46,7 @@ namespace MyMod.Ui
         }
 
         private SpoilerState St(UiState s)
-            => s != null ? s.GetOrCreate(s.MakeId(Key) + "/spoiler", () => new SpoilerState()) : null;
+            => s != null ? s.GetOrCreate(s.MakeId(StateKey) + "/spoiler", () => new SpoilerState()) : null;
 
         public bool IsOpen(LayoutContext ctx)
         {
@@ -152,7 +152,7 @@ body.Add(new Text("Second line"));
 
 var sp = new Spoiler
 {
-    Key = "settings_advanced",       // a stable key is mandatory, see below
+    Key = "settings_advanced",       // needed when the element is recreated; see below
     Title = "Advanced",
     Content = body,
     Style = { Gap = 6f, Padding = new Thickness(4f) }
@@ -201,22 +201,28 @@ That way your component follows whatever theme the user has and looks like it be
 > themes are built, which makes initialisation order matter. The palette above, plus your own
 > public `Style` fields for whatever the user should be able to configure, is simpler and safer.
 
-### State: the ID store and a stable `Key`
+### State: the ID store and `StateKey`
 
 Whether the spoiler is open is internal widget mechanics, so it lives in the ID store:
 
 ```csharp
 private sealed class SpoilerState : WidgetState { public bool Open; }
 
-s.GetOrCreate(s.MakeId(Key) + "/spoiler", () => new SpoilerState())
+s.GetOrCreate(s.MakeId(StateKey) + "/spoiler", () => new SpoilerState())
 ```
 
 The `"/spoiler"` suffix keeps your state apart from anyone else's under the same key.
 
-**`Key` must be stable across frames.** Something like `"sp" + i` inside a loop is fine as long as
-`i` is stable. A key derived from the time, a random number or the current sort order is a source
-of bugs that are hard to pin down: state "disappears", the spoiler snaps shut on its own, hover
-never triggers.
+**Reach for state through `StateKey`, not through `Key`.** `StateKey` is the `Key` when one is set,
+otherwise an automatic key tied to the element object itself. The difference matters:
+`MakeId(null)` hands out numbers BY CALL COUNT, and a component touches its state twice per frame —
+in `Measure` and again in `Emit`. With `Key = null` it would read the state under one number and
+write it under another, which looks exactly like "the component does not work without a key".
+
+**If the user does set a `Key`, it must be stable across frames.** Something like `"sp" + i` inside
+a loop is fine as long as `i` is stable. A key derived from the time, a random number or the
+current sort order is a source of bugs that are hard to pin down: state "disappears", the spoiler
+snaps shut on its own.
 
 Note the `IsOpen(ctx)` / `SetOpen(ctx, open)` pair. The state lives in `UiState`, but the user of
 your component should not have to reach in there — give them methods instead. The whole framework
@@ -280,7 +286,7 @@ and whether the element files a cursor request both depend on it.
 - [ ] Spacing goes through `EffMargin` / `MeasurePadding` / `ContentRect`, and `Measure` agrees
       with where you actually draw.
 - [ ] Colours come from the theme, not from constants.
-- [ ] State lives in the ID store under a stable `Key`, exposed through methods.
+- [ ] State lives in the ID store under `StateKey` (not `Key`), exposed through methods.
 - [ ] Input is handled in `Emit`, with a `Disabled` check.
 - [ ] Children are drawn with `EmitStyled`, not `Emit`.
 - [ ] Buffers (`Style`, `TextStyle`, lists) are created once in fields, not per frame.
@@ -294,8 +300,12 @@ place. The single most common first-component mistake.
 copy. Reuse one buffer across rows in a loop and every row ends up with the last row's style.
 Either keep one buffer per row, or do not mutate it between commands.
 
-**An unstable `Key`.** State is lost every frame: scrolling jumps, the spoiler closes,
-`HoverEnter` fires nonstop.
+**Reaching for state through `Key` instead of `StateKey`.** With no key set, `MakeId(null)` returns
+different numbers in `Measure` and in `Emit`: the component reads one state and writes another. The
+symptom is "it only works if I set a Key".
+
+**An unstable `Key`.** If a key is set but changes between frames, state is lost: scrolling jumps,
+the spoiler closes, `HoverEnter` fires nonstop.
 
 **Doing data work in `Emit`.** A map scan, a file read or LINQ over a large list inside frame
 building runs 60 times per second. Compute it ahead of time and hand the component a ready value

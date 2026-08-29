@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.7.9` · mod `0.2.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.7.15` · mod `0.2.1` · RimWorld `1.6`
 
 ---
 
@@ -25,6 +25,7 @@ tsel.TreePanel.Nodes.Add(new TreeItem("Weapons").Sub(new TreeItem("Ranged").Sub(
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
+| `Key` | `string` | `null` | State key in the ID store (see "Keys and state" on the Architecture page). Needed when the element is recreated between frames, or when its state must survive such recreation. |
 | `TreePanel` | `Tree` (readonly) | new `Tree()` | Option tree; see `Tree`. |
 | `OnChange` | `Action<TreeItem>` | `null` | Receives the entire selected node, not just its value. |
 | `Placeholder` | `string` | `"-"` | Text shown when nothing is selected. |
