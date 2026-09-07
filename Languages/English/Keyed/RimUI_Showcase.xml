@@ -1,14 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <RimUI.Showcase.Nav.Grid>Grid</RimUI.Showcase.Nav.Grid>
   <RimUI.Showcase.Nav.Grid.Columns>12 columns</RimUI.Showcase.Nav.Grid.Columns>
   <RimUI.Showcase.Nav.Grid.CellSpan>Merged cells</RimUI.Showcase.Nav.Grid.CellSpan>
   <RimUI.Showcase.Nav.Grid.NestedFlex>Nesting + Flex</RimUI.Showcase.Nav.Grid.NestedFlex>
+  <RimUI.Showcase.Nav.Grid.Wrap>Wrapping</RimUI.Showcase.Nav.Grid.Wrap>
+  <RimUI.Showcase.Nav.Grid.AutoHeight>Auto height</RimUI.Showcase.Nav.Grid.AutoHeight>
+  <RimUI.Showcase.Nav.Grid.Events>Event priority</RimUI.Showcase.Nav.Grid.Events>
+  <RimUI.Showcase.Grid.Events.Desc>A click goes to the deepest element under the cursor: a nested button takes it from the block it sits in. Among overlapping siblings the priority comes from zOrder, which drives both draw order and who receives the click and the cursor.</RimUI.Showcase.Grid.Events.Desc>
+  <RimUI.Showcase.Grid.AutoHeight.Desc>autoHeight makes height follow content, both for table rows and for containers: RowHeight becomes a minimum rather than the size. An explicit height disables the flag; maxHeight caps the growth.</RimUI.Showcase.Grid.AutoHeight.Desc>
+  <RimUI.Showcase.Grid.Wrap.Desc>wrapChildren moves children that do not fit the container width onto the next line. Without it they are squeezed to fit. With wrapping, grow stretches items within their own line.</RimUI.Showcase.Grid.Wrap.Desc>
   <RimUI.Showcase.Nav.Styles>Styles</RimUI.Showcase.Nav.Styles>
   <RimUI.Showcase.Nav.Styles.Radius>Corner radius</RimUI.Showcase.Nav.Styles.Radius>
   <RimUI.Showcase.Nav.Styles.Border>Border</RimUI.Showcase.Nav.Styles.Border>
   <RimUI.Showcase.Nav.Styles.Gradients>Gradients</RimUI.Showcase.Nav.Styles.Gradients>
   <RimUI.Showcase.Nav.Styles.Shadows>Shadows</RimUI.Showcase.Nav.Styles.Shadows>
+  <RimUI.Showcase.Nav.Styles.Limits>Size limits</RimUI.Showcase.Nav.Styles.Limits>
+  <RimUI.Showcase.Nav.Styles.Classes>Style classes</RimUI.Showcase.Nav.Styles.Classes>
+  <RimUI.Showcase.Style.Classes.Desc>A class is a named set of properties an element can take on and swap at runtime. Priority follows CSS: code defaults, then the theme, then classes in list order, and above all the style set on the element itself. Declare a class in code (Theme.DefineClass) or in a theme file, where its name starts with '#'.</RimUI.Showcase.Style.Classes.Desc>
+  <RimUI.Showcase.Style.Limits.Desc>minWidth / maxWidth / minHeight / maxHeight clamp the resulting size. They apply both with an explicit width/height and without one; on conflict the minimum wins.</RimUI.Showcase.Style.Limits.Desc>
   <RimUI.Showcase.Nav.Styles.Opacity>Opacity</RimUI.Showcase.Nav.Styles.Opacity>
   <RimUI.Showcase.Nav.Styles.SpriteFrame>Sprite frame (9-slice)</RimUI.Showcase.Nav.Styles.SpriteFrame>
   <RimUI.Showcase.Nav.Styles.Typography>Typography</RimUI.Showcase.Nav.Styles.Typography>
@@ -498,4 +508,239 @@
   <RimUI.Showcase.Chart.Heatmap.ColonistC>Colonist C</RimUI.Showcase.Chart.Heatmap.ColonistC>
   <RimUI.Showcase.Chart.Heatmap.Desc>A colonist × day matrix. Each cell interpolates between MinColor and MaxColor according to its value; values near the maximum approach MaxColor.</RimUI.Showcase.Chart.Heatmap.Desc>
   <RimUI.Showcase.Chart.Heatmap.Caption>Recreation hours this week</RimUI.Showcase.Chart.Heatmap.Caption>
+  <RimUI.Showcase.Common.Block>block</RimUI.Showcase.Common.Block>
+  <RimUI.Showcase.Common.Grow>grow</RimUI.Showcase.Common.Grow>
+  <RimUI.Showcase.Wrap.Seg1>first</RimUI.Showcase.Wrap.Seg1>
+  <RimUI.Showcase.Wrap.Seg2>second</RimUI.Showcase.Wrap.Seg2>
+  <RimUI.Showcase.Wrap.Seg3>third</RimUI.Showcase.Wrap.Seg3>
+  <RimUI.Showcase.Wrap.Seg4>fourth</RimUI.Showcase.Wrap.Seg4>
+  <RimUI.Showcase.Wrap.Seg5>fifth</RimUI.Showcase.Wrap.Seg5>
+  <RimUI.Showcase.Wrap.Seg6>sixth</RimUI.Showcase.Wrap.Seg6>
+  <RimUI.Showcase.Wrap.Seg7>seventh</RimUI.Showcase.Wrap.Seg7>
+  <RimUI.Showcase.Wrap.Tab1>Overview</RimUI.Showcase.Wrap.Tab1>
+  <RimUI.Showcase.Wrap.Tab2>Materials</RimUI.Showcase.Wrap.Tab2>
+  <RimUI.Showcase.Wrap.Tab3>Production</RimUI.Showcase.Wrap.Tab3>
+  <RimUI.Showcase.Wrap.Tab4>Storage</RimUI.Showcase.Wrap.Tab4>
+  <RimUI.Showcase.Wrap.Tab5>Reports</RimUI.Showcase.Wrap.Tab5>
+  <RimUI.Showcase.Wrap.Tab6>Settings</RimUI.Showcase.Wrap.Tab6>
+  <RimUI.Showcase.Wrap.TabBody>Contents of tab</RimUI.Showcase.Wrap.TabBody>
+  <RimUI.Showcase.Wrap.Off>wrapChildren = false - all seven squeeze into one line</RimUI.Showcase.Wrap.Off>
+  <RimUI.Showcase.Wrap.On>wrapChildren = true - the same seven wrap</RimUI.Showcase.Wrap.On>
+  <RimUI.Showcase.Wrap.Grow>wrapChildren together with grow - stretching works within its own line, not across the whole block</RimUI.Showcase.Wrap.Grow>
+  <RimUI.Showcase.Wrap.SegOff>SelectButton, wrapChildren = false - the segments squeeze</RimUI.Showcase.Wrap.SegOff>
+  <RimUI.Showcase.Wrap.SegOn>SelectButton, wrapChildren = true - they wrap onto the next line</RimUI.Showcase.Wrap.SegOn>
+  <RimUI.Showcase.Wrap.Tabs>Tabs, wrapChildren = true - the tab strip wraps and the body moves down with it</RimUI.Showcase.Wrap.Tabs>
+  <RimUI.Showcase.AutoH.Steel>Steel</RimUI.Showcase.AutoH.Steel>
+  <RimUI.Showcase.AutoH.SteelDesc>An ordinary material; it fits on one line.</RimUI.Showcase.AutoH.SteelDesc>
+  <RimUI.Showcase.AutoH.Plate>Plate</RimUI.Showcase.AutoH.Plate>
+  <RimUI.Showcase.AutoH.PlateDesc>A long description that does not fit on one line and wraps onto several: it is exactly what should make the table row grow instead of cutting the text off at a fixed height.</RimUI.Showcase.AutoH.PlateDesc>
+  <RimUI.Showcase.AutoH.Cloth>Cloth</RimUI.Showcase.AutoH.Cloth>
+  <RimUI.Showcase.AutoH.ClothDesc>A short note.</RimUI.Showcase.AutoH.ClothDesc>
+  <RimUI.Showcase.AutoH.ColMaterial>Material</RimUI.Showcase.AutoH.ColMaterial>
+  <RimUI.Showcase.AutoH.ColDesc>Description</RimUI.Showcase.AutoH.ColDesc>
+  <RimUI.Showcase.AutoH.ListShort>A short row</RimUI.Showcase.AutoH.ListShort>
+  <RimUI.Showcase.AutoH.ListLong>A long caption that does not fit the list's width and wraps</RimUI.Showcase.AutoH.ListLong>
+  <RimUI.Showcase.AutoH.ListShort2>Another short one</RimUI.Showcase.AutoH.ListShort2>
+  <RimUI.Showcase.AutoH.TreeStorage>Storage</RimUI.Showcase.AutoH.TreeStorage>
+  <RimUI.Showcase.AutoH.TreeProd>Production</RimUI.Showcase.AutoH.TreeProd>
+  <RimUI.Showcase.AutoH.TreeDeep>A nested node whose long caption runs out of width</RimUI.Showcase.AutoH.TreeDeep>
+  <RimUI.Showcase.AutoH.Shrink>shrink: a block 150 tall with content taller than that. On the left shrink = 1 - the children squeeze to fit; on the right shrink = 0 - they keep their size and go past the bottom border</RimUI.Showcase.AutoH.Shrink>
+  <RimUI.Showcase.AutoH.Panel>Panel: from content / height = 120 / maxHeight = 150</RimUI.Showcase.AutoH.Panel>
+  <RimUI.Showcase.AutoH.ByContent>from content</RimUI.Showcase.AutoH.ByContent>
+  <RimUI.Showcase.AutoH.ScrollBox>ScrollBox in a block 160 tall. On the left autoHeight = false - it fits the block and scrolls; on the right true - it grows to its content and the block clips the excess</RimUI.Showcase.AutoH.ScrollBox>
+  <RimUI.Showcase.AutoH.TableOff>DataTable, autoHeight = false - the row height is fixed and the text is cut off</RimUI.Showcase.AutoH.TableOff>
+  <RimUI.Showcase.AutoH.TableOn>DataTable, autoHeight = true - the row grows to its content</RimUI.Showcase.AutoH.TableOn>
+  <RimUI.Showcase.AutoH.TreeTable>TreeTable, autoHeight = false on the left, true on the right</RimUI.Showcase.AutoH.TreeTable>
+  <RimUI.Showcase.AutoH.ListBox>ListBox, autoHeight = false on the left, true on the right - the long caption wraps</RimUI.Showcase.AutoH.ListBox>
+  <RimUI.Showcase.AutoH.Tree>Tree, autoHeight = false on the left, true on the right. The nested node's caption is wider than the room left after the branch indent</RimUI.Showcase.AutoH.Tree>
+  <RimUI.Showcase.Events.InnerButton>inner button</RimUI.Showcase.Events.InnerButton>
+  <RimUI.Showcase.Events.OuterHint>a click on the block's background counts for the block</RimUI.Showcase.Events.OuterHint>
+  <RimUI.Showcase.Events.CountBlock>block:</RimUI.Showcase.Events.CountBlock>
+  <RimUI.Showcase.Events.CountButton>button:</RimUI.Showcase.Events.CountButton>
+  <RimUI.Showcase.Events.ZLow>ZOrder = 0 (beneath)</RimUI.Showcase.Events.ZLow>
+  <RimUI.Showcase.Events.ZHigh>ZOrder = 5 (on top)</RimUI.Showcase.Events.ZHigh>
+  <RimUI.Showcase.Events.CountLower>lower:</RimUI.Showcase.Events.CountLower>
+  <RimUI.Showcase.Events.CountUpper>upper:</RimUI.Showcase.Events.CountUpper>
+  <RimUI.Showcase.Events.BlockClick>A click on the button is counted by the button alone; a click on the background, by the block alone. The cursor differs too: a caret over the block, a hand over the button</RimUI.Showcase.Events.BlockClick>
+  <RimUI.Showcase.Events.BlockZ>Two overlapping blocks. The green one is declared second and with ZOrder = 5: it is drawn on top and takes the click where they overlap. The red one responds only where the green does not cover it</RimUI.Showcase.Events.BlockZ>
+  <RimUI.Showcase.Nav.Styles.Resize>Resizing</RimUI.Showcase.Nav.Styles.Resize>
+  <RimUI.Showcase.Resize.Title>Resizing with the mouse</RimUI.Showcase.Resize.Title>
+  <RimUI.Showcase.Resize.Desc>Style.Resizable lets a block be resized by its frame. The grab zone is the border itself, so the content stays usable: a button at the edge and a scrollbar are clickable as always. Resizing changes only Style.Width/Height, within Min/Max.</RimUI.Showcase.Resize.Desc>
+  <RimUI.Showcase.Resize.InnerButton>button inside the block</RimUI.Showcase.Resize.InnerButton>
+  <RimUI.Showcase.Resize.ClickTitle>Click</RimUI.Showcase.Resize.ClickTitle>
+  <RimUI.Showcase.Resize.ClickBody>A button inside a resizable block works as usual.</RimUI.Showcase.Resize.ClickBody>
+  <RimUI.Showcase.Resize.AllHint>Drag any side or corner. The size is clamped to 90x50 ... 420x220.</RimUI.Showcase.Resize.AllHint>
+  <RimUI.Showcase.Resize.HorzHint>Only the left and right edges can be dragged.</RimUI.Showcase.Resize.HorzHint>
+  <RimUI.Showcase.Resize.NoBorderHint>No border is set - there is no grab at all.</RimUI.Showcase.Resize.NoBorderHint>
+  <RimUI.Showcase.Resize.FlowHint>This block's width is handed out by the row (Grow = 1): there is no grab horizontally, but there is vertically.</RimUI.Showcase.Resize.FlowHint>
+  <RimUI.Showcase.Resize.OpenWindow>Open a resizable window</RimUI.Showcase.Resize.OpenWindow>
+  <RimUI.Showcase.Resize.WinHint1>Drag the window by any edge or corner. The left and top edges move the position as well: the opposite side stays put.</RimUI.Showcase.Resize.WinHint1>
+  <RimUI.Showcase.Resize.WinHint2>The size you drag out is remembered: the window does not jump back to its content-derived size.</RimUI.Showcase.Resize.WinHint2>
+  <RimUI.Showcase.Resize.WinTitle>Resizable window</RimUI.Showcase.Resize.WinTitle>
+  <RimUI.Showcase.Resize.BlockAll>resizable = All - eight directions; corners outrank sides, and the button inside the block keeps working</RimUI.Showcase.Resize.BlockAll>
+  <RimUI.Showcase.Resize.BlockHorz>resizable = Horizontal - the left and right edges only; at the top and bottom the cursor does not change</RimUI.Showcase.Resize.BlockHorz>
+  <RimUI.Showcase.Resize.BlockNoBorder>no border is set - there is no resizing: dragging an invisible boundary is not discoverable, nobody would guess where it is</RimUI.Showcase.Resize.BlockNoBorder>
+  <RimUI.Showcase.Resize.BlockFlow>a parent outranks its child - the row hands out the width, so there is no grab horizontally; vertically the block resizes</RimUI.Showcase.Resize.BlockFlow>
+  <RimUI.Showcase.Resize.BlockWindow>the window resizes by edges and corners; the dragged size is remembered</RimUI.Showcase.Resize.BlockWindow>
+  <RimUI.Showcase.Limits.MinW>MinWidth 120, narrow content</RimUI.Showcase.Limits.MinW>
+  <RimUI.Showcase.Limits.MaxW>MaxWidth 90 with Width 200</RimUI.Showcase.Limits.MaxW>
+  <RimUI.Showcase.Limits.PlainW>Width 150, no limits</RimUI.Showcase.Limits.PlainW>
+  <RimUI.Showcase.Limits.MinH>MinHeight 70, a single line</RimUI.Showcase.Limits.MinH>
+  <RimUI.Showcase.Limits.MaxH>MaxHeight 40, text taller than the box</RimUI.Showcase.Limits.MaxH>
+  <RimUI.Showcase.Limits.HeightVsMin>Height 90 with MinHeight 120</RimUI.Showcase.Limits.HeightVsMin>
+  <RimUI.Showcase.Limits.LongText>This text is deliberately taller than the block: it takes six or seven lines while the block has room for two. The upper lines show in both cases, but everything below the block's border behaves differently. With overflow: visible the lines keep being drawn and spill onto whatever sits below - the block does not hold them in. With overflow: clip those same lines are cut off exactly at the block's bottom border, as if they had never been there. The difference between the two blocks is this one flag: the sizes, padding, background and the text itself are identical.</RimUI.Showcase.Limits.LongText>
+  <RimUI.Showcase.Limits.OvVisible>visible - the lines continue past the block's border</RimUI.Showcase.Limits.OvVisible>
+  <RimUI.Showcase.Limits.OvClip>clip - the same lines are cut off at the border</RimUI.Showcase.Limits.OvClip>
+  <RimUI.Showcase.Classes.Card>card</RimUI.Showcase.Classes.Card>
+  <RimUI.Showcase.Classes.Block>Clicking a card toggles the "selected" class. The third card carries the "disabled" class: it is declared after selected and therefore wins - selecting it does not highlight it</RimUI.Showcase.Classes.Block>
+  <RimUI.Showcase.Flush.Placeholder>type something</RimUI.Showcase.Flush.Placeholder>
+  <RimUI.Showcase.Flush.Empty>saved: -</RimUI.Showcase.Flush.Empty>
+  <RimUI.Showcase.Flush.Saved>saved:</RimUI.Showcase.Flush.Saved>
+  <RimUI.Showcase.Flush.Save>Save</RimUI.Showcase.Flush.Save>
+  <RimUI.Showcase.Flush.Block>flush() and getText() - the button takes what was typed without waiting for Enter or for focus to be lost; the value is read from the field's state, so it is available even when the field is off-screen</RimUI.Showcase.Flush.Block>
+  <RimUI.Showcase.Cascade.Food>Food</RimUI.Showcase.Cascade.Food>
+  <RimUI.Showcase.Cascade.Bread>Bread</RimUI.Showcase.Cascade.Bread>
+  <RimUI.Showcase.Cascade.Meat>Meat</RimUI.Showcase.Cascade.Meat>
+  <RimUI.Showcase.Cascade.Materials>Materials</RimUI.Showcase.Cascade.Materials>
+  <RimUI.Showcase.Cascade.Steel>Steel</RimUI.Showcase.Cascade.Steel>
+  <RimUI.Showcase.Cascade.Wood>Wood</RimUI.Showcase.Cascade.Wood>
+  <RimUI.Showcase.Cascade.Nothing>nothing selected</RimUI.Showcase.Cascade.Nothing>
+  <RimUI.Showcase.Cascade.PickNode>pick a node</RimUI.Showcase.Cascade.PickNode>
+  <RimUI.Showcase.Cascade.ByButtons>set by the buttons</RimUI.Showcase.Cascade.ByButtons>
+  <RimUI.Showcase.Cascade.PickSteel>Select "Steel"</RimUI.Showcase.Cascade.PickSteel>
+  <RimUI.Showcase.Cascade.Reset>Clear</RimUI.Showcase.Cascade.Reset>
+  <RimUI.Showcase.Cascade.BlockClear>clearable - a "nothing selected" first item that clears the selection</RimUI.Showcase.Cascade.BlockClear>
+  <RimUI.Showcase.Cascade.BlockBranch>selectBranches - the "Materials" branch can be selected itself and stays expandable</RimUI.Showcase.Cascade.BlockBranch>
+  <RimUI.Showcase.Cascade.BlockMulti>multiSelect - a click adds to the set, a second one removes; the caption shows how many</RimUI.Showcase.Cascade.BlockMulti>
+  <RimUI.Showcase.Cascade.BlockApi>SetSelected and Clear from code: the field's caption is taken from the selected item</RimUI.Showcase.Cascade.BlockApi>
+  <RimUI.Showcase.Axis.UnitGeneric>u</RimUI.Showcase.Axis.UnitGeneric>
+  <RimUI.Showcase.Axis.UnitPieces>pcs</RimUI.Showcase.Axis.UnitPieces>
+  <RimUI.Showcase.Axis.UnitHours>h</RimUI.Showcase.Axis.UnitHours>
+  <RimUI.Showcase.Axis.BlockZoom>yMin/yMax/yTickStep and a label format of your own - the axis runs from 20 to 60 in steps of 10, and every label carries its unit</RimUI.Showcase.Axis.BlockZoom>
+  <RimUI.Showcase.Axis.BlockRaw>niceTicks = false - the scale ends exactly at the data maximum (19), which makes the step fractional: 4.75, 9.5, 14.25</RimUI.Showcase.Axis.BlockRaw>
+  <RimUI.Showcase.Axis.BlockNice>niceTicks (the default) - the step is rounded to 1/2/5*10^n and the top is extended to a whole number of steps: labels 0, 5, 10, 15, 20</RimUI.Showcase.Axis.BlockNice>
+  <RimUI.Showcase.Axis.BlockHeat>yMin/yMax - the colour is computed against a 0..10 scale rather than this map's own data, which makes two maps side by side comparable</RimUI.Showcase.Axis.BlockHeat>
+  <RimUI.Showcase.Sort.BlockTable>defaultSortColumn - on first showing, the rows are already ordered by level from highest to lowest; after that the order is set by clicks on the header</RimUI.Showcase.Sort.BlockTable>
+  <RimUI.Showcase.Sort.BlockTree>defaultSortColumn - on first showing, the nodes are already ordered by amount from highest to lowest, within each parent separately</RimUI.Showcase.Sort.BlockTree>
+  <RimUI.Showcase.Header.Launcher>A header of your own: elements around the hamburger, the title and the close button</RimUI.Showcase.Header.Launcher>
+  <RimUI.Showcase.Header.OpenButton>Open a window with a custom header</RimUI.Showcase.Header.OpenButton>
+  <RimUI.Showcase.Header.Body>This window's header adds elements of its own to the built-in ones: a button after the hamburger on the left, a tag beside the title in the centre, and two buttons before "close" on the right. Dragging by the header still works, and pressing the header's buttons does not drag the window.</RimUI.Showcase.Header.Body>
+  <RimUI.Showcase.Header.Title>Custom header</RimUI.Showcase.Header.Title>
+  <RimUI.Showcase.Header.MenuItem>Menu item</RimUI.Showcase.Header.MenuItem>
+  <RimUI.Showcase.Header.LeftButton>Button on the left</RimUI.Showcase.Header.LeftButton>
+  <RimUI.Showcase.Header.BeforeTitle>Button to the left of the title</RimUI.Showcase.Header.BeforeTitle>
+  <RimUI.Showcase.Header.Draft>draft</RimUI.Showcase.Header.Draft>
+  <RimUI.Showcase.Header.Help>Help</RimUI.Showcase.Header.Help>
+  <RimUI.Showcase.Header.Pin>pin</RimUI.Showcase.Header.Pin>
+  <RimUI.Showcase.Header.Pinned>Pinned</RimUI.Showcase.Header.Pinned>
+  <RimUI.Showcase.ScrollBox.Desc>Scrolling for any content: lists, tables, wide diagrams. It works at the core level - children are laid out with a scroll offset and drawing is clipped to the viewport. Horizontal scrolling is switched on by the Horizontal flag (off by default, so that content wraps instead of running off sideways).</RimUI.Showcase.ScrollBox.Desc>
+  <RimUI.Showcase.ScrollBox.Vertical>Vertical (the default)</RimUI.Showcase.ScrollBox.Vertical>
+  <RimUI.Showcase.ScrollBox.Horizontal>Horizontal: Horizontal = true</RimUI.Showcase.ScrollBox.Horizontal>
+  <RimUI.Showcase.ScrollBox.Both>Both axes: the wheel scrolls vertically, Shift + wheel horizontally</RimUI.Showcase.ScrollBox.Both>
+  <RimUI.Showcase.ScrollBox.Row>Row {0}</RimUI.Showcase.ScrollBox.Row>
+  <RimUI.Showcase.ScrollBox.Col>Column {0}</RimUI.Showcase.ScrollBox.Col>
+  <RimUI.Showcase.ScrollBox.Cell>R{0} C{1}</RimUI.Showcase.ScrollBox.Cell>
+  <RimUI.Showcase.Nav.Styles.Cursor>Cursor</RimUI.Showcase.Nav.Styles.Cursor>
+  <RimUI.Showcase.Style.Cursor.Desc>Style.Cursor sets the MEANING of the cursor (arrow / hand / move / caret / four resize directions), while the theme supplies the texture and the hotspot. Unity gives mods no access to OS cursors, so the framework ships its own assets drawn in the system style - a white body with a black outline. The deepest element under the mouse wins; the shape is applied once per frame.</RimUI.Showcase.Style.Cursor.Desc>
+  <RimUI.Showcase.Style.Cursor.Kinds>Cursor kinds</RimUI.Showcase.Style.Cursor.Kinds>
+  <RimUI.Showcase.Style.Cursor.Arrow>Arrow - the ordinary pointer</RimUI.Showcase.Style.Cursor.Arrow>
+  <RimUI.Showcase.Style.Cursor.Hand>Hand - clickable</RimUI.Showcase.Style.Cursor.Hand>
+  <RimUI.Showcase.Style.Cursor.Move>Move - dragging</RimUI.Showcase.Style.Cursor.Move>
+  <RimUI.Showcase.Style.Cursor.Text>Text - text entry</RimUI.Showcase.Style.Cursor.Text>
+  <RimUI.Showcase.Style.Cursor.Resize>Resizing: four directions</RimUI.Showcase.Style.Cursor.Resize>
+  <RimUI.Showcase.Style.Cursor.ResizeH>ResizeH - horizontal</RimUI.Showcase.Style.Cursor.ResizeH>
+  <RimUI.Showcase.Style.Cursor.ResizeV>ResizeV - vertical</RimUI.Showcase.Style.Cursor.ResizeV>
+  <RimUI.Showcase.Style.Cursor.ResizeNWSE>ResizeNWSE - the "\" diagonal</RimUI.Showcase.Style.Cursor.ResizeNWSE>
+  <RimUI.Showcase.Style.Cursor.ResizeNESW>ResizeNESW - the "/" diagonal</RimUI.Showcase.Style.Cursor.ResizeNESW>
+  <RimUI.Showcase.Style.Cursor.NestArrow>...while this block brings the arrow back (Arrow)</RimUI.Showcase.Style.Cursor.NestArrow>
+  <RimUI.Showcase.Style.Cursor.Auto>Unconfigured: the cursor comes from theme slots</RimUI.Showcase.Style.Cursor.Auto>
+  <RimUI.Showcase.Style.Cursor.Button>Button</RimUI.Showcase.Style.Cursor.Button>
+  <RimUI.Showcase.Style.Cursor.ButtonOff>Unavailable</RimUI.Showcase.Style.Cursor.ButtonOff>
+  <RimUI.Showcase.Style.Cursor.Input>Text field</RimUI.Showcase.Style.Cursor.Input>
+  <RimUI.Showcase.Style.Cursor.Nest>Nesting: the deepest one wins</RimUI.Showcase.Style.Cursor.Nest>
+  <RimUI.Showcase.Style.Cursor.NestOuter>The panel claims the hand</RimUI.Showcase.Style.Cursor.NestOuter>
+  <RimUI.Showcase.Style.Cursor.NestInner>...and the field inside claims the caret</RimUI.Showcase.Style.Cursor.NestInner>
+  <RimUI.Showcase.OrgChart.Desc>A hierarchy diagram: node cards, connecting lines, collapsible subtrees (the circle on the card's edge) and node selection - single, multiple (MultiSelect) and cascading over a whole subtree (SelectChildren). It grows downwards or to the right (Orientation). Selection can be switched off entirely (Selectable on the chart) or per node (Selectable on the node). The chart easily grows wider than the window, so it is wrapped in a ScrollBox with horizontal scrolling - the component itself does not scroll.</RimUI.Showcase.OrgChart.Desc>
+  <RimUI.Showcase.OrgChart.Basic>A basic chart: clicking the circle collapses a branch, clicking the card selects it</RimUI.Showcase.OrgChart.Basic>
+  <RimUI.Showcase.OrgChart.Horizontal>Horizontal growth plus cascading multi-select: clicking a department marks its subordinates too, clicking again clears them</RimUI.Showcase.OrgChart.Horizontal>
+  <RimUI.Showcase.OrgChart.Template>A card template of your own (NodeTemplate)</RimUI.Showcase.OrgChart.Template>
+  <RimUI.Showcase.OrgChart.Governor>Governor</RimUI.Showcase.OrgChart.Governor>
+  <RimUI.Showcase.OrgChart.Supply>Supply</RimUI.Showcase.OrgChart.Supply>
+  <RimUI.Showcase.OrgChart.Cook>Cook</RimUI.Showcase.OrgChart.Cook>
+  <RimUI.Showcase.OrgChart.Farmer>Farmer</RimUI.Showcase.OrgChart.Farmer>
+  <RimUI.Showcase.OrgChart.Hauler>Hauler</RimUI.Showcase.OrgChart.Hauler>
+  <RimUI.Showcase.OrgChart.Defense>Defence</RimUI.Showcase.OrgChart.Defense>
+  <RimUI.Showcase.OrgChart.Shooter>Shooter</RimUI.Showcase.OrgChart.Shooter>
+  <RimUI.Showcase.OrgChart.Melee>Melee fighter</RimUI.Showcase.OrgChart.Melee>
+  <RimUI.Showcase.OrgChart.Craft>Production</RimUI.Showcase.OrgChart.Craft>
+  <RimUI.Showcase.OrgChart.Smith>Smith</RimUI.Showcase.OrgChart.Smith>
+  <RimUI.Showcase.OrgChart.Tailor>Tailor</RimUI.Showcase.OrgChart.Tailor>
+  <RimUI.Showcase.OrgChart.T.Lead>Irina</RimUI.Showcase.OrgChart.T.Lead>
+  <RimUI.Showcase.OrgChart.T.LeadRole>lead</RimUI.Showcase.OrgChart.T.LeadRole>
+  <RimUI.Showcase.OrgChart.T.Medic>Mark</RimUI.Showcase.OrgChart.T.Medic>
+  <RimUI.Showcase.OrgChart.T.MedicRole>doctor</RimUI.Showcase.OrgChart.T.MedicRole>
+  <RimUI.Showcase.OrgChart.T.Scout>Lana</RimUI.Showcase.OrgChart.T.Scout>
+  <RimUI.Showcase.OrgChart.T.ScoutRole>scout</RimUI.Showcase.OrgChart.T.ScoutRole>
+  <RimUI.Showcase.Rating.Desc>A star rating: the score is set by clicking. The value is fractional, so the component shows halves as well as external scores such as "4.2 out of 5". Clicking the current score again clears it (Cancel), and hovering shows what a click would set.</RimUI.Showcase.Rating.Desc>
+  <RimUI.Showcase.Rating.Basic>Ordinary: five stars, the value in an external variable</RimUI.Showcase.Rating.Basic>
+  <RimUI.Showcase.Rating.Half>Halves (AllowHalf): click the left half of a star</RimUI.Showcase.Rating.Half>
+  <RimUI.Showcase.Rating.Ten>Ten smaller stars</RimUI.Showcase.Rating.Ten>
+  <RimUI.Showcase.Rating.ReadOnly>Display only (ReadOnly): a score of 4.5</RimUI.Showcase.Rating.ReadOnly>
+  <RimUI.Showcase.Paginator.Desc>Page navigation: arrows to the start, back, forward and to the end, page numbers with an ellipsis, and an optional page-size selector. Numbering starts at one - the way the player sees it. The component does not own the data: it reports the chosen number, and your code makes the selection.</RimUI.Showcase.Paginator.Desc>
+  <RimUI.Showcase.Paginator.WithData>With data: the list below is rebuilt from the page number</RimUI.Showcase.Paginator.WithData>
+  <RimUI.Showcase.Paginator.Compact>Compact: no "first/last", three numbers</RimUI.Showcase.Paginator.Compact>
+  <RimUI.Showcase.Paginator.Many>Many pages: the first and the last are always visible</RimUI.Showcase.Paginator.Many>
+  <RimUI.Showcase.Paginator.Item>Record {0}</RimUI.Showcase.Paginator.Item>
+  <RimUI.Showcase.Paginator.Summary>{0}-{1} of {2}</RimUI.Showcase.Paginator.Summary>
+  <RimUI.Showcase.Timeline.Desc>An event timeline: markers on an axis, lines between them, content to the side. Vertical and horizontal orientations; content sits on one side or alternates. To the left of the axis is the "opposite side" for a date, a time or a status.</RimUI.Showcase.Timeline.Desc>
+  <RimUI.Showcase.Timeline.Basic>Ordinary: dates on the left, events on the right</RimUI.Showcase.Timeline.Basic>
+  <RimUI.Showcase.Timeline.Alternate>Alternating sides (Alternate)</RimUI.Showcase.Timeline.Alternate>
+  <RimUI.Showcase.Timeline.Colors>Custom marker colours and the Start side</RimUI.Showcase.Timeline.Colors>
+  <RimUI.Showcase.Timeline.Horizontal>A horizontal timeline</RimUI.Showcase.Timeline.Horizontal>
+  <RimUI.Showcase.Timeline.Landing>Landing on the planet</RimUI.Showcase.Timeline.Landing>
+  <RimUI.Showcase.Timeline.Shelter>Shelter built</RimUI.Showcase.Timeline.Shelter>
+  <RimUI.Showcase.Timeline.Raid>First pirate raid</RimUI.Showcase.Timeline.Raid>
+  <RimUI.Showcase.Timeline.Trade>Trade caravan</RimUI.Showcase.Timeline.Trade>
+  <RimUI.Showcase.Timeline.Day1>Day 1</RimUI.Showcase.Timeline.Day1>
+  <RimUI.Showcase.Timeline.Day3>Day 3</RimUI.Showcase.Timeline.Day3>
+  <RimUI.Showcase.Timeline.Day12>Day 12</RimUI.Showcase.Timeline.Day12>
+  <RimUI.Showcase.Timeline.Day20>Day 20</RimUI.Showcase.Timeline.Day20>
+  <RimUI.Showcase.Timeline.Done>Resource stockpiling finished</RimUI.Showcase.Timeline.Done>
+  <RimUI.Showcase.Timeline.Now>Construction under way</RimUI.Showcase.Timeline.Now>
+  <RimUI.Showcase.Timeline.Next>Ship launch</RimUI.Showcase.Timeline.Next>
+  <RimUI.Showcase.Timeline.Stage1>Stage 1</RimUI.Showcase.Timeline.Stage1>
+  <RimUI.Showcase.Timeline.Stage2>Stage 2</RimUI.Showcase.Timeline.Stage2>
+  <RimUI.Showcase.Timeline.Stage3>Stage 3</RimUI.Showcase.Timeline.Stage3>
+  <RimUI.Showcase.Stepper.Desc>A step-by-step wizard: a strip of headers with a progress indicator, the active step's content, and moves forward and back. In linear mode jumping ahead over a step is forbidden, and a step can refuse to let you leave until a condition is met (CanLeave). Going back is always allowed - otherwise an unfilled form would become a trap.</RimUI.Showcase.Stepper.Desc>
+  <RimUI.Showcase.Stepper.Linear>Linear with validation: steps 2 and 3 do not let you move on until they are filled in</RimUI.Showcase.Stepper.Linear>
+  <RimUI.Showcase.Stepper.FreeLabel>Free mode: click any step, no buttons</RimUI.Showcase.Stepper.FreeLabel>
+  <RimUI.Showcase.Stepper.Back>Back</RimUI.Showcase.Stepper.Back>
+  <RimUI.Showcase.Stepper.Next>Next</RimUI.Showcase.Stepper.Next>
+  <RimUI.Showcase.Stepper.Finish>Finish</RimUI.Showcase.Stepper.Finish>
+  <RimUI.Showcase.Stepper.Done>The wizard is complete</RimUI.Showcase.Stepper.Done>
+  <RimUI.Showcase.Stepper.Step1>Start</RimUI.Showcase.Stepper.Step1>
+  <RimUI.Showcase.Stepper.Step1Body>The first step asks for nothing - just press "Next".</RimUI.Showcase.Stepper.Step1Body>
+  <RimUI.Showcase.Stepper.Step2>Name</RimUI.Showcase.Stepper.Step2>
+  <RimUI.Showcase.Stepper.NameHint>While the field is empty, "Next" will not work.</RimUI.Showcase.Stepper.NameHint>
+  <RimUI.Showcase.Stepper.NamePlaceholder>Colony name</RimUI.Showcase.Stepper.NamePlaceholder>
+  <RimUI.Showcase.Stepper.Step3>Consent</RimUI.Showcase.Stepper.Step3>
+  <RimUI.Showcase.Stepper.AgreeHint>Without the tick it will not let you move on, but you can still go back.</RimUI.Showcase.Stepper.AgreeHint>
+  <RimUI.Showcase.Stepper.Agree>I agree to everything at once</RimUI.Showcase.Stepper.Agree>
+  <RimUI.Showcase.Stepper.Step4>Summary</RimUI.Showcase.Stepper.Step4>
+  <RimUI.Showcase.Stepper.Step4Body>The last step: the "Next" button turns into "Finish".</RimUI.Showcase.Stepper.Step4Body>
+  <RimUI.Showcase.Stepper.Free1>Overview</RimUI.Showcase.Stepper.Free1>
+  <RimUI.Showcase.Stepper.Free1Body>The steps are independent, so you can switch between them in any order.</RimUI.Showcase.Stepper.Free1Body>
+  <RimUI.Showcase.Stepper.Free2>Settings</RimUI.Showcase.Stepper.Free2>
+  <RimUI.Showcase.Stepper.Free2Body>An icon of your own instead of the number is set by the Icon field.</RimUI.Showcase.Stepper.Free2Body>
+  <RimUI.Showcase.Stepper.Free3>Check</RimUI.Showcase.Stepper.Free3>
+  <RimUI.Showcase.Stepper.Free3Body>The navigation buttons are off - the headers are the only control.</RimUI.Showcase.Stepper.Free3Body>
+  <RimUI.Showcase.ConfirmPopup.Desc>A compact confirmation right at the target element: a message and two buttons, with no full-screen modal. It suits reversible local actions; for anything irreversible and important ConfirmWindow remains, which cannot be missed. It closes on a click outside, on a button, or on clicking the target again.</RimUI.Showcase.ConfirmPopup.Desc>
+  <RimUI.Showcase.ConfirmPopup.Label>Confirmation at the button: below and to the right</RimUI.Showcase.ConfirmPopup.Label>
+  <RimUI.Showcase.ConfirmPopup.Delete>Delete record</RimUI.Showcase.ConfirmPopup.Delete>
+  <RimUI.Showcase.ConfirmPopup.DeleteMsg>Delete the selected record? This cannot be undone.</RimUI.Showcase.ConfirmPopup.DeleteMsg>
+  <RimUI.Showcase.ConfirmPopup.Reset>Restore</RimUI.Showcase.ConfirmPopup.Reset>
+  <RimUI.Showcase.ConfirmPopup.ResetMsg>Return the counter to three records?</RimUI.Showcase.ConfirmPopup.ResetMsg>
+  <RimUI.Showcase.ConfirmPopup.Yes>Yes</RimUI.Showcase.ConfirmPopup.Yes>
+  <RimUI.Showcase.ConfirmPopup.No>No</RimUI.Showcase.ConfirmPopup.No>
+  <RimUI.Showcase.ConfirmPopup.Left>Records left: {0}</RimUI.Showcase.ConfirmPopup.Left>
 </LanguageData>

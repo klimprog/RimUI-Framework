@@ -1,12 +1,13 @@
 ![RimUI Framework](../About/Preview.png)
 
-**RimUI Framework** — ядро `0.7.15` · мод `0.2.1` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
 
 ---
 
 # Документация RimUI Framework
 
-- [0.2](0.2/index_ru.md) — актуальная
+- [0.3](0.3/index_ru.md) — актуальная
+- [0.2](0.2/index_ru.md) — архив
 - [0.1](0.1/index_ru.md) — архив
 
 

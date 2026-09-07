@@ -2,6 +2,70 @@
 
 [Русский](CHANGELOG_ru.md) · [README](README.md)
 
+## 0.3.0
+
+**Layout**
+
+- **Size limits**: `MinWidth`, `MaxWidth`, `MinHeight`, `MaxHeight` in the style. They apply both
+  when the size is computed from content and when it is set explicitly; on conflict the minimum
+  wins. There was previously no way to constrain a block — `MinHeight` only worked inside
+  `FlexBox`.
+- **Wrapping children onto new lines** (`WrapChildren`): the container moves elements that no
+  longer fit, and each line is laid out on its own. Supported by row components as well —
+  `SelectButton`, `Paginator`, `Stepper`, `Tabs`, `Gallery`.
+- **Shrinking** (`Shrink`): `0` means "do not shrink me". Previously everything shrank
+  indiscriminately, and a block with a fixed height turned its content into an overlap — text on
+  top of text.
+- **`Stretch` no longer overrides an explicit size**: a bar with a set width inside a column keeps
+  that width.
+- **Clipping at the border** (`Overflow.Clip`) fixed: the property existed but did nothing, so
+  content that was not allowed to grow spilled outside.
+- **Row height from content** (`AutoHeight`) in `ListBox`, `Tree`, `DataTable`, `TreeTable`: text
+  wraps and the row grows. Scrolling stays virtualized.
+
+**Events**
+
+- **A click goes to exactly one element** — the first that handles it. Previously a button and the
+  block underneath both treated the press as their own, and suppressing that was manual work.
+- **The mouse wheel** goes to whatever is under the cursor: scrolling no longer "falls through"
+  into the list beneath the area.
+- **The cursor** is claimed by the deepest element under the mouse, not by its parent.
+- **Order among siblings** (`ZOrder`) for overlapping elements: the higher one gets the click, the
+  wheel and the cursor first. Drawing order is unaffected.
+
+**Windows**
+
+- **Mouse resizing** by edges and corners — for windows and for any block with a border
+  (`Style.Resizable`, eight directions). Only the regular width and height change, within
+  Min/Max; there is no grab along an axis the layout owns; a block never grows past its parent. A
+  window's dragged size is remembered and is not reset back to the content-derived size.
+- **Dragging a window off-screen**: up to 80% of it may go past the left, right and bottom edges;
+  past the top edge is forbidden, otherwise the header you drag it by could not be reached again.
+  Recomputed when the resolution or UI scale changes, too.
+- **Custom modal window header**: three zones (left, centre, right), each accepting your own
+  elements before and after the built-in ones, and the built-in ones can be switched off. Pressing
+  a button in the header no longer drags the window.
+
+**Components**
+
+- **A text field's value is available while the field is off-screen** — from a hidden tab or a
+  collapsed panel. `Flush()` was added: it commits what was typed when a "Save" button is pressed,
+  without Enter and without losing focus.
+- **`CascadeSelect`**: clearing the selection, selecting a branch, multi-select with check marks,
+  `SetSelected`/`Clear` from code. The list can now be filled or rebuilt after the first frame —
+  previously the menu was built exactly once and kept showing the old set.
+- **Initial table sorting** (`DefaultSortColumn`/`DefaultSortAsc`) in `DataTable` and `TreeTable`;
+  it never overrides what the player chose.
+- **Value axis for charts**: your own bounds, step and label format, with the step rounded to
+  1/2/5·10ⁿ. That removes fractional "2.5 items" on whole-number data. In the heatmap the same
+  bounds set the colour scale, which makes two maps side by side comparable.
+
+**Themes**
+
+- **Style classes**: a named set of properties attaches to any element (`AddClass`/`SetClass`) and
+  is declared in the theme as a section prefixed with `#`, or from code. Previously the slot was
+  chosen by the element's type and could not be substituted from outside.
+
 ## 0.2.1
 Fix: components without an explicit `Key` lost their state.
 

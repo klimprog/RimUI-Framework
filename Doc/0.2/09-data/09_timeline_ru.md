@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.7.15` · мод `0.2.1` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.21` · мод `0.2.1` · RimWorld `1.6`
 
 ---
 
