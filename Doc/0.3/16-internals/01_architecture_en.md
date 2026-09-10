@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -125,6 +125,25 @@ still drawn on top. Depth works by itself: a child always outranks its ancestor.
 Anything that reacts to a press outside the tree (dragging a window by its header, say) can check
 whether the click has already been taken — that is why the window does not move when you press a
 button inside its header.
+
+## Fields and accessor methods
+
+Every public setting has a pair of methods: `GetText()` / `SetText(value)`, `GetWidth()` /
+`SetWidth(value)` and so on. The field itself is public too, and assignment works as before.
+
+**Prefer the methods.** The fields will not stay open forever: once they close, code written
+through the methods needs no changes at all, while direct assignments will.
+
+```csharp
+item.SetText("Plasteel");        // this way
+item.Text = "Plasteel";          // works today, but will stop working
+```
+
+Why the framework needs this: a field leaves nowhere to put a value check or a reaction to a
+change. While a setting is a field, any such improvement breaks calling code silently.
+
+Maths types (`RectF`, `Vec2`, `SizeF`, `Thickness`, `ColorRGBA`) and draw commands have no such
+methods: fields suit them and will stay fields.
 
 ## Core and adapter
 

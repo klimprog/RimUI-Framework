@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -60,6 +60,8 @@ el.Style.Text = new TextStyle { Align = TextAlign.Center, Color = ColorRGBA.Whit
 | `Shrink` | `float` | `1` | Shrink weight when the content does not fit (the counterpart of CSS `flex-shrink`). `0` means "do not shrink me": the element keeps its size and goes past the border, and `Overflow` then decides what happens. |
 | `AutoHeight` | `bool` | `false` | A row fits its height to its content (lists, trees, tables) instead of a fixed one. |
 | `ZOrder` | `int` | `0` | Order among **siblings** when events are dispatched: the higher one gets the click, the wheel and the right to claim the cursor first. Drawing order is unaffected. Depth works by itself - a child always outranks its ancestor. |
+| `Opacity` | `float?` | `null` | Transparency of the WHOLE SUBTREE: 1 - opaque, 0 - invisible. |
+| `Tint` | `ColorRGBA?` | `null` | Tint of the WHOLE SUBTREE: a colour multiplier. White changes nothing, grey desaturates. |
 | `Resizable` | `ResizeEdges` | `None` | Which edges the block can be dragged by. See "Resizing with the mouse" below. |
 | `Left`/`Top`/`Right`/`Bottom` | `float?` | `null` | Absolute offsets relative to the parent, like CSS. |
 | `Anchor` | `Anchor` (`TopLeft`\|`TopCenter`\|`TopRight`\|`MiddleLeft`\|`MiddleCenter`\|`MiddleRight`\|`BottomLeft`\|`BottomCenter`\|`BottomRight`) | `TopLeft` | Anchor used when offsets are absent; all 9 positions of a 3×3 grid. |
@@ -259,6 +261,29 @@ dragging, it just does not grow any further.
 It lives in the ID store and is found by the element's key. If the block is **recreated** (a new
 object every frame, or every time the window opens), the automatic key changes with it and the
 size is lost. Set a `Key` — the same pitfall as with text fields.
+
+## Dimming and tinting a subtree
+
+`Opacity` and `Tint` act not on a single element but on it together with all its children:
+background, text, image, nested blocks. Dimming a card is one value rather than a walk through all
+of its parts.
+
+```csharp
+card.Style.Opacity = 0.35f;                                  // dim it as a whole
+card.Style.Tint = new ColorRGBA(1f, 0.6f, 0.55f, 1f);        // shift it to red
+```
+
+**Nested values multiply together.** `0.5` inside `0.5` gives `0.25`; grey inside red gives a muted
+red. The same goes for animation: dimming and, say, a fade-in add up instead of cancelling each
+other out.
+
+**Dropdown panels neither dim nor take the tint.** A list over a dimmed card stays readable - it is
+drawn as a separate layer, and that is deliberate.
+
+**An image keeps its own tint**: `Image.Tint` multiplies with the subtree's tint rather than being
+replaced by it.
+
+Both values can also come from the theme - the `opacity` and `tint` paths.
 
 ## Multiples of 3 (`Width`/`Height`)
 

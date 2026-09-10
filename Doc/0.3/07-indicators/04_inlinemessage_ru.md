@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -28,7 +28,7 @@ new InlineMessage(Severity.Warn, "Внимание") { Key = "im1", Closable = t
 |---|---|---|---|
 | `Key` | `string` | `null` | Ключ состояния в ID-store (см. «Ключ и состояние» на странице «Архитектура»). Нужен, если элемент пересоздаётся между кадрами или его состояние надо сохранить между пересозданиями. |
 | `Content` | `string` | `null` | Текст сообщения. |
-| `TextElement` | `Text` | `null` | Готовый элемент текста вместо `Content`. |
+| `TextElement` | `UiElement` | `null` | Готовый элемент текста вместо `Content`. |
 | `Severity` | `Severity` (`Info`\|`Success`\|`Warn`\|`Error`) | — | Уровень важности, задаётся конструктором — определяет цвет и иконку (акцент/зелёный/жёлтый/красный соответственно; полная таблица цветов — на странице «Tag»). |
 | `Closable` | `bool` | `false` | Включает крестик закрытия. |
 | `OnClose` | `Action` | `null` | Колбэк после закрытия. |

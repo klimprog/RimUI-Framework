@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -44,6 +44,8 @@ tt.Nodes.Add(Node("Resources", 245, 310, 1200)
 | `RowHeight` | `float` | `26` | Row height (a minimum when `Style.AutoHeight` is on). |
 | `DefaultSortColumn` | `int` | `-1` | Column the tree is sorted by when first shown; `-1` = unsorted. Applied **once**, when the state is created: like a click on the header, it sorts siblings WITHIN each parent — the tree structure is preserved; from then on the order is the player's, and assigning here will not reset it. A column outside the range is ignored. |
 | `DefaultSortAsc` | `bool` | `true` | Direction of the initial sort. |
+| `TableColumn.TitleContent` | `UiElement` | `null` | Content of your own for a column header. |
+| `TreeTableItem.Content` | `UiElement` | `null` | Content of your own for the FIRST column (the others are given as elements anyway). |
 | `HeaderHeight` | `float` | `28` | Header height. |
 | `Indent` | `float` | `16` | Indent per nesting level. |
 | `CaseSensitive` | `bool` | `false` | Case-sensitive filters. |

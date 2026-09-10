@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -27,7 +27,7 @@ new Label("Пароль") { Required = true, Hint = "Не короче 8 сим�
 | Параметр | Тип | По умолчанию | Описание |
 |---|---|---|---|
 | `Content` | `string` | `null` | Текст подписи (сырой). |
-| `TextElement` | `Text` | `null` | Готовый элемент текста вместо `Content`, если задан — приоритетнее. |
+| `TextElement` | `UiElement` | `null` | Готовый элемент текста вместо `Content`, если задан — приоритетнее. |
 | `Required` | `bool` | `false` | Рисует маркер «*» после текста. |
 | `Hint` | `string` | `null` | Текст подсказки под подписью (сырой). |
 | `HintElement` | `Text` | `null` | Готовый элемент подсказки, приоритетнее `Hint`. |

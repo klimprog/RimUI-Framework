@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -26,7 +26,7 @@ Row(new Tag("NEW", Severity.Success), new Tag("BETA", Severity.Warn),
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `Content` | `string` | `null` | Label text. |
-| `TextElement` | `Text` | `null` | Prebuilt text element used instead of `Content`. |
+| `TextElement` | `UiElement` | `null` | Content of your own used instead of `Content` - any composition, not just a caption. |
 | `IconIndex` | `int` | `-1` | Index in the `Icons` sheet. |
 | `Severity` | `Severity` | `Info` | Controls the background color. |
 | `Rounded` | `bool` | `true` | Uses pill radius (`BorderRadius.Middle`); `false` uses `Small`. |

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -26,6 +26,7 @@ var p = new Panel("Title", myBody) { Collapsible = true };
 |---|---|---|---|
 | `Key` | `string` | `null` | State key in the ID store (see "Keys and state" on the Architecture page). Needed when the element is recreated between frames, or when its state must survive such recreation. |
 | `Title` | `string` | `null` | Header text. |
+| `TitleContent` | `UiElement` | `null` | Content of your own for the header instead of a caption; the collapse chevron stays in place. |
 | `TitleElement` | `Text` | `null` | Prebuilt title, preferred over `Title`. |
 | `Body` | `UiElement` | `null` | Panel body. |
 | `Collapsible` | `bool` | `false` | Enables header-click collapsing. |

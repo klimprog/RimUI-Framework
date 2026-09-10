@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -30,6 +30,8 @@ new MultiSelect<string>(skills) { Placeholder = "Up to three", MaxSelected = 3 }
 | `Values` | `Func<ICollection<T>>` | `null` | Source collection. When supplied, the control mutates it directly. |
 | `OnChange` | `Action<ICollection<T>>` | `null` | Receives the full selected collection. |
 | `Placeholder` | `string` | `"-"` | Text shown when nothing is selected. |
+| `Placement` | `OverlayPlacement` | `Bottom` | Which side the panel opens on: `Bottom`, `Top`, `Right`, `Left`, `Auto` (downwards, or upwards when there is not enough room). |
+| `Align` | `OverlayAlign` | `Start` | Alignment along the other axis: `Start`, `Center`, `End`, `Auto`. `End` pins the panel's right edge to the field's right edge, so it runs to the left. |
 | `Disabled` | `bool` | `false` | Disables the control. |
 | `MaxSelected` | `int` | `0` (unlimited) | Maximum number of selected items. |
 | `MaxListHeight` | `float` | `220` | Maximum panel height. |
@@ -43,7 +45,35 @@ new MultiSelect<string>(skills) { Placeholder = "Up to three", MaxSelected = 3 }
 
 Once the limit is reached, clicking an unselected item does nothing. The panel stays open and no older selection is removed automatically. Already selected items can always be deselected; the limit applies only when adding. Panel placement and flipping match `Select`.
 
-## Styles
+
+## Where the panel opens
+
+The direction is set along two independent axes: `Placement` - which side of the field the panel
+sits on, `Align` - how it lines up along the other axis. The pair covers all eight combinations:
+
+| What you want | How to set it |
+|---|---|
+| downwards, left edges aligned | `Placement = Bottom` (the default) |
+| upwards | `Placement = Top` |
+| **up and to the left** | `Placement = Top`, `Align = End` |
+| downwards, centred on the field | `Align = Center` |
+| sideways (a submenu) | `Placement = Right` or `Left` |
+
+`Auto` on either axis means "pick it yourself": the side flips to the opposite one when there is
+not enough room.
+
+**Room is measured against the visible area, not just the window.** A list inside a table or a
+scroll area opens where it can be seen. Clamping the panel to the cell's bounds is out of the
+question, though - it would have nowhere to open - so it extends past them freely.
+
+**Alignment only shows when the widths differ.** If the panel is exactly as wide as the field,
+`Start`, `Center` and `End` all look the same.
+
+## Content of your own for an item
+
+`SelectItem.Content` works the same as in `Select` (see its page): a composition instead of a
+caption, with `Text` kept for search. The item's checkbox stays in its place.
+
 
 Uses the `Select` slots (`select/field*`, `select/panel`, and `select/item*`), plus `chip`, `chip/text`, and `chip/close` for selected values.
 

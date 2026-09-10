@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -30,6 +30,7 @@ lb.OnActivate = i => { /* double-click */ };
 | `Key` | `string` | `null` | State key in the ID store (see "Keys and state" on the Architecture page). Needed when the element is recreated between frames, or when its state must survive such recreation. |
 | `Items` | `List<T>` | empty | List rows. |
 | `Display` | `Func<T,string>` | `null` (`item.ToString()`) | Row text. |
+| `Render` | `Func<T, UiElement>` | `null` | Content of your own for a row, built from the value. The component keeps the cache: the factory is called once per value. |
 | `OnSelect` | `Action<int>` | `null` | Selection callback. |
 | `OnActivate` | `Action<int>` | `null` | Double-click callback. |
 | `RowHeight` | `float` | `24` | Row height. |
@@ -63,6 +64,30 @@ needs to, instead of being cut off at a fixed height. The row height you set the
 minimum.
 
 Scrolling stays virtualized: every row is measured, but only the visible ones are drawn.
+
+## Content of your own for a row
+
+`Render` builds a row out of anything. It is a factory rather than a ready element for a reason:
+the list holds values, not item objects, so an element has nowhere to live except a cache beside
+the list.
+
+```csharp
+lb.Render = v =>
+{
+    var col = new FlexBox(Axis.Column) { Style = { Gap = 2f } };
+    col.Add(new Text(v));
+    col.Add(new ProgressBar(() => Stock(v)) { BarHeight = 8f, ShowText = false });
+    return col;
+};
+```
+
+The cache is keyed by value and reset when the contents change. That is why the factory is called
+once per value rather than every frame: a new object would otherwise mean a new key and the loss of
+nested controls' state.
+
+`Display` is not redundant: search and sorting go by it.
+
+With `Style.AutoHeight` the row height is measured from the content.
 
 ## Styles
 

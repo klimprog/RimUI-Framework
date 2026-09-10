@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -37,6 +37,7 @@ cas.Items.Add(new CascadeItem("Harsh").Sub(new CascadeItem("Tundra")));
 | `SelectBranches` | `bool` | `false` | Allows selecting a **branch**, not only a leaf. The branch stays expandable: the submenu opens on hover, while a click on the branch itself selects it. |
 | `MultiSelect` | `bool` | `false` | Multi-select: a click adds an item to the set or removes it, the menu stays open, and selected items are marked with a check. |
 | `MultiSummary` | `Func<int,string>` | `null` | The field's caption in multi-select mode; "selected: N" by default. |
+| `CascadeItem.Content` | `UiElement` | `null` | Content of your own for an item - passed to the menu item as is. |
 
 `CascadeItem(string text, object value = null)` defaults `value` to `text`. The fluent `Sub(CascadeItem child)` method adds a child.
 

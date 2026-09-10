@@ -17,7 +17,7 @@
   <RimUI.Showcase.Nav.Styles.Shadows>Shadows</RimUI.Showcase.Nav.Styles.Shadows>
   <RimUI.Showcase.Nav.Styles.Limits>Size limits</RimUI.Showcase.Nav.Styles.Limits>
   <RimUI.Showcase.Nav.Styles.Classes>Style classes</RimUI.Showcase.Nav.Styles.Classes>
-  <RimUI.Showcase.Style.Classes.Desc>A class is a named set of properties an element can take on and swap at runtime. Priority follows CSS: code defaults, then the theme, then classes in list order, and above all the style set on the element itself. Declare a class in code (Theme.DefineClass) or in a theme file, where its name starts with '#'.</RimUI.Showcase.Style.Classes.Desc>
+  <RimUI.Showcase.Style.Classes.Desc>A class is a named set of properties an element can take on and swap at runtime. Which one wins: code defaults, then the theme, then classes in list order, and above all the style set on the element itself. Declare a class in code (Theme.DefineClass) or in a theme file, where its name starts with '#'.</RimUI.Showcase.Style.Classes.Desc>
   <RimUI.Showcase.Style.Limits.Desc>minWidth / maxWidth / minHeight / maxHeight clamp the resulting size. They apply both with an explicit width/height and without one; on conflict the minimum wins.</RimUI.Showcase.Style.Limits.Desc>
   <RimUI.Showcase.Nav.Styles.Opacity>Opacity</RimUI.Showcase.Nav.Styles.Opacity>
   <RimUI.Showcase.Nav.Styles.SpriteFrame>Sprite frame (9-slice)</RimUI.Showcase.Nav.Styles.SpriteFrame>
@@ -743,4 +743,81 @@
   <RimUI.Showcase.ConfirmPopup.Yes>Yes</RimUI.Showcase.ConfirmPopup.Yes>
   <RimUI.Showcase.ConfirmPopup.No>No</RimUI.Showcase.ConfirmPopup.No>
   <RimUI.Showcase.ConfirmPopup.Left>Records left: {0}</RimUI.Showcase.ConfirmPopup.Left>
+  <RimUI.Showcase.OverlayClip.Block>A Select inside a table cell: the panel opens below the table's body and is clickable all the way down - the ancestors' clipping does not cut it off</RimUI.Showcase.OverlayClip.Block>
+  <RimUI.Showcase.OverlayClip.ColRow>Row</RimUI.Showcase.OverlayClip.ColRow>
+  <RimUI.Showcase.OverlayClip.ColMode>Mode</RimUI.Showcase.OverlayClip.ColMode>
+  <RimUI.Showcase.OverlayClip.Males>Males</RimUI.Showcase.OverlayClip.Males>
+  <RimUI.Showcase.OverlayClip.Females>Females</RimUI.Showcase.OverlayClip.Females>
+  <RimUI.Showcase.OverlayClip.Pick>choose</RimUI.Showcase.OverlayClip.Pick>
+  <RimUI.Showcase.OverlayClip.Keep>Keep</RimUI.Showcase.OverlayClip.Keep>
+  <RimUI.Showcase.OverlayClip.Sell>Sell</RimUI.Showcase.OverlayClip.Sell>
+  <RimUI.Showcase.OverlayClip.Slaughter>Slaughter</RimUI.Showcase.OverlayClip.Slaughter>
+  <RimUI.Showcase.OverlayClip.Tame>Tame</RimUI.Showcase.OverlayClip.Tame>
+  <RimUI.Showcase.Placement.Down>placement = Bottom - the panel sits under the field, left edges aligned (the default)</RimUI.Showcase.Placement.Down>
+  <RimUI.Showcase.Placement.UpLeft>placement = Top, align = End - the panel sits above the field and runs left: right edges aligned</RimUI.Showcase.Placement.UpLeft>
+  <RimUI.Showcase.Placement.Center>align = Center - the panel is centred on the field even when wider than it</RimUI.Showcase.Placement.Center>
+  <RimUI.Showcase.Placement.Wide>panelWidth = Content - the panel is as wide as its longest item rather than as the narrow field</RimUI.Showcase.Placement.Wide>
+  <RimUI.Showcase.Placement.Pick>choose</RimUI.Showcase.Placement.Pick>
+  <RimUI.Showcase.Placement.Short1>Steel</RimUI.Showcase.Placement.Short1>
+  <RimUI.Showcase.Placement.Short2>Wood</RimUI.Showcase.Placement.Short2>
+  <RimUI.Showcase.Placement.Short3>Cloth</RimUI.Showcase.Placement.Short3>
+  <RimUI.Showcase.Placement.Long1>An ordinary steel component</RimUI.Showcase.Placement.Long1>
+  <RimUI.Showcase.Placement.Long2>An improved component with a blueprint</RimUI.Showcase.Placement.Long2>
+  <RimUI.Showcase.Placement.Long3>An advanced plasteel component</RimUI.Showcase.Placement.Long3>
+  <RimUI.Showcase.PopoverApi.Block>close() from code: picking an item closes the panel, and the button outside opens it and shows what was picked</RimUI.Showcase.PopoverApi.Block>
+  <RimUI.Showcase.PopoverApi.Trigger>A list built by hand</RimUI.Showcase.PopoverApi.Trigger>
+  <RimUI.Showcase.PopoverApi.Open>Open from code</RimUI.Showcase.PopoverApi.Open>
+  <RimUI.Showcase.PopoverApi.Nothing>nothing picked</RimUI.Showcase.PopoverApi.Nothing>
+  <RimUI.Showcase.PopoverApi.Picked>picked:</RimUI.Showcase.PopoverApi.Picked>
+  <RimUI.Showcase.PopoverApi.Item1>Wheat</RimUI.Showcase.PopoverApi.Item1>
+  <RimUI.Showcase.PopoverApi.Item2>Potato</RimUI.Showcase.PopoverApi.Item2>
+  <RimUI.Showcase.PopoverApi.Item3>Corn</RimUI.Showcase.PopoverApi.Item3>
+  <RimUI.Showcase.Nav.Styles.Opacity2>Dimming a subtree</RimUI.Showcase.Nav.Styles.Opacity2>
+  <RimUI.Showcase.Opacity.Desc>Style.Opacity dims an element together with all its children in one value: background, text, image, nested blocks. Style.Tint colours a subtree the same way, with a colour multiplier. Nested values multiply together: 0.5 inside 0.5 gives 0.25, grey inside red gives a muted red. Dropdown panels neither dim nor take the tint - a list over a dimmed card stays readable.</RimUI.Showcase.Opacity.Desc>
+  <RimUI.Showcase.Opacity.Row>1.0 / 0.6 / 0.3 - the same card with different dimming</RimUI.Showcase.Opacity.Row>
+  <RimUI.Showcase.Opacity.Nested>Nesting: the outer block at 0.5, the inner card at another 0.5 - 0.25 together</RimUI.Showcase.Opacity.Nested>
+  <RimUI.Showcase.Opacity.Toggle>Dimming by state: the button switches the card between normal and dimmed</RimUI.Showcase.Opacity.Toggle>
+  <RimUI.Showcase.Opacity.Dim>Dim</RimUI.Showcase.Opacity.Dim>
+  <RimUI.Showcase.Opacity.Undim>Restore</RimUI.Showcase.Opacity.Undim>
+  <RimUI.Showcase.Opacity.Title>Wheat</RimUI.Showcase.Opacity.Title>
+  <RimUI.Showcase.Opacity.Body>Sowing for spring, plot 3</RimUI.Showcase.Opacity.Body>
+  <RimUI.Showcase.Opacity.Tag>ready</RimUI.Showcase.Opacity.Tag>
+  <RimUI.Showcase.Opacity.Outer>outer block</RimUI.Showcase.Opacity.Outer>
+  <RimUI.Showcase.Opacity.Tint>Style.Tint - a colour multiplier over the whole subtree: desaturated, shifted to red, shifted to blue</RimUI.Showcase.Opacity.Tint>
+  <RimUI.Showcase.Opacity.TintNested>Tint and dimming combine: a red subtree with a dimmed card inside it</RimUI.Showcase.Opacity.TintNested>
+  <RimUI.Showcase.HScroll.Block>The columns do not fit: the fixed widths plus the minimum share are wider than the table. The content scrolls sideways, and the fade at the edge shows there are more columns to the right</RimUI.Showcase.HScroll.Block>
+  <RimUI.Showcase.HScroll.Name>Name</RimUI.Showcase.HScroll.Name>
+  <RimUI.Showcase.HScroll.Col>Column</RimUI.Showcase.HScroll.Col>
+  <RimUI.Showcase.HScroll.Row>Row</RimUI.Showcase.HScroll.Row>
+  <RimUI.Showcase.ItemContent.SelectBlock>An item with content of its own: a row with a tag and a caption instead of plain text. The selected item is shown the same way in the field itself</RimUI.Showcase.ItemContent.SelectBlock>
+  <RimUI.Showcase.ItemContent.ListBlock>A list row is built by a factory from the value: the row height is measured from the content, while search and sorting still go by the text</RimUI.Showcase.ItemContent.ListBlock>
+  <RimUI.Showcase.ItemContent.Steel>Steel</RimUI.Showcase.ItemContent.Steel>
+  <RimUI.Showcase.ItemContent.Wood>Wood</RimUI.Showcase.ItemContent.Wood>
+  <RimUI.Showcase.ItemContent.Plasteel>Plasteel</RimUI.Showcase.ItemContent.Plasteel>
+  <RimUI.Showcase.ItemContent.Common>common</RimUI.Showcase.ItemContent.Common>
+  <RimUI.Showcase.ItemContent.Rare>rare</RimUI.Showcase.ItemContent.Rare>
+  <RimUI.Showcase.ItemContent.Pick>choose a material</RimUI.Showcase.ItemContent.Pick>
+  <RimUI.Showcase.ItemContent.Stock>in stock</RimUI.Showcase.ItemContent.Stock>
+  <RimUI.Showcase.ItemContent.TreeBlock>A node with content of its own: the expand chevron and the branch indent stay in place, the caption is replaced by a composition</RimUI.Showcase.ItemContent.TreeBlock>
+  <RimUI.Showcase.ItemContent.MenuBlock>A menu item with content of its own: the check mark and the submenu arrow stay in place</RimUI.Showcase.ItemContent.MenuBlock>
+  <RimUI.Showcase.ItemContent.Storage>Storage</RimUI.Showcase.ItemContent.Storage>
+  <RimUI.Showcase.ItemContent.Ready>full</RimUI.Showcase.ItemContent.Ready>
+  <RimUI.Showcase.ItemContent.Workshop>Workshop</RimUI.Showcase.ItemContent.Workshop>
+  <RimUI.Showcase.ItemContent.Busy>busy</RimUI.Showcase.ItemContent.Busy>
+  <RimUI.Showcase.ItemContent.MenuLabel>Menu with composed items</RimUI.Showcase.ItemContent.MenuLabel>
+  <RimUI.Showcase.ItemContent.Export>Export</RimUI.Showcase.ItemContent.Export>
+  <RimUI.Showcase.ItemContent.Import>Import</RimUI.Showcase.ItemContent.Import>
+  <RimUI.Showcase.ItemContent.Csv>csv</RimUI.Showcase.ItemContent.Csv>
+  <RimUI.Showcase.ItemContent.HeadBlock>A column header with content of its own: an icon beside the caption. The sort arrow and the filter field stay in place</RimUI.Showcase.ItemContent.HeadBlock>
+  <RimUI.Showcase.ItemContent.TreeTableBlock>A tree-table node with content of its own in the first column: the other columns are given as elements anyway</RimUI.Showcase.ItemContent.TreeTableBlock>
+  <RimUI.Showcase.ItemContent.Material>Material</RimUI.Showcase.ItemContent.Material>
+  <RimUI.Showcase.ItemContent.Amount>Stock</RimUI.Showcase.ItemContent.Amount>
+  <RimUI.Showcase.ItemContent.PanelBlock>A panel header with content of its own: a caption, a counter and a switch in the header. The collapse chevron stays in place</RimUI.Showcase.ItemContent.PanelBlock>
+  <RimUI.Showcase.ItemContent.ChipBlock>Chip, Tag, InlineMessage and Label accept not just a caption but any composition</RimUI.Showcase.ItemContent.ChipBlock>
+  <RimUI.Showcase.ItemContent.Queue>Work queue</RimUI.Showcase.ItemContent.Queue>
+  <RimUI.Showcase.ItemContent.Waiting>queued</RimUI.Showcase.ItemContent.Waiting>
+  <RimUI.Showcase.ItemContent.Auto>auto</RimUI.Showcase.ItemContent.Auto>
+  <RimUI.Showcase.ItemContent.Body>The panel's content.</RimUI.Showcase.ItemContent.Body>
+  <RimUI.Showcase.ItemContent.Batch>Batch</RimUI.Showcase.ItemContent.Batch>
+  <RimUI.Showcase.ItemContent.Of>of</RimUI.Showcase.ItemContent.Of>
 </LanguageData>

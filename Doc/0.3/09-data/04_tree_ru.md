@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -65,6 +65,21 @@ Value`, `List<TreeItem> Children`; метод `Sub(TreeItem child)` — fluent, 
 высоте. Заданная высота строки при этом работает как минимальная.
 
 Прокрутка остаётся виртуализированной: измеряются все строки, но рисуются только видимые.
+
+## Своё содержимое узла
+
+`TreeItem.Content` — композиция вместо подписи. Шеврон раскрытия и отступ ветви остаются на месте.
+
+```csharp
+var row = new FlexBox(Axis.Row) { Style = { Gap = 6f, AlignItems = AlignItems.Center } };
+row.Add(new Text("Склад"));
+row.Add(new Tag("заполнен", Severity.Success));
+
+tree.Nodes.Add(new TreeItem("Склад") { Content = row });
+```
+
+`Text` не лишний: по нему идёт поиск по дереву. При `Style.AutoHeight` высота строки считается по
+содержимому — по остатку ширины после отступа ветви.
 
 ## Стили
 

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -27,7 +27,7 @@ row.Add(new Chip(label, () => labels.Remove(label)));
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `Content` | `string` | `null` | Chip text. |
-| `TextElement` | `Text` | `null` | Prebuilt text element used instead of `Content`. |
+| `TextElement` | `UiElement` | `null` | Content of your own used instead of `Content` - any composition, not just a caption. |
 | `IconIndex` | `int` | `-1` | Index in the `Icons` sheet. |
 | `Removable` | `bool` | automatically `true` when `onRemove` is supplied | Shows the close button. |
 | `OnRemove` | `Action` | `null` | Close-button callback. |

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -39,6 +39,7 @@ cas.Items.Add(new CascadeItem("Суровый").Sub(new CascadeItem("Тундр�
 | `SelectBranches` | `bool` | `false` | Разрешить выбирать **ветку**, а не только лист. Ветка остаётся раскрываемой: подменю раскрывается по наведению, а клик по самой ветке выбирает её. |
 | `MultiSelect` | `bool` | `false` | Множественный выбор: клик добавляет или убирает пункт из набора, меню не закрывается, выбранные помечаются галочкой. |
 | `MultiSummary` | `Func<int,string>` | `null` | Подпись поля при множественном выборе; по умолчанию «выбрано: N». |
+| `CascadeItem.Content` | `UiElement` | `null` | Своё содержимое пункта — уходит в пункт меню как есть. |
 
 `CascadeItem(string text, object value = null)` — `value` по умолчанию = `text`, если не задан
 явно; метод `Sub(CascadeItem child)` добавляет дочерний пункт (fluent).

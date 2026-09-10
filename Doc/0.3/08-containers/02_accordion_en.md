@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -28,7 +28,7 @@ acc.Section("Misc", body3);
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `Key` | `string` | `null` | State key in the ID store (see "Keys and state" on the Architecture page). Needed when the element is recreated between frames, or when its state must survive such recreation. |
-| `Sections` | `List<AccordionSection>` (readonly) | empty | Sections. |
+| `Sections` | `List<AccordionSection>` (readonly) | empty | Sections. Each has `Title`, `TitleContent` (content of your own for the header - the section chevron stays in place), `Body` and `StartOpen`. |
 | `Multiple` | `bool` | `false` | Allows several sections to stay open. |
 | `HeaderHeight` | `float` | `30` | Section header height. |
 | `Gap` | `float` | `4` | Gap between sections. |

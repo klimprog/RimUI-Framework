@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -55,6 +55,22 @@ needs to, instead of being cut off at a fixed height. The row height you set the
 minimum.
 
 Scrolling stays virtualized: every row is measured, but only the visible ones are drawn.
+
+## Content of your own for a node
+
+`TreeItem.Content` takes a composition instead of a caption. The expand chevron and the branch
+indent stay in place.
+
+```csharp
+var row = new FlexBox(Axis.Row) { Style = { Gap = 6f, AlignItems = AlignItems.Center } };
+row.Add(new Text("Storage"));
+row.Add(new Tag("full", Severity.Success));
+
+tree.Nodes.Add(new TreeItem("Storage") { Content = row });
+```
+
+`Text` is not redundant: search through the tree goes by it. With `Style.AutoHeight` the row height
+is measured from the content - against the width left after the branch indent.
 
 ## Styles
 

@@ -514,7 +514,7 @@
   <RimUI.Showcase.Nav.Styles.Cursor>Курсор</RimUI.Showcase.Nav.Styles.Cursor>
   <RimUI.Showcase.Nav.Styles.Limits>Границы размера</RimUI.Showcase.Nav.Styles.Limits>
   <RimUI.Showcase.Nav.Styles.Classes>Классы стилей</RimUI.Showcase.Nav.Styles.Classes>
-  <RimUI.Showcase.Style.Classes.Desc>Класс — именованный набор свойств, который элемент берёт на себя и меняет на лету. Приоритет как в CSS: значения по умолчанию, затем тема, затем классы в порядке списка, и сильнее всех — стиль, заданный элементу явно. Объявить класс можно в коде (Theme.DefineClass) или в файле темы — там имя начинается с «#».</RimUI.Showcase.Style.Classes.Desc>
+  <RimUI.Showcase.Style.Classes.Desc>Класс — именованный набор свойств, который элемент берёт на себя и меняет на лету. Кто сильнее при совпадении: значения по умолчанию, затем тема, затем классы в порядке списка, и сильнее всех — стиль, заданный элементу явно. Объявить класс можно в коде (Theme.DefineClass) или в файле темы — там имя начинается с «#».</RimUI.Showcase.Style.Classes.Desc>
   <RimUI.Showcase.Style.Limits.Desc>minWidth / maxWidth / minHeight / maxHeight — границы, в которые зажимается размер. Работают и с явным width/height, и без него: при конфликте минимум сильнее максимума.</RimUI.Showcase.Style.Limits.Desc>
   <RimUI.Showcase.Style.Cursor.Desc>Style.Cursor задаёт СМЫСЛ курсора (стрелка / рука / перетаскивание / каретка / четыре направления ресайза), а текстуру и точку клика подставляет тема. Unity не даёт модам доступа к курсорам ОС, поэтому фреймворк везёт свои ассеты, нарисованные в системном стиле — белое тело с чёрным контуром. Побеждает самый глубокий элемент под мышью; вид применяется один раз за кадр.</RimUI.Showcase.Style.Cursor.Desc>
   <RimUI.Showcase.Style.Cursor.Kinds>Виды курсора</RimUI.Showcase.Style.Cursor.Kinds>
@@ -743,4 +743,81 @@
   <RimUI.Showcase.Header.Help>Справка</RimUI.Showcase.Header.Help>
   <RimUI.Showcase.Header.Pin>закрепить</RimUI.Showcase.Header.Pin>
   <RimUI.Showcase.Header.Pinned>Закреплено</RimUI.Showcase.Header.Pinned>
+  <RimUI.Showcase.OverlayClip.Block>Select в ячейке таблицы: панель раскрывается ниже тела таблицы и нажимается целиком — клипы предков её не отсекают</RimUI.Showcase.OverlayClip.Block>
+  <RimUI.Showcase.OverlayClip.ColRow>Строка</RimUI.Showcase.OverlayClip.ColRow>
+  <RimUI.Showcase.OverlayClip.ColMode>Режим</RimUI.Showcase.OverlayClip.ColMode>
+  <RimUI.Showcase.OverlayClip.Males>Самцы</RimUI.Showcase.OverlayClip.Males>
+  <RimUI.Showcase.OverlayClip.Females>Самки</RimUI.Showcase.OverlayClip.Females>
+  <RimUI.Showcase.OverlayClip.Pick>выберите</RimUI.Showcase.OverlayClip.Pick>
+  <RimUI.Showcase.OverlayClip.Keep>Оставить</RimUI.Showcase.OverlayClip.Keep>
+  <RimUI.Showcase.OverlayClip.Sell>Продать</RimUI.Showcase.OverlayClip.Sell>
+  <RimUI.Showcase.OverlayClip.Slaughter>Забить</RimUI.Showcase.OverlayClip.Slaughter>
+  <RimUI.Showcase.OverlayClip.Tame>Приручать</RimUI.Showcase.OverlayClip.Tame>
+  <RimUI.Showcase.Placement.Down>placement = Bottom — панель под полем, левые края совпадают (по умолчанию)</RimUI.Showcase.Placement.Down>
+  <RimUI.Showcase.Placement.UpLeft>placement = Top, align = End — панель над полем и уходит влево: правые края совпадают</RimUI.Showcase.Placement.UpLeft>
+  <RimUI.Showcase.Placement.Center>align = Center — панель центрируется по полю, даже если шире его</RimUI.Showcase.Placement.Center>
+  <RimUI.Showcase.Placement.Wide>panelWidth = Content — ширина панели по самому длинному пункту, а не по узкому полю</RimUI.Showcase.Placement.Wide>
+  <RimUI.Showcase.Placement.Pick>выберите</RimUI.Showcase.Placement.Pick>
+  <RimUI.Showcase.Placement.Short1>Сталь</RimUI.Showcase.Placement.Short1>
+  <RimUI.Showcase.Placement.Short2>Дерево</RimUI.Showcase.Placement.Short2>
+  <RimUI.Showcase.Placement.Short3>Ткань</RimUI.Showcase.Placement.Short3>
+  <RimUI.Showcase.Placement.Long1>Обычный компонент из стали</RimUI.Showcase.Placement.Long1>
+  <RimUI.Showcase.Placement.Long2>Улучшенный компонент со схемой</RimUI.Showcase.Placement.Long2>
+  <RimUI.Showcase.Placement.Long3>Продвинутый компонент из пластали</RimUI.Showcase.Placement.Long3>
+  <RimUI.Showcase.PopoverApi.Block>close() из кода: выбор пункта закрывает панель, кнопка снаружи открывает её и показывает выбранное</RimUI.Showcase.PopoverApi.Block>
+  <RimUI.Showcase.PopoverApi.Trigger>Список своей сборки</RimUI.Showcase.PopoverApi.Trigger>
+  <RimUI.Showcase.PopoverApi.Open>Открыть из кода</RimUI.Showcase.PopoverApi.Open>
+  <RimUI.Showcase.PopoverApi.Nothing>ничего не выбрано</RimUI.Showcase.PopoverApi.Nothing>
+  <RimUI.Showcase.PopoverApi.Picked>выбрано:</RimUI.Showcase.PopoverApi.Picked>
+  <RimUI.Showcase.PopoverApi.Item1>Пшеница</RimUI.Showcase.PopoverApi.Item1>
+  <RimUI.Showcase.PopoverApi.Item2>Картофель</RimUI.Showcase.PopoverApi.Item2>
+  <RimUI.Showcase.PopoverApi.Item3>Кукуруза</RimUI.Showcase.PopoverApi.Item3>
+  <RimUI.Showcase.Nav.Styles.Opacity2>Гашение поддерева</RimUI.Showcase.Nav.Styles.Opacity2>
+  <RimUI.Showcase.Opacity.Desc>Style.Opacity гасит элемент вместе со всеми детьми одним значением: фон, текст, картинку, вложенные блоки. Style.Tint тем же способом красит поддерево цветом-множителем. Вложенные значения перемножаются: 0.5 внутри 0.5 дают 0.25, серый внутри красного — приглушённый красный. Выпадающие панели не гаснут и не красятся — список поверх приглушённой карточки остаётся читаемым.</RimUI.Showcase.Opacity.Desc>
+  <RimUI.Showcase.Opacity.Row>1.0 / 0.6 / 0.3 — одна и та же карточка с разным гашением</RimUI.Showcase.Opacity.Row>
+  <RimUI.Showcase.Opacity.Nested>Вложенность: внешний блок 0.5, внутренняя карточка ещё 0.5 — вместе 0.25</RimUI.Showcase.Opacity.Nested>
+  <RimUI.Showcase.Opacity.Toggle>Гашение по состоянию: кнопка переключает карточку между обычной и приглушённой</RimUI.Showcase.Opacity.Toggle>
+  <RimUI.Showcase.Opacity.Dim>Приглушить</RimUI.Showcase.Opacity.Dim>
+  <RimUI.Showcase.Opacity.Undim>Вернуть</RimUI.Showcase.Opacity.Undim>
+  <RimUI.Showcase.Opacity.Title>Пшеница</RimUI.Showcase.Opacity.Title>
+  <RimUI.Showcase.Opacity.Body>Посев на весну, участок 3</RimUI.Showcase.Opacity.Body>
+  <RimUI.Showcase.Opacity.Tag>готово</RimUI.Showcase.Opacity.Tag>
+  <RimUI.Showcase.Opacity.Outer>внешний блок</RimUI.Showcase.Opacity.Outer>
+  <RimUI.Showcase.Opacity.Tint>Style.Tint — цвет-множитель на всё поддерево: обесцвечивание, уход в красное, уход в синее</RimUI.Showcase.Opacity.Tint>
+  <RimUI.Showcase.Opacity.TintNested>Оттенок и гашение складываются: красное поддерево, внутри него приглушённая карточка</RimUI.Showcase.Opacity.TintNested>
+  <RimUI.Showcase.HScroll.Block>Колонкам не хватает ширины: сумма фиксированных плюс минимум доли шире таблицы. Содержимое прокручивается вбок, а затенение у края показывает, что справа есть ещё колонки</RimUI.Showcase.HScroll.Block>
+  <RimUI.Showcase.HScroll.Name>Название</RimUI.Showcase.HScroll.Name>
+  <RimUI.Showcase.HScroll.Col>Колонка</RimUI.Showcase.HScroll.Col>
+  <RimUI.Showcase.HScroll.Row>Строка</RimUI.Showcase.HScroll.Row>
+  <RimUI.Showcase.ItemContent.SelectBlock>Пункт со своим содержимым: строка с тегом и подписью вместо простого текста. Выбранный пункт показывается так же и в самом поле</RimUI.Showcase.ItemContent.SelectBlock>
+  <RimUI.Showcase.ItemContent.ListBlock>Строка списка собирается фабрикой по значению: высота строки считается по содержимому, а поиск и сортировка по-прежнему идут по тексту</RimUI.Showcase.ItemContent.ListBlock>
+  <RimUI.Showcase.ItemContent.Steel>Сталь</RimUI.Showcase.ItemContent.Steel>
+  <RimUI.Showcase.ItemContent.Wood>Дерево</RimUI.Showcase.ItemContent.Wood>
+  <RimUI.Showcase.ItemContent.Plasteel>Пласталь</RimUI.Showcase.ItemContent.Plasteel>
+  <RimUI.Showcase.ItemContent.Common>обычный</RimUI.Showcase.ItemContent.Common>
+  <RimUI.Showcase.ItemContent.Rare>редкий</RimUI.Showcase.ItemContent.Rare>
+  <RimUI.Showcase.ItemContent.Pick>выберите материал</RimUI.Showcase.ItemContent.Pick>
+  <RimUI.Showcase.ItemContent.Stock>на складе</RimUI.Showcase.ItemContent.Stock>
+  <RimUI.Showcase.ItemContent.TreeBlock>Узел со своим содержимым: шеврон раскрытия и отступ ветви остаются на месте, подпись заменена композицией</RimUI.Showcase.ItemContent.TreeBlock>
+  <RimUI.Showcase.ItemContent.MenuBlock>Пункт меню со своим содержимым: галочка отметки и стрелка подменю остаются на своих местах</RimUI.Showcase.ItemContent.MenuBlock>
+  <RimUI.Showcase.ItemContent.Storage>Склад</RimUI.Showcase.ItemContent.Storage>
+  <RimUI.Showcase.ItemContent.Ready>заполнен</RimUI.Showcase.ItemContent.Ready>
+  <RimUI.Showcase.ItemContent.Workshop>Мастерская</RimUI.Showcase.ItemContent.Workshop>
+  <RimUI.Showcase.ItemContent.Busy>занята</RimUI.Showcase.ItemContent.Busy>
+  <RimUI.Showcase.ItemContent.MenuLabel>Меню с составными пунктами</RimUI.Showcase.ItemContent.MenuLabel>
+  <RimUI.Showcase.ItemContent.Export>Выгрузить</RimUI.Showcase.ItemContent.Export>
+  <RimUI.Showcase.ItemContent.Import>Загрузить</RimUI.Showcase.ItemContent.Import>
+  <RimUI.Showcase.ItemContent.Csv>csv</RimUI.Showcase.ItemContent.Csv>
+  <RimUI.Showcase.ItemContent.HeadBlock>Заголовок колонки со своим содержимым: значок рядом с подписью. Стрелка сортировки и поле фильтра остаются на своих местах</RimUI.Showcase.ItemContent.HeadBlock>
+  <RimUI.Showcase.ItemContent.TreeTableBlock>Узел дерева-таблицы со своим содержимым в первой колонке: остальные колонки и так задаются элементами</RimUI.Showcase.ItemContent.TreeTableBlock>
+  <RimUI.Showcase.ItemContent.Material>Материал</RimUI.Showcase.ItemContent.Material>
+  <RimUI.Showcase.ItemContent.Amount>Запас</RimUI.Showcase.ItemContent.Amount>
+  <RimUI.Showcase.ItemContent.PanelBlock>Заголовок панели со своим содержимым: подпись, счётчик и переключатель в шапке. Шеврон сворачивания остаётся на месте</RimUI.Showcase.ItemContent.PanelBlock>
+  <RimUI.Showcase.ItemContent.ChipBlock>Chip, Tag, InlineMessage и Label принимают не только подпись, но и любую композицию</RimUI.Showcase.ItemContent.ChipBlock>
+  <RimUI.Showcase.ItemContent.Queue>Очередь работ</RimUI.Showcase.ItemContent.Queue>
+  <RimUI.Showcase.ItemContent.Waiting>в очереди</RimUI.Showcase.ItemContent.Waiting>
+  <RimUI.Showcase.ItemContent.Auto>авто</RimUI.Showcase.ItemContent.Auto>
+  <RimUI.Showcase.ItemContent.Body>Содержимое панели.</RimUI.Showcase.ItemContent.Body>
+  <RimUI.Showcase.ItemContent.Batch>Партия</RimUI.Showcase.ItemContent.Batch>
+  <RimUI.Showcase.ItemContent.Of>из</RimUI.Showcase.ItemContent.Of>
 </LanguageData>

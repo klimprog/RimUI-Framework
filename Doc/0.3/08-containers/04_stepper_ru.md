@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -70,6 +70,7 @@ new Stepper { Linear = false, ShowNav = false };
 | Поле | Тип | Описание |
 |---|---|---|
 | `Title` | `string` | Подпись под кружком. Переносится по словам. |
+| `TitleContent` | `UiElement` | `null` | Своё содержимое заголовка вместо подписи; кружок с номером шага остаётся на месте. |
 | `Content` | `UiElement` | Содержимое шага. |
 | `Icon` | `int` | Иконка вместо номера в кружке (`-1` = номер). |
 | `Disabled` | `bool` | Шаг недоступен для клика. |

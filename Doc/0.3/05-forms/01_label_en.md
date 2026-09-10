@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -26,7 +26,7 @@ new Label("Password") { Required = true, Hint = "At least 8 characters", IconInd
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `Content` | `string` | `null` | Raw label text. |
-| `TextElement` | `Text` | `null` | Prepared text element; takes priority over `Content`. |
+| `TextElement` | `UiElement` | `null` | Content of your own; takes priority over `Content`. Any composition, not just a caption. |
 | `Required` | `bool` | `false` | Draw an asterisk after the text. |
 | `Hint` | `string` | `null` | Raw hint text below the label. |
 | `HintElement` | `Text` | `null` | Prepared hint element; takes priority over `Hint`. |

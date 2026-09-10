@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -39,6 +39,8 @@ menu.AddItem(new MenuItem("Экспорт")
 | `ItemHeight` | `float` | `0` (из темы) | Высота пункта. |
 | `IconSlot` | `float` | `0` (из темы) | Ширина слота под иконку (если хоть у одного пункта есть иконка). |
 | `MinWidth` | `float` | `0` (из темы) | Минимальная ширина панели. |
+| `Placement` | `OverlayPlacement` | `Bottom` | Сторона, с которой раскрывается ПЕРВАЯ панель. Подменю всегда уходят вбок от строки родителя. |
+| `Align` | `OverlayAlign` | `Start` | Выравнивание панели по второй оси: `Start`, `Center`, `End`, `Auto`. `End` прижимает панель правым краем к правому краю якоря — она уходит влево. |
 
 `MenuItem(string text, Action onClick = null, string icon = null)`: `string Text`, `string
 Icon`, `Action OnClick`, `bool Disabled`, `List<MenuItem> Items` (подменю); метод `Sub(MenuItem
@@ -57,6 +59,21 @@ child)` — добавить подпункт, возвращает РОДИТЕ
 Ширина панели считается по самому широкому пункту (слот под иконку + текст + место под
 шеврон вложенности), но не меньше `MinWidth` (0 = из темы, `Theme.MenuMinWidth = 140`). Высота —
 сумма высот всех пунктов плюс `Gap` между ними плюс внутренние отступы панели.
+
+## Своё содержимое пункта
+
+`MenuItem.Content` — композиция вместо подписи. Галочка отметки и стрелка подменю остаются на
+своих местах.
+
+```csharp
+var row = new FlexBox(Axis.Row) { Style = { Gap = 6f, AlignItems = AlignItems.Center } };
+row.Add(new Text("Выгрузить"));
+row.Add(new Tag("csv", Severity.Info));
+
+menu.Items.Add(new MenuItem("Выгрузить") { Content = row });
+```
+
+`Text` не лишний: по нему считается ширина меню.
 
 ## Стили
 

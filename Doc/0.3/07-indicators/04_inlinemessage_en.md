@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -27,7 +27,7 @@ new InlineMessage(Severity.Warn, "Warning") { Key = "im1", Closable = true };
 |---|---|---|---|
 | `Key` | `string` | `null` | State key in the ID store (see "Keys and state" on the Architecture page). Needed when the element is recreated between frames, or when its state must survive such recreation. |
 | `Content` | `string` | `null` | Message text. |
-| `TextElement` | `Text` | `null` | Prebuilt text element used instead of `Content`. |
+| `TextElement` | `UiElement` | `null` | Content of your own used instead of `Content` - any composition, not just a caption. |
 | `Severity` | `Severity` | set by constructor | Controls icon and color; see `Tag` for the full mapping. |
 | `Closable` | `bool` | `false` | Shows a close button. |
 | `OnClose` | `Action` | `null` | Called after the banner closes. |

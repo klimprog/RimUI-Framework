@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -34,7 +34,11 @@ acc.Section("Разное", body3);
 | `HeaderHeight` | `float` | `30` | Высота заголовка секции. |
 | `Gap` | `float` | `4` | Отступ между секциями. |
 
-`AccordionSection`: `string Title`/`Text TitleElement`, `UiElement Body`, `bool StartOpen`.
+`AccordionSection`: `string Title`/`Text TitleElement`, `UiElement TitleContent`, `UiElement Body`,
+`bool StartOpen`.
+
+`TitleContent` — своё содержимое заголовка секции вместо подписи: шеврон секции остаётся на
+месте, а подпись заменяется композицией. `Title` при этом остаётся именем для кода.
 
 **Раскрытие мгновенное**, как и у `Panel`: клик сразу переключает булев флаг секции, высота в
 `Measure` берётся напрямую из текущего состояния — интерполяции высоты между кадрами нет.

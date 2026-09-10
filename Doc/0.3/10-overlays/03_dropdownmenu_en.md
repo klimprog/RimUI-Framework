@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -38,6 +38,8 @@ menu.AddItem(new MenuItem("Export")
 | `ItemHeight` | `float` | `0` (theme) | Item height. |
 | `IconSlot` | `float` | `0` (theme) | Icon-column width when any item has an icon. |
 | `MinWidth` | `float` | `0` (theme) | Minimum panel width. |
+| `Placement` | `OverlayPlacement` | `Bottom` | Which side the FIRST panel opens on. Submenus always go sideways from their parent row. |
+| `Align` | `OverlayAlign` | `Start` | Alignment along the other axis: `Start`, `Center`, `End`, `Auto`. `End` pins the panel's right edge to the anchor's right edge, so it runs to the left. |
 
 `MenuItem` exposes text, icon, callback, disabled state, and child items. `Sub` adds a child and returns the parent. `HasChildren` reports nested items.
 
@@ -46,6 +48,21 @@ menu.AddItem(new MenuItem("Export")
 The root opens below with a 4 px gap and `Popover` flipping. A submenu opens flush to the right of its parent row, not the whole panel, and may flip left. Its top aligns with the parent row and it opens on hover.
 
 Width fits the widest item, including icon and chevron slots, but is at least `MinWidth` or `Theme.MenuMinWidth = 140`. Height is item heights plus gaps and panel padding.
+
+## Content of your own for an item
+
+`MenuItem.Content` takes a composition instead of a caption. The check mark and the submenu arrow
+stay in their places.
+
+```csharp
+var row = new FlexBox(Axis.Row) { Style = { Gap = 6f, AlignItems = AlignItems.Center } };
+row.Add(new Text("Export"));
+row.Add(new Tag("csv", Severity.Info));
+
+menu.Items.Add(new MenuItem("Export") { Content = row });
+```
+
+`Text` is not redundant: the menu's width is measured from it.
 
 ## Styles
 

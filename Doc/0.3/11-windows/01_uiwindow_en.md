@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -84,6 +84,15 @@ The fraction is configurable by overriding `OffscreenFraction`.
 
 The clamping is recomputed not only while dragging but also when the **screen resolution or the UI
 scale changes**: otherwise a window dragged off-screen could end up entirely outside the border.
+
+## Hovering and a window on top
+
+While another window sits above it, a window's content does not respond to the cursor: no
+highlights, no cursors, no tooltips. This is decided by the topmost window under the mouse rather
+than by drawing order, and it works on its own - there is nothing to configure.
+
+Resizing follows the same rule: it cannot be started through another window, but a drag already in
+progress is carried through to the end even if the cursor moves away.
 
 ## Styles
 

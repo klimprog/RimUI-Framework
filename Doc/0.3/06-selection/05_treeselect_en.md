@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -29,6 +29,8 @@ tsel.TreePanel.Nodes.Add(new TreeItem("Weapons").Sub(new TreeItem("Ranged").Sub(
 | `TreePanel` | `Tree` (readonly) | new `Tree()` | Option tree; see `Tree`. |
 | `OnChange` | `Action<TreeItem>` | `null` | Receives the entire selected node, not just its value. |
 | `Placeholder` | `string` | `"-"` | Text shown when nothing is selected. |
+| `Placement` | `OverlayPlacement` | `Bottom` | Which side the panel opens on: `Bottom`, `Top`, `Right`, `Left`, `Auto` (downwards, or upwards when there is not enough room). |
+| `Align` | `OverlayAlign` | `Start` | Alignment along the other axis: `Start`, `Center`, `End`, `Auto`. `End` pins the panel's right edge to the field's right edge, so it runs to the left. |
 | `LeavesOnly` | `bool` | `true` | Allows selection of leaves only. |
 | `Disabled` | `bool` | `false` | Disables the control. |
 | `FieldHeight` | `float` | `28` | Trigger field height. |
@@ -38,7 +40,30 @@ tsel.TreePanel.Nodes.Add(new TreeItem("Weapons").Sub(new TreeItem("Ranged").Sub(
 
 The panel opens below and flips above like `Select`. Search fully reuses `Tree.CollectFiltered`: only leaves match, and context branches are forced open without changing their stored `Expanded` state. See `Tree` for details.
 
-## Styles
+
+## Where the panel opens
+
+The direction is set along two independent axes: `Placement` - which side of the field the panel
+sits on, `Align` - how it lines up along the other axis. The pair covers all eight combinations:
+
+| What you want | How to set it |
+|---|---|
+| downwards, left edges aligned | `Placement = Bottom` (the default) |
+| upwards | `Placement = Top` |
+| **up and to the left** | `Placement = Top`, `Align = End` |
+| downwards, centred on the field | `Align = Center` |
+| sideways (a submenu) | `Placement = Right` or `Left` |
+
+`Auto` on either axis means "pick it yourself": the side flips to the opposite one when there is
+not enough room.
+
+**Room is measured against the visible area, not just the window.** A list inside a table or a
+scroll area opens where it can be seen. Clamping the panel to the cell's bounds is out of the
+question, though - it would have nowhere to open - so it extends past them freely.
+
+**Alignment only shows when the widths differ.** If the panel is exactly as wide as the field,
+`Start`, `Center` and `End` all look the same.
+
 
 Uses the `Select` family slots (`select/panel` and `select/field*`) together with `tree/*`.
 

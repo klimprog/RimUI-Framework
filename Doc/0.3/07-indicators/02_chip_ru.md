@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -28,7 +28,7 @@ row.Add(new Chip(label, () => labels.Remove(label)));   // с удалением
 | Параметр | Тип | По умолчанию | Описание |
 |---|---|---|---|
 | `Content` | `string` | `null` | Текст. |
-| `TextElement` | `Text` | `null` | Готовый элемент текста вместо `Content`. |
+| `TextElement` | `UiElement` | `null` | Готовый элемент текста вместо `Content`. |
 | `IconIndex` | `int` | `-1` | Индекс листа `Icons`. |
 | `Removable` | `bool` | авто `true`, если передан `onRemove` | Показывать ли крестик удаления. |
 | `OnRemove` | `Action` | `null` | Колбэк клика по крестику. |

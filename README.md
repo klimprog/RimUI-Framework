@@ -4,7 +4,7 @@
 
 [Русский](README_ru.md)
 
-`Core 0.8.21` · `Mod 0.3.0` · RimWorld `1.6`
+`Core 0.8.31` · `Mod 0.3.1` · RimWorld `1.6`
 
 ## Overview
 

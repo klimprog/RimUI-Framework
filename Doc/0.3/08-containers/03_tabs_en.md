@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -34,7 +34,11 @@ tb.Tab("Off", disabledBody, disabled: true);
 | `TabPadding` | `float` | `14` | Horizontal header padding. |
 | `Position` | `TabPosition` (`Top`, `Bottom`, `Left`, `Right`) | `Top` | Header side. |
 
-`TabPage` contains `string Title`, `UiElement Body`, and `bool Disabled`. Disabled tabs use a separate text color and cannot be clicked.
+`TabPage` contains `string Title`, `UiElement TitleContent`, `UiElement Body`, and `bool Disabled`.
+Disabled tabs use a separate text color and cannot be clicked.
+
+`TitleContent` is content of your own for the tab instead of a caption: the active tab's underline
+stays in place. The tab's width is still measured from `Title`, so it is worth setting as well.
 
 ## Exact sizing and overflow
 

@@ -2,6 +2,64 @@
 
 [Русский](CHANGELOG_ru.md) · [README](README.md)
 
+## 0.3.1
+
+**Content of your own instead of a caption**
+
+Wherever a string was accepted, an element is now accepted too: a list item with a picture, a tag
+or a progress bar no longer means assembling the list by hand.
+
+Works in `Select`, `MultiSelect`, `ListBox`, `PickList`, `OrderList`, `Tree`, `TreeSelect`,
+`MultiTreeSelect`, `CascadeSelect`, menus, in the column headers of `DataTable` and `TreeTable`, in
+tree-table nodes, in the headers of `Panel`, `Accordion`, `Tabs`, in `Stepper` steps, and in `Chip`,
+`Tag`, `InlineMessage` and `Label`.
+
+The built-in trimmings stay in place: the tree chevron, the menu check mark, the multi-select
+checkbox, the sort arrow in a table. The caption is still worth setting - search and sorting go by
+it.
+
+**Dimming and tinting a subtree**
+
+`Style.Opacity` and `Style.Tint` act on an element together with all its children - background,
+text, image, nested blocks: a card can be dimmed with a single value instead of a walk through all
+of its parts. Nested values multiply together. Dropdown panels do not dim: a list over a dimmed
+card stays readable.
+
+**Where panels open**
+
+The direction is set along two axes: the side (`Placement`) and the alignment along the other axis
+(`Align`) - including "up and to the left". The setting is available in `Select`, `MultiSelect`,
+`TreeSelect`, `MultiTreeSelect`, `ColorPicker`, menus and `Popover`. The panel of a `Select` can be
+sized to its longest item (`PanelWidth = Content`).
+
+**Controlling `Popover` from code**
+
+`IsOpen`, `Open()`, `Close()` and `Toggle()` were added. A click outside the panel closed it before
+as well, but after picking an item INSIDE it there was no way to close it.
+
+**Horizontal table scrolling became visible**
+
+When the columns do not fit, `DataTable` scrolls sideways. A fade is now drawn at the edge to show
+there are more columns there (`ScrollEdgeFade`, on by default). The documentation for
+`MinWeightColumnWidth` describes how the minimum content width is calculated and when scrolling
+kicks in.
+
+**Accessor methods for settings**
+
+Public settings now come with `GetX()` / `SetX(value)` pairs. The fields stay open and assignment
+works as before, but the methods are the better choice - the fields will be closed in one of the
+next versions, and code written through the methods will need no changes then.
+
+**Fixed**
+
+- **Clicking a dropdown inside a table or a scroll area.** The panel is drawn over everything, yet
+  only the part of it that fell inside its parent was clickable: a list in a table cell was fully
+  visible, but only its top items could be picked.
+- **Hovering through a window on top.** A cursor over the top window highlighted elements of the
+  window beneath it.
+- **Events and the cursor in a `Popover` panel.** The panel's content did not respond to hovering
+  and did not change the cursor from its style.
+
 ## 0.3.0
 
 **Layout**

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -43,7 +43,9 @@ var table = new DataTable(
 | `CaseSensitive` | `bool` | `false` | Case-sensitive filters. |
 | `DefaultSortColumn` | `int` | `-1` | Column the table is sorted by when first shown; `-1` = unsorted. Applied **once**, when the state is created: from then on the order is the player's, set by clicking the headers, and assigning here will not reset it. A column outside the range is ignored. |
 | `DefaultSortAsc` | `bool` | `true` | Direction of the initial sort. |
-| `MinWeightColumnWidth` | `float` | `90` | Aggregate minimum used for weighted columns before horizontal scrolling. |
+| `TableColumn.TitleContent` | `UiElement` | `null` | Content of your own for a column header. The sort arrow and the filter field stay in place. |
+| `MinWeightColumnWidth` | `float` | `90` | Aggregate minimum used for weighted columns before horizontal scrolling. The fixed widths plus this minimum per weighted column set the minimum content width - see "Exact weighted column sizing". |
+| `ScrollEdgeFade` | `bool` | `true` | Fades the edge while there is more content sideways. |
 
 `TableColumn(string title, float width = 0f, float weight = 1f)` uses fixed pixels when `width > 0`; otherwise it receives a share of remaining width by `weight`. `SortBy` returns an `IComparable` key by source-row index. `FilterBy` returns filter text; `null` disables that column's filter field.
 
@@ -87,6 +89,32 @@ colW[i]  = rest * (Weight[i] / weightSum)
 ```
 
 `MinWeightColumnWidth` guarantees only the aggregate width of weighted columns, not each column. With weights 1 and 3 and `rest = 180`, widths are 45 and 135 px. Horizontal scrolling begins when `contentW > visibleWidth + 0.5`.
+
+**Here is the thing worth keeping in mind.** The sum of the fixed widths plus
+`MinWeightColumnWidth` for every weighted column is the table's **minimum content width**. Given
+less than that, the table does not shrink: it starts scrolling sideways, and the right-hand columns
+along with their separators move past the visible edge.
+
+It looks deceiving: every separator is drawn, but the last one ended up beyond the edge, and the
+picture reads as "a grid line went missing". Easy to check - scroll the table to the right.
+
+For example, four columns of 170 plus one weighted column with `MinWeightColumnWidth = 70` come to
+750. If the table only got 500, three separators are visible and the fourth (at 580) is not.
+
+What to do about it:
+
+* give the table the width it needs, or reduce the fixed ones;
+* lower `MinWeightColumnWidth` if the weighted column may be narrow;
+* leave it as is - scrolling works, and `ScrollEdgeFade` (on by default) fades the edge to show
+  that the content continues.
+
+### Edge fade
+
+While there is more content sideways, a soft fade in the window's background colour is drawn at the
+matching edge of the body. On the left it appears only once the table has been scrolled - there is
+nothing to show at an untouched edge.
+
+Switch it off with `ScrollEdgeFade = false`: the scrollbar at the bottom is then enough.
 
 ### Exact sorting behavior
 

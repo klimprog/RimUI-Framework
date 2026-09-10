@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.21` · мод `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -35,7 +35,11 @@ tb.Tab("Выкл", disabledBody, disabled: true);
 | `TabPadding` | `float` | `14` | Горизонтальный паддинг заголовка. |
 | `Position` | `TabPosition` (`Top`\|`Bottom`\|`Left`\|`Right`) | `Top` | Сторона размещения вкладок. |
 
-`TabPage`: `string Title`, `UiElement Body`, `bool Disabled` (свой цвет текста, не кликается).
+`TabPage`: `string Title`, `UiElement TitleContent`, `UiElement Body`, `bool Disabled` (свой цвет
+текста, не кликается).
+
+`TitleContent` — своё содержимое вкладки вместо подписи: подчёркивание активной вкладки остаётся
+на месте. Ширина вкладки при этом считается по `Title`, поэтому его стоит задавать и здесь.
 
 ## Точная механика ширины и переполнения
 

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -31,7 +31,33 @@ var pop2 = new Popover { Trigger = Button.Make("Panel"), Placement = OverlayPlac
 | `Trigger` | `UiElement` | `null` | In-flow anchor and toggle area. |
 | `Content` | `UiElement` | `null` | Panel content. |
 | `Placement` | `OverlayPlacement` | `Bottom` | `Bottom`, `Top`, `Right`, or `Left`. |
+| `Align` | `OverlayAlign` | `Start` | Alignment along the other axis: `Start`, `Center`, `End`, `Auto`. `End` pins the panel's right edge to the anchor's right edge, so it runs to the left. |
 | `Gap` | `float` | `4` | Gap from the anchor. |
+
+## Controlling it from code
+
+| Member | Returns | Description |
+|---|---|---|
+| `IsOpen` | `bool` | Is the panel open? `false` before the first frame. |
+| `Open()` | - | Opens it. |
+| `Close()` | - | Closes it. Safe to call straight from a callback INSIDE the panel. |
+| `Toggle()` | - | Toggles it. |
+
+The intent is applied on the next frame rather than instantly. There are two reasons: before the
+first frame there is no state store yet, and closing from a callback happens inside the panel's own
+drawing - were it to vanish mid-way, the clip commands would fall out of balance.
+
+This is the case the method exists for: a click outside the panel closes it by itself, a click on
+an element INSIDE it does not.
+
+```csharp
+var pick = Button.Make("Wheat");
+pick.OnClick = () =>
+{
+    chosen = "Wheat";
+    pop.Close();          // an item was picked - the panel closed
+};
+```
 
 ## Styles
 

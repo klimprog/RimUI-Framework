@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.21` · mod `0.3.0` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
 
 ---
 
@@ -70,6 +70,7 @@ new Stepper { Linear = false, ShowNav = false };
 | Field | Type | Description |
 |---|---|---|
 | `Title` | `string` | Caption under the circle. Wraps by words. |
+| `TitleContent` | `UiElement` | `null` | Content of your own for the header instead of a caption; the circle with the step number stays in place. |
 | `Content` | `UiElement` | The step's content. |
 | `Icon` | `int` | Icon instead of the number in the circle (`-1` = number). |
 | `Disabled` | `bool` | The step cannot be clicked. |
