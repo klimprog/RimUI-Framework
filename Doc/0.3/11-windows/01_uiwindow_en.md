@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.35` · mod `0.3.2` · RimWorld `1.6`
 
 ---
 
@@ -33,6 +33,8 @@ window.Show();
 | `Resizable` | `ResizeEdges` | `None` | Which edges the window can be dragged by. See "Resizing a window" below. |
 | `MinWindowSize` | `Vector2` | `(180, 120)` | Lower bound of the size while resizing. |
 | `MaxWindowSize` | `Vector2` | `Vector2.zero` | Upper bound; zero on an axis means the screen is the only limit. |
+| `DragHandle` | `UiElement` | `null` | The element the window is dragged by. `null` means it cannot be dragged. See "Dragging a window". |
+| `HideContentWhileDragging` | `bool` | `true` | Hide the content while the window is being dragged. |
 
 Window state, including scroll, focus, expansion, and internally stored control values, lives only from open to close. Reopening even the same instance starts clean. Persist data yourself through callbacks or `OnClose`.
 
@@ -85,14 +87,77 @@ The fraction is configurable by overriding `OffscreenFraction`.
 The clamping is recomputed not only while dragging but also when the **screen resolution or the UI
 scale changes**: otherwise a window dragged off-screen could end up entirely outside the border.
 
+## Dragging a window
+
+A window is dragged by a **handle** - any element of its content, usually the title bar:
+
+```csharp
+var header = new FlexBox(Axis.Row) { Style = { Cursor = CursorKind.Move } };
+header.Add(new Text("Production console"));
+
+var win = new UiWindow(root);
+win.SetDragHandle(header);        // this is what the window is dragged by
+```
+
+One call from the content drawing is then needed - **after** the handle has been drawn:
+
+```csharp
+public override void DoWindowContents(Rect inRect)
+{
+    // ... lay out and draw the content, the handle included ...
+    HandleWindowDrag();
+}
+```
+
+The order is not a formality: by that point the buttons inside the handle have taken their click,
+so the window can see whether the press is free. Otherwise a press on "close" would drag the window
+along with it.
+
+The handle is taken by its bounds after layout, so there is no dragging before the first frame.
+
+`ModalWindow` does all of this itself: its handle is the title bar, switched on by `Draggable`.
+
+**Verse's own dragging (`Window.draggable`) is turned off for this.** It drags the window from any
+point and intercepts clicks on the content.
+
+### Content while the window is dragged
+
+A window moves as many times as it is redrawn, so a heavy window lags behind the cursor by exactly
+its own drawing time. The content is therefore **neither laid out nor drawn** while the window is
+being dragged - only the window's panel stays. There is nothing to measure or draw, and the frame is
+short no matter what is inside.
+
+| Parameter | Type | Default | Description |
+|---|---|---|---|
+| `HideContentWhileDragging` | `bool` | `true` | Hide the content while the window is being dragged. |
+
+Turn it off for a window that is cheap to draw and should stay readable:
+
+```csharp
+win.SetHideContentWhileDragging(false);
+```
+
+**The price:** while the content is not drawn it does not exist for the game's input layer either,
+so the caret is lost from a text field during a drag. The fields and their text come back, the focus
+does not.
+
 ## Hovering and a window on top
 
 While another window sits above it, a window's content does not respond to the cursor: no
 highlights, no cursors, no tooltips. This is decided by the topmost window under the mouse rather
 than by drawing order, and it works on its own - there is nothing to configure.
 
-Resizing follows the same rule: it cannot be started through another window, but a drag already in
-progress is carried through to the end even if the cursor moves away.
+Resizing and dragging follow the same rule: neither can be started through another window, but one
+already in progress is carried through to the end even if the cursor moves away. While anything is
+held - the window, a resized block, a slider, dragged content - the mouse counts as belonging to that
+window wherever it goes.
+
+That hold is **one for the whole framework**: while one window is being dragged or resized, another
+starts neither.
+
+Windows are not the whole story: the game's own popup messages and tooltips are windows too, and
+they sit above any of ours. While one covers an element, hovering it does nothing - the click would
+go to them, not to us.
 
 ## Styles
 
@@ -104,6 +169,8 @@ Window panel: `Theme.WindowPanelFor(SheetKey)`. The default protected `SheetKey`
 |---|---|---|
 | `UiWindow(UiElement root, Theme theme = null)` | - | Creates a window. |
 | `Show()` | `void` | Adds it to `Find.WindowStack`. |
+| `SetDragHandle(UiElement)` | `void` | Sets the handle the window is dragged by. |
+| `HandleWindowDrag()` (protected) | `void` | Handles a press on the handle. Called from the content drawing AFTER it. |
 | `InitialSize` | `Vector2` | Automatic size or `FixedSize`. |
 
 ## Events

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.35` · mod `0.3.2` · RimWorld `1.6`
 
 ---
 
@@ -113,9 +113,16 @@ the theme (`Theme.Cursors`). The kinds are:
 | `Text` | Text entry. |
 | `ResizeH`, `ResizeV`, `ResizeNWSE`, `ResizeNESW` | Resizing horizontally, vertically and along both diagonals. |
 
-How it works: every element under the mouse requests its cursor, **the deepest one wins**, and the
-kind is applied once per frame. Disabled elements (`EffectiveDisabled`) request nothing — a hand
+How it works: every element under the mouse requests its cursor and **the deepest one wins**.
+Disabled elements (`EffectiveDisabled`) request nothing — a hand
 over an unavailable button would be a lie.
+
+The decision is made **once per frame for every open window**: only the window that has the mouse
+makes a request, and among those the topmost one wins. A window with no mouse over it does not
+cancel another's request.
+
+Outside the framework's elements the **game's** cursor comes back - its own one included, when
+"custom cursor" is enabled in the RimWorld settings, rather than the system arrow.
 
 The theme supplies these by default: a hand for buttons (`button`) and select fields
 (`select/field`), a caret for input fields (`input/frame`), and a hand for the header of a
@@ -185,7 +192,7 @@ shrink, the content honestly goes past the border, and from there `Overflow` dec
 `ZOrder` decides which of the **siblings** gets the click, the wheel and the right to claim the
 cursor first when elements of one parent overlap: in a `Stack`, in decorations over content, in
 overlays. Higher means more important. It does not affect **drawing** order: the higher one is
-still drawn on top, as before.
+still drawn on top, and that order comes from the order the children were added in.
 
 Depth is handled by itself — a child always outranks its ancestor, and no `ZOrder` is needed for
 that.

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.35` · mod `0.3.2` · RimWorld `1.6`
 
 ---
 
@@ -39,7 +39,7 @@ var modal = new ModalWindow(body) {
 | `Body` | `UiElement` | constructor input | Body content. |
 | `FooterButtons` | `List<UiElement>` (readonly) | empty | Footer buttons. |
 | `FooterAlign` | `JustifyContent` | `End` | Footer alignment. |
-| `Draggable` | `bool` | `true` | Enables custom title-bar dragging. |
+| `Draggable` | `bool` | `true` | Dragging by the title bar. The title bar becomes the handle and the shared `UiWindow` mechanism takes it from there - see its page, "Dragging a window". |
 | `ShowTitle` | `bool` | `true` | Shows the title. `false` leaves the centre zone of the header free for your own elements. |
 | `ShowClose` | `bool` | `true` | Shows the close button. |
 | `HeaderLeftBefore` / `HeaderLeftAfter` | `List<UiElement>` (readonly) | empty | Your own elements in the left zone of the header - before and after the hamburger. |
@@ -109,7 +109,7 @@ Panel slot: `Theme.ModalPanel`. A panel sprite disables the native window backgr
 | Animation | Yes | On child elements through `Style.Animation`. |
 | Disabled | Not applicable | Footer controls have their own state. |
 | Hover fade | Not on window | Available on child controls. |
-| Dragging | Yes | Custom title-bar implementation. |
+| Dragging | Yes | `Draggable`; the title bar is the handle, the mechanism is shared with `UiWindow`. |
 
 
 ---

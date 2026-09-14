@@ -1,6 +1,6 @@
 ![RimUI Framework](../About/Preview.png)
 
-**RimUI Framework** — core `0.8.31` · mod `0.3.1` · RimWorld `1.6`
+**RimUI Framework** — core `0.8.35` · mod `0.3.2` · RimWorld `1.6`
 
 ---
 

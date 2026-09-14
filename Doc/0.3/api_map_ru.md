@@ -1,6 +1,6 @@
 ![RimUI Framework](../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.35` · мод `0.3.2` · RimWorld `1.6`
 
 ---
 
@@ -197,7 +197,7 @@
     - События: `OnAccept`, `OnReject`, `Events.HoverEnter / Events.HoverLeave`, `Events.Click / Events.RightClick`, `Events.DisabledChanged`
 - Окна
   - [UiWindow](11-windows/01_uiwindow_ru.md)
-    - Методы: `UiWindow(UiElement root, Theme theme = null) (конструктор)`, `Show()`, `InitialSize (override, свойство)`
+    - Методы: `UiWindow(UiElement root, Theme theme = null) (конструктор)`, `Show()`, `SetDragHandle(UiElement)`, `HandleWindowDrag() (protected)`, `InitialSize (override, свойство)`
   - [ModalWindow](11-windows/02_modalwindow_ru.md)
     - Методы: `ModalWindow(UiElement body = null, Theme theme = null) (конструктор)`, `InitialSize (override, свойство)`
     - События: `OnClose`

@@ -1,6 +1,6 @@
 ![RimUI Framework](../../../About/Preview.png)
 
-**RimUI Framework** — ядро `0.8.31` · мод `0.3.1` · RimWorld `1.6`
+**RimUI Framework** — ядро `0.8.35` · мод `0.3.2` · RimWorld `1.6`
 
 ---
 
@@ -47,7 +47,7 @@ modal.Show();
 | `Body` | `UiElement` | из конструктора | Контент тела. |
 | `FooterButtons` | `List<UiElement>` (readonly) | пусто | Кнопки в футере. |
 | `FooterAlign` | `JustifyContent` (`Start`\|`Center`\|`End`\|`SpaceBetween`\|`SpaceAround`\|`SpaceEvenly`) | `End` | Выравнивание кнопок футера — те же значения, что у `Style.JustifyContent` (см. страницу «Style — модель стиля»). |
-| `Draggable` | `bool` | `true` | Перетаскивание окна за шапку (своя реализация, не нативный drag). |
+| `Draggable` | `bool` | `true` | Перетаскивание окна за шапку. Зоной захвата становится шапка, дальше работает общий механизм `UiWindow` — см. его страницу, раздел «Перетаскивание окна». |
 | `ShowTitle` | `bool` | `true` | Показывать заголовок. `false` — центральная зона шапки остаётся под свои элементы. |
 | `ShowClose` | `bool` | `true` | Показывать крестик закрытия. |
 | `HeaderLeftBefore` / `HeaderLeftAfter` | `List<UiElement>` (readonly) | пусто | Свои элементы в левой зоне шапки — до и после гамбургера. |
@@ -124,7 +124,7 @@ w.HeaderLeftAfter.Add(pin);             // справа от гамбургер�
 | Анимация | Да | Общий механизм `Style.Animation` у элементов внутри окна. |
 | Disabled | Не применимо к окну | У кнопок футера — обычный `Button.Disabled`. |
 | Hover-fade | Не в самом окне | У вложенных `Button`/`DropdownMenu` — да (см. их страницы). |
-| Перетаскивание | Да | `Draggable`, своя реализация за шапку. |
+| Перетаскивание | Да | `Draggable`; шапка как зона захвата, механизм — общий у `UiWindow`. |
 
 
 ---

@@ -2,6 +2,33 @@
 
 [Русский](CHANGELOG_ru.md) · [README](README.md)
 
+## 0.3.2
+
+**Dragging a window by a handle of your own**
+
+A window is dragged by an element you nominate: a title bar, a strip along the top, anything -
+`SetDragHandle`. Available to any window, not just `ModalWindow` by its title bar.
+
+The window keeps up with the cursor through quick movements and when the cursor leaves its frame,
+and the button can be released anywhere. A window the dragged one is carried over does not take the
+hold for itself.
+
+While a window is being dragged its content is not drawn - the frame stays. A heavy window does not
+fall behind the cursor that way: there is nothing to draw at that moment. Switched off with
+`HideContentWhileDragging`. The price: the caret is lost from a text field during a drag.
+
+**The cursor outside the framework's elements**
+
+The game's cursor comes back - its own one included, when it is enabled in the RimWorld settings.
+Previously the system arrow took its place.
+
+**Fixed**
+
+- Resizing a window by its edge.
+- The cursor flickering while hovering elements.
+- A resized block, a held slider and dragged content breaking off when the cursor moves under
+  another window or under a popup message from the game.
+
 ## 0.3.1
 
 **Content of your own instead of a caption**

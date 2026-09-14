@@ -641,7 +641,7 @@
   <RimUI.Showcase.ScrollBox.Col>Column {0}</RimUI.Showcase.ScrollBox.Col>
   <RimUI.Showcase.ScrollBox.Cell>R{0} C{1}</RimUI.Showcase.ScrollBox.Cell>
   <RimUI.Showcase.Nav.Styles.Cursor>Cursor</RimUI.Showcase.Nav.Styles.Cursor>
-  <RimUI.Showcase.Style.Cursor.Desc>Style.Cursor sets the MEANING of the cursor (arrow / hand / move / caret / four resize directions), while the theme supplies the texture and the hotspot. Unity gives mods no access to OS cursors, so the framework ships its own assets drawn in the system style - a white body with a black outline. The deepest element under the mouse wins; the shape is applied once per frame.</RimUI.Showcase.Style.Cursor.Desc>
+  <RimUI.Showcase.Style.Cursor.Desc>Style.Cursor sets the MEANING of the cursor (arrow / hand / move / caret / four resize directions), while the theme supplies the texture and the hotspot. Unity gives mods no access to OS cursors, so the framework ships its own assets drawn in the system style - a white body with a black outline. The deepest element under the mouse wins; the shape is applied once per frame. Outside the framework's elements the game's cursor comes back - its own one included, when it is enabled in the RimWorld settings.</RimUI.Showcase.Style.Cursor.Desc>
   <RimUI.Showcase.Style.Cursor.Kinds>Cursor kinds</RimUI.Showcase.Style.Cursor.Kinds>
   <RimUI.Showcase.Style.Cursor.Arrow>Arrow - the ordinary pointer</RimUI.Showcase.Style.Cursor.Arrow>
   <RimUI.Showcase.Style.Cursor.Hand>Hand - clickable</RimUI.Showcase.Style.Cursor.Hand>
