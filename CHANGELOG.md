@@ -2,6 +2,24 @@
 
 [Русский](CHANGELOG_ru.md) · [README](README.md)
 
+## 0.4.0
+
+**RimWorld 1.7**
+
+RimWorld 1.6 and 1.7 are supported. Everything works in both: components, charts, `NodeCanvas`
+links, animations, cursors, OS fonts, audio. How the versions differ - see the "Game versions"
+section of the documentation.
+
+**The assembly sits in its game version's folder**
+
+`RimUI.dll` lives in `1.6/Assemblies/` and `1.7/Assemblies/`. If your project references the RimUI
+assembly, fix the path: take it from the folder of the game version you build for. Nothing changes
+in the game - it loads the assembly for its own version by itself.
+
+**Text field**
+
+Clicking outside a text field takes the focus away from it.
+
 ## 0.3.2
 
 **Dragging a window by a handle of your own**

@@ -4,7 +4,7 @@
 
 [Русский](README_ru.md)
 
-`Core 0.8.35` · `Mod 0.3.2` · RimWorld `1.6`
+`Core 0.9.3` · `Mod 0.4.0` · RimWorld `1.6, 1.7`
 
 ## Overview
 
@@ -32,7 +32,7 @@ RimUI Framework is a library, not a content mod. Which means:
 - **It writes nothing to the save.** No `GameComponent`, no `WorldComponent`, no `Scribe` fields:
   removing the mod does not corrupt existing saves.
 - **No runtime dependencies.** Just the framework's own code, no third-party libraries.
-- **Supports RimWorld 1.6.**
+- **Supports RimWorld 1.6 and 1.7.**
 
 **Load order:** RimUI Framework must load **before** the mods that use it — they declare the
 dependency and `loadAfter` in their own `About.xml`.

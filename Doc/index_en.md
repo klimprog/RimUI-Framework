@@ -1,12 +1,13 @@
 ![RimUI Framework](../About/Preview.png)
 
-**RimUI Framework** — core `0.8.35` · mod `0.3.2` · RimWorld `1.6`
+**RimUI Framework** — core `0.9.3` · mod `0.4.0` · RimWorld `1.6, 1.7`
 
 ---
 
 # RimUI Framework documentation
 
-- [0.3](0.3/index_en.md) — current
+- [0.4](0.4/index_en.md) — current
+- [0.3](0.3/index_en.md) — archived
 - [0.2](0.2/index_en.md) — archived
 - [0.1](0.1/index_en.md) — archived
 
